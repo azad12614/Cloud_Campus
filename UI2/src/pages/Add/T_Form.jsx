@@ -23,7 +23,7 @@ function M_Form() {
       bsc,
       image,
     };
-    fetch("http://localhost:3000/add-sir", {
+    fetch("https://cloud-xmqm.onrender.com/add-sir", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

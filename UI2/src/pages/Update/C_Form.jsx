@@ -22,7 +22,7 @@ function Form() {
             preCourse,
             image,
         };
-        fetch(`http://localhost:3000/update-course/${course?._id}`, {
+        fetch(`https://cloud-xmqm.onrender.com/update-course/${course?._id}`, {
             method: "PUT",
             headers: {
                 "Content-type": "application/json",

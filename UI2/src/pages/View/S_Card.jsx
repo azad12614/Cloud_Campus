@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const Card = () => {
     const [Sections, setSections] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:3000/all-sections`)
+        fetch(`https://cloud-xmqm.onrender.com/all-sections`)
             .then((res) => res.json())
             .then((data) => setSections(data));
     }, []);

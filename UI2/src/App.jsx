@@ -23,6 +23,7 @@ import ManageTeacher from "./pages/Manage/Teacher";
 import UpdateTeacher from "./pages/Update/Teacher";
 
 function App() {
+  const URL = "https://cloud-xmqm.onrender.com";
   const router = createBrowserRouter([
     {
       path: "/",
@@ -34,23 +35,23 @@ function App() {
     },
     {
       path: "/view-member",
-      element: <ViewMember/>,
+      element: <ViewMember />,
       loader: function () {
-        return fetch("http://localhost:3000/all-members");
+        return fetch(`${URL}/all-members`);
       },
     },
     {
       path: "/manage-member",
       element: <ManageMember />,
       loader: function () {
-        return fetch("http://localhost:3000/all-members");
+        return fetch(`${URL}/all-members`);
       },
     },
     {
       path: "/update-member/:id",
       element: <UpdateMember></UpdateMember>,
-      loader: function ({params}) {
-        return fetch(`http://localhost:3000/member/${params.id}`);
+      loader: function ({ params }) {
+        return fetch(`${URL}/member/${params.id}`);
       },
     },
     {
@@ -59,23 +60,23 @@ function App() {
     },
     {
       path: "/view-course",
-      element: <ViewCourse/>,
+      element: <ViewCourse />,
       loader: function () {
-        return fetch("http://localhost:3000/all-courses");
+        return fetch(`${URL}/all-courses`);
       },
     },
     {
       path: "/manage-course",
       element: <ManageCourse />,
       loader: function () {
-        return fetch("http://localhost:3000/all-courses");
+        return fetch(`${URL}/all-courses`);
       },
     },
     {
       path: "/update-course/:id",
       element: <UpdateCourse></UpdateCourse>,
-      loader: function ({params}) {
-        return fetch(`http://localhost:3000/course/${params.id}`);
+      loader: function ({ params }) {
+        return fetch(`${URL}/course/${params.id}`);
       },
     },
     {
@@ -84,23 +85,23 @@ function App() {
     },
     {
       path: "/view-section",
-      element: <ViewSection/>,
+      element: <ViewSection />,
       loader: function () {
-        return fetch("http://localhost:3000/all-sections");
+        return fetch(`${URL}/all-sections`);
       },
     },
     {
       path: "/manage-section",
       element: <ManageSection />,
       loader: function () {
-        return fetch("http://localhost:3000/all-sections");
+        return fetch(`${URL}/all-sections`);
       },
     },
     {
       path: "/update-section/:id",
       element: <UpdateSection></UpdateSection>,
-      loader: function ({params}) {
-        return fetch(`http://localhost:3000/section/${params.id}`);
+      loader: function ({ params }) {
+        return fetch(`${URL}/section/${params.id}`);
       },
     },
     {
@@ -109,23 +110,23 @@ function App() {
     },
     {
       path: "/view-sir",
-      element: <ViewTeacher/>,
+      element: <ViewTeacher />,
       loader: function () {
-        return fetch("http://localhost:3000/all-sir");
+        return fetch(`${URL}/all-sir`);
       },
     },
     {
       path: "/manage-sir",
       element: <ManageTeacher />,
       loader: function () {
-        return fetch("http://localhost:3000/all-sir");
+        return fetch(`${URL}/all-sir`);
       },
     },
     {
       path: "/update-sir/:id",
       element: <UpdateTeacher></UpdateTeacher>,
-      loader: function ({params}) {
-        return fetch(`http://localhost:3000/sir/${params.id}`);
+      loader: function ({ params }) {
+        return fetch(`${URL}/sir/${params.id}`);
       },
     },
   ]);

@@ -21,7 +21,7 @@ function M_Form() {
       preCourse,
       image,
     };
-    fetch("http://localhost:3000/add-course", {
+    fetch("https://cloud-xmqm.onrender.com/add-course", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

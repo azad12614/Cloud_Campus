@@ -8,7 +8,7 @@ function Table() {
   const navigate = useNavigate();
   const Teacher = useLoaderData();
   function handleDelete(id) {
-    fetch(`http://localhost:3000/delete-sir/${id}`, {
+    fetch(`https://cloud-xmqm.onrender.com/delete-sir/${id}`, {
       method: "DELETE"
     }).then((res) => res.json())
       .then((data) => {

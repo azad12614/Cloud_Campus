@@ -12,7 +12,7 @@ function Form() {
       name,
       image,
     };
-    fetch(`http://localhost:3000/update-section/${section?._id}`, {
+    fetch(`https://cloud-xmqm.onrender.com/update-section/${section?._id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",

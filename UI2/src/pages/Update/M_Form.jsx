@@ -16,7 +16,7 @@ function Form() {
       role,
       image
     };
-    fetch(`http://localhost:3000/update-member/${member?._id}`, {
+    fetch(`https://cloud-xmqm.onrender.com/update-member/${member?._id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",

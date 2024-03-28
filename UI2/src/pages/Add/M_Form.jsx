@@ -15,7 +15,7 @@ function M_Form() {
       role,
       image,
     };
-    fetch("http://localhost:3000/add-member", {
+    fetch("https://cloud-xmqm.onrender.com/add-member", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

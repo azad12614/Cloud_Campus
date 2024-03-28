@@ -24,7 +24,7 @@ function Form() {
             bsc,
             image,
         };
-        fetch(`http://localhost:3000/update-sir/${sir?._id}`, {
+        fetch(`https://cloud-xmqm.onrender.com/update-sir/${sir?._id}`, {
             method: "PUT",
             headers: {
                 "Content-type": "application/json",

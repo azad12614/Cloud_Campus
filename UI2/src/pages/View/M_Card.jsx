@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Card = () => {
     const [Members, setMembers] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:3000/all-members`)
+        fetch(`https://cloud-xmqm.onrender.com/all-members`)
             .then((res) => res.json())
             .then((data) => setMembers(data));
     }, []);
