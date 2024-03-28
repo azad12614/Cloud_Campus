@@ -62,14 +62,14 @@ function App() {
       path: "/view-course",
       element: <ViewCourse />,
       loader: function () {
-        return fetch(`${URL}/all-courses`);
+        return fetch(`https://cloud-xmqm.onrender.com/all-courses`);
       },
     },
     {
       path: "/manage-course",
       element: <ManageCourse />,
       loader: function () {
-        return fetch(`${URL}/all-courses`);
+        return fetch(`https://cloud-xmqm.onrender.com/all-courses`);
       },
     },
     {
