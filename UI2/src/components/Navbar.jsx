@@ -35,7 +35,7 @@ function Navbar() {
               </li>
               <li>
                 <details close="true">
-                  <summary className="font-bold">Alumni</summary>
+                  <summary className="font-bold">Alumnis</summary>
                   <ul>
                     <li>
                       <Link to={"/add-member"}>Add Member</Link>
