@@ -18,7 +18,7 @@ h1 {
 }
 
 ol {
-    width: min(60rem, 90%);
+    width: min(100rem, 96%);
     margin-inline: auto;
 
     display: flex;

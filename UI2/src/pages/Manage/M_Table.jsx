@@ -30,6 +30,7 @@ function Table() {
               <th className="text-center font-bold text-lg ">Name</th>
               <th className="text-center font-bold text-lg ">E-mail</th>
               <th className="text-center font-bold text-lg ">Role</th>
+              <th className="text-center font-bold text-lg ">Company</th>
               <th className="text-center font-bold text-lg ">Actions</th>
             </tr>
           </thead>
@@ -39,6 +40,7 @@ function Table() {
                 <td className="text-center text-lg border-[#000000] ">{member.name}</td>
                 <td className="text-center text-lg border-[#000000] ">{member.email}</td>
                 <td className="text-center text-lg border-[#000000] ">{member.role}</td>
+                <td className="text-center text-lg border-[#000000] ">{member.company}</td>
                 <td className="text-center text-lg border-[#000000] ">
                   <button className="btn btn-sm md:btn-md lg:btn-lg btn-warning  mx-1" onClick={() => handleDelete(member?._id)}> <TbHttpDelete></TbHttpDelete> </button>
                   <Link to={`/update-member/${member?._id}`}>

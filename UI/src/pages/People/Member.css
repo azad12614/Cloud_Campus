@@ -14,7 +14,7 @@ h2 {
 #container {
     height: 100vh;
     width: 100vw;
-    background-color: #F2EBDD;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,18 +56,19 @@ h2 {
 
 #hulk h2 {
     color: #59C887;
-    letter-spacing: -2px;
-    line-height: 50px;
+    letter-spacing: 1px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
+    font-size: 6rem;
 }
 
+/* 
 #hulk p {
     font-size: 2rem;
     line-height: 30px;
     font-weight: 500;
     text-align: center;
-}
+} */
 
 #hulk>.card-text {
     height: 45%;
@@ -84,17 +85,19 @@ h2 {
 #hulk>.card-text>div>div:first-child {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 5px;
 }
 
 #hulk>.card-text>div>div:first-child>span:first-child {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 800;
+    padding-right: 1.5px;
 }
 
 #hulk>.card-text>div>div:first-child>span:last-child {
     font-size: 2rem;
     font-weight: 600;
+    padding-left: 1.5px;
 }
 
 #hulk>.card-text>div>div:last-child {
@@ -105,7 +108,7 @@ h2 {
     border: 5px solid black;
     border-right: none;
     border-bottom: none;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 #hulk>.card-text>div>div:last-child>span:first-child {
@@ -130,29 +133,34 @@ h2 {
 }
 
 #spiderman h2 {
-    font-size: 3rem;
-    letter-spacing: 15px;
+    font-size: 4rem;
     text-align: center;
-    margin-left: 10px;
     color: #2E5579;
+}
+
+#spiderman>.card-text {
+    margin-top: 15px;
+    margin-bottom: -15px;
 }
 
 #spiderman>.card-text>div {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 #spiderman>.card-text>div>div:first-child {
     display: flex;
     flex-direction: column;
+    margin-top: 25px;
 }
 
 #spiderman>.card-text>div>div:first-child>span {
-    font-size: 1.5rem;
-    line-height: 30px;
+    font-size: 2rem;
+    line-height: 25px;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 
 #spiderman>.card-text>div>div:last-child {
@@ -177,7 +185,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #deadpool img {
@@ -188,37 +195,46 @@ h2 {
     display: flex;
     justify-content: center;
     height: 20%;
+    color: #AA0000;
 }
 
 #deadpool>.card-text>div {
     width: 100%;
 }
 
+/* 
 #deadpool>.card-text>div:last-child {
     border-left: 3px solid black;
-}
+} */
 
 #deadpool>.card-text>div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
 }
 
 #deadpool>.card-text>div:first-child>span:first-child {
     font-size: 4rem;
     font-weight: 900;
+    text-align: center;
 }
 
+/* 
 #deadpool>.card-text>div:first-child>span:last-child {
     font-size: 4rem;
     font-weight: 900;
-}
+} */
 
 #deadpool>.card-text>div:last-child {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
 #deadpool>.card-text>div:last-child>span:first-child {
@@ -227,6 +243,7 @@ h2 {
     margin-bottom: 3px;
 }
 
+/* 
 #deadpool>.card-text>div:last-child>span:nth-of-type(2) {
     font-size: 1.3rem;
     font-weight: 500;
@@ -235,7 +252,7 @@ h2 {
 #deadpool>.card-text>div:last-child>span:last-child {
     font-size: 1.2rem;
     margin-bottom: 10px;
-}
+} */
 
 #deadpool>.card-image p {
     position: absolute;

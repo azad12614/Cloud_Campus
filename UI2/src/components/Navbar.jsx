@@ -35,7 +35,7 @@ function Navbar() {
               </li>
               <li>
                 <details close="true">
-                  <summary className="font-bold">Alumnis</summary>
+                  <summary className="font-bold">Alumni</summary>
                   <ul>
                     <li>
                       <Link to={"/add-member"}>Add Member</Link>
@@ -100,7 +100,9 @@ function Navbar() {
             </ul>
           </div>
           {/* <div className="btn btn-ghost text-xl text-[#fed7aa] bg-[#3E001F] hover:bg-transparent border-0 rounded-full">3A</div> */}
-          <img src={`${logo}`} className="-m-4 ml-3 w-16 rounded-lg" />
+          <Link to={"/"}>
+            <img src={`${logo}`} className="-m-4 ml-3 w-16 rounded-lg" />
+          </Link>
         </div>
         <div className="navbar-center mr-20 hidden lg:flex">
           <ul className="menu menu-horizontal text-[#fed7aa]">
