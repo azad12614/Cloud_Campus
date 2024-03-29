@@ -37,7 +37,7 @@ function App() {
       path: "/view-member",
       element: <ViewMember />,
       loader: function () {
-        return fetch(`${URL}/all-members`);
+        return fetch(URL + "/all-members");
       },
     },
     {
