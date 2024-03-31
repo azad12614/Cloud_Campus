@@ -102,5 +102,6 @@ ol li .icon {
 
 ol li .title {
     font-size: 4rem;
-    font-weight: 500
+    font-weight: 500;
+    color: var(--accent-color);
 }

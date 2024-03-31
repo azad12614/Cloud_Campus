@@ -11,7 +11,6 @@ function card() {
 
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style={{ visibility: "visible", animationDelay: "0.2s", animationName: "fadeInUp", }}>
-
                             <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
                                 <div class="social-info">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -107,7 +106,7 @@ function card() {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style={{ visibility: "visible", animationDelay: "0.5s", animationName: "fadeInUp", }}>
 
@@ -122,7 +121,7 @@ function card() {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style={{ visibility: "visible", animationDelay: "0.5s", animationName: "fadeInUp", }}>
 

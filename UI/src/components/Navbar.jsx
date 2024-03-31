@@ -102,6 +102,38 @@ const Navbar = () => {
                   role="button"
                   className="group flex font-bold"
                 >
+                  Education
+                  <svg
+                    className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180
+  transition duration-150 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </div>
+                <div className="dropdown-content menu z-[2] font-bold bg-[#0275dd] w-80">
+                  <div>
+                    <li className="p-2">
+                      <Link to="/syllabus">Syllabus</Link>
+                    </li>
+                    <li className="p-2">
+                      <Link to="/que">Quesition</Link>
+                    </li>
+                    <li className="p-2">
+                      <Link to="/resource">Resource</Link>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="dropdown dropdown-bottom">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="group flex font-bold"
+                >
                   Others
                   <svg
                     className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180

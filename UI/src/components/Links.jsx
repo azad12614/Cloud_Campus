@@ -22,6 +22,24 @@ function Links() {
             </li>
           </a>
 
+          <a href={`https://www.iiuc.ac.bd/alumni/adirectory`} target="_blank">
+            <li style={myli} >
+              Alumni List
+            </li>
+          </a>
+
+          <a href={`https://opac.iiuc.ac.bd/`} target="_blank">
+            <li style={myli} >
+              Library
+            </li>
+          </a>
+
+          <a href={`https://www.iiuc.ac.bd/home/career/`} target="_blank">
+            <li style={myli} >
+              Job offer
+            </li>
+          </a>
+
         </ul>
       </div>
     </>
