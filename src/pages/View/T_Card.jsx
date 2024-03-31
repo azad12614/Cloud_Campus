@@ -16,7 +16,7 @@ const Card = () => {
         const pic = sir?.image;
         console.log(pic);
         return (
-            <div className="bg-[#161A30] shadow-xl mb-4" key={sir._id}>
+            <div className="bg-[#161A30] shadow-xl my-2 mx-auto" key={sir._id}>
                 <div className="m-auto border-2 border-dark">
                     <figure>
                         <img
@@ -27,20 +27,20 @@ const Card = () => {
                     </figure>
                 </div>
                 <div className="card-body text-[#fed7aa]">
-                    <h4 className="card-title justify-evenly font-bold text-2xl -mt-5 mb-2">
+                    <h4 className="card-title text-center font-bold text-2xl mx-auto -my-4 h-20">
                         {sir.name}
                     </h4>
-                    <h1 className="btn text-center text-[#FFFFFF] -mt-3 font-bold text-xl bg-transparent border-0">
+                    <h1 className="btn text-center text-[#FFFFFF] font-bold text-xl bg-transparent border-0">
                         {sir.role}
                     </h1>
                     <div className="card-actions justify-evenly">
                         <button
                             className="btn text-center text-[#fed7aa] bg-[#31304D] hover:bg-transparent border-0"
-                            onClick={() => document.getElementById("my_modal_1").showModal()}
+                            onClick={() => document.getElementById(`${sir?._id}+${sir?.name}`).showModal()}
                         >
                             Education
                         </button>
-                        <dialog id="my_modal_1" className="modal">
+                        <dialog id={`${sir?._id}+${sir?.name}`} className="modal">
                             <div className="modal-box bg-[#31304D]">
                                 <h3 className="font-bold text-lg">Education Info</h3>
                                 <p className="py-4">
@@ -58,11 +58,11 @@ const Card = () => {
                         </dialog>
                         <button
                             className="btn text-center text-[#fed7aa] bg-[#31304D] hover:bg-transparent border-0"
-                            onClick={() => document.getElementById("my_modal_1").showModal()}
+                            onClick={() => document.getElementById(`${sir?.name}+${sir?.role}`).showModal()}
                         >
                             Contact
                         </button>
-                        <dialog id="my_modal_1" className="modal">
+                        <dialog id={`${sir?.name}+${sir?.role}`} className="modal">
                             <div className="modal-box bg-[#31304D]">
                                 <h3 className="font-bold text-lg">Contact Info</h3>
                                 <p className="py-4">
@@ -95,7 +95,7 @@ const Card = () => {
     }
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mx-auto mt-2">
             {Teachers.map((sir) => single(sir))}
         </div>
     );

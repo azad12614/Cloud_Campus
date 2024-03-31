@@ -17,7 +17,7 @@ const Card = () => {
         const pic = member?.image;
         console.log(pic);
         return (
-            <div className="bg-[#161A30] shadow-xl mb-4" key={member._id}>
+            <div className="bg-[#161A30] shadow-xl my-2" key={member._id}>
                 <div className="m-auto border-2 border-dark">
                     <figure>
                         <img
@@ -28,20 +28,38 @@ const Card = () => {
                     </figure>
                 </div>
                 <div className="card-body text-[#fed7aa]">
-                    <h4 className="card-title justify-evenly font-bold text-2xl -mt-5 mb-2">
+                    <h4 className="card-title justify-evenly font-bold text-2xl -mt-2">
                         {member.name}
                     </h4>
-                    <h1 className="btn text-center text-[#FFFFFF] -mt-3 font-bold text-xl bg-transparent border-0">
-                        {member.role}
-                    </h1>
                     <div className="card-actions justify-evenly">
                         <button
                             className="btn text-center text-[#fed7aa] bg-[#31304D] hover:bg-transparent border-0"
-                            onClick={() => document.getElementById("my_modal_1").showModal()}
+                            onClick={() => document.getElementById(`${member?._id}+${member?.name}`).showModal()}
+                        >
+                            Details
+                        </button>
+                        <dialog id={`${member?._id}+${member?.name}`} className="modal">
+                            <div className="modal-box bg-[#31304D]">
+                                <h3 className="font-bold text-lg">Job info!</h3>
+                                <p className="py-4">
+                                    Role: {`${member?.role}`}<br></br>
+                                    Company: {`${member?.company}`};
+                                </p>
+                                <div className="modal-action">
+                                    <form method="dialog">
+                                        {/* if there is a button in form, it will close the modal */}
+                                        <button className="btn bg-[#161A30]">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                        <button
+                            className="btn text-center text-[#fed7aa] bg-[#31304D] hover:bg-transparent border-0"
+                            onClick={() => document.getElementById(`${member?._id}+${member?.email}`).showModal()}
                         >
                             E-mail
                         </button>
-                        <dialog id="my_modal_1" className="modal">
+                        <dialog id={`${member?._id}+${member?.email}`} className="modal">
                             <div className="modal-box bg-[#31304D]">
                                 <h3 className="font-bold text-lg">Hello!</h3>
                                 <p className="py-4">
@@ -74,9 +92,12 @@ const Card = () => {
     }
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mx-auto">
-            {Members.map((member) => single(member))}
-        </div>
+        <>
+            <h1 className="text-white text-4xl font-bold mx-auto mt-2">Alumni</h1>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mx-auto mt-2">
+                {Members.map((member) => single(member))}
+            </div>
+        </>
     );
 };
 
