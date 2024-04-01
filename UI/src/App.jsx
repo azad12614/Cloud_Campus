@@ -5,6 +5,7 @@ import Class from "./pages/Schedule/Class.jsx";
 import Course from "./pages/Course/Course.jsx";
 import Teacher from "./pages/People/Teacher.jsx";
 import Member from "./pages/People/Member.jsx";
+import Academic from "./pages/Others/Academic.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +28,10 @@ function App() {
     {
       path: "/member",
       element: <Member />,
+    },
+    {
+      path: "/ac",
+      element: <Academic />,
     },
   ]);
   return <RouterProvider router={router} />;
