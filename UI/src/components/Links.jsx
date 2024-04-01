@@ -40,6 +40,12 @@ function Links() {
             </li>
           </a>
 
+          <a href={`https://www.iiuc.ac.bd/academic/bcalendar/`} target="_blank">
+            <li style={myli} >
+              Academic Calendar
+            </li>
+          </a>
+
         </ul>
       </div>
     </>

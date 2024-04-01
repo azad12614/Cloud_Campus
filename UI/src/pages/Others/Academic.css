@@ -8,6 +8,7 @@
     /* background-color: #1f1f1f; */
     /* min-height: 100vh; */
     /*padding: 100px 0; */
+    padding-bottom: 100px;
     font-family: Jost;
 }
 
@@ -22,7 +23,7 @@
 
 .timeline-content {
     padding: 20px;
-    background: #11e8f0;
+    background: #10d0d6;
     -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     border-radius: 5px;
@@ -35,6 +36,15 @@
     border-radius: 6px;
     font-weight: bold;
     font-size: large;
+}
+
+.timeline-content>h3 {
+    font-size: larger;
+    color: #ff6701;
+}
+
+.timeline-content>p>span {
+    color: #0501ff;
 }
 
 .timeline-component {

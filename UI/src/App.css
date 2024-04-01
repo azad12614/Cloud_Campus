@@ -10,6 +10,7 @@
 
 html {
   font-size: 50%;
+  background-color: #000;
 }
 
 a {
@@ -62,7 +63,7 @@ li {
 
 .menu-link {
   grid-column: 3/4;
-  color: 	#9400e7;
+  color: #9400e7;
 }
 
 .menu-link ul {
@@ -219,7 +220,7 @@ li {
     font-size: 2.5rem;
     color: #ffffff;
   }
-  
+
 }
 
 /* -----------responsive css style i-pad----------- */
