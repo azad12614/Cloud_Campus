@@ -2,7 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Course from "./pages/Course/Course.jsx";
 import Home from "./pages/Home/Home.jsx";
-import Academic from "./pages/Others/Academic.jsx";
+import Academic from "./pages/Edu/Academic.jsx";
+import Syllabus from "./pages/Edu/Syllabus.jsx";
 import Member from "./pages/People/Member.jsx";
 import Teacher from "./pages/People/Teacher.jsx";
 import Class from "./pages/Schedule/Class.jsx";
@@ -32,6 +33,10 @@ function App() {
     {
       path: "/ac",
       element: <Academic />,
+    },
+    {
+      path: "/syllabus",
+      element: <Syllabus />,
     },
   ]);
   return <RouterProvider router={router} />;
