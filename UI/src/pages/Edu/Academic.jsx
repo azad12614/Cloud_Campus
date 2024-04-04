@@ -2,25 +2,15 @@
 import React from 'react';
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Section from "../../components/Section";
 import "./Academic.css";
 
 function Academic() {
-
-    const myh1 = {
-        paddingTop: "100px",
-        paddingBottom: "39px",
-        fontSize: "3.5rem",
-        fontWeight: "500",
-        textTransform: "uppercase",
-        textAlign: "center",
-    }
-
     return (
-
-        <div>
+        <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
             <Navbar></Navbar>
-            <h1 style={myh1}>Academic Calendar</h1>
-            <h1 className='text-5xl mb-4 text-blue font-bold'>Spring Semester - 2024</h1>
+            <Section text={"Academic Calendar"}></Section>
+            <h1 className='text-5xl mt-36 mb-4 text-blue font-bold'>Spring Semester - 2024</h1>
             <section class="design-section">
                 <div class="timeline">
 

@@ -1,8 +1,8 @@
-import Navbar from "../../components/Navbar";
+import React, { useEffect, useState } from "react";
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+import Section from "../../components/Section";
 import "./Course.css";
-import React from "react";
-import { useEffect, useState } from "react";
 
 function Course() {
 
@@ -13,20 +13,13 @@ function Course() {
             .then((data) => setCourses(data));
     }, []);
 
-    const myh1 = {
-        paddingTop: "100px",
-        paddingBottom: "39px",
-        fontSize: "3.5rem",
-        fontWeight: "500",
-        textTransform: "uppercase",
-        textAlign: "center",
-    }
     const myh2 = {
         paddingLeft: "12px",
         fontSize: "3rem",
         fontWeight: "300",
         textTransform: "uppercase",
         textAlign: "start",
+        marginTop: "60px",
     }
 
     function single(course) {
@@ -66,9 +59,9 @@ function Course() {
     }
 
     return (
-        <div className="d-flex flex-column max-w-full overflow-x-hidden">
+        <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
             <Navbar></Navbar>
-            <h1 style={myh1}>Courses</h1>
+            <Section text={"Course Offer"}></Section>
             <h2 style={myh2}>Select Semester</h2>
 
             <div role="tablist" className="tabs tabs-lifted px-4">

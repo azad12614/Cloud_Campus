@@ -5,8 +5,8 @@ import Footer from "../../components/Footer";
 
 function Home() {
   return (
-    <div className="d-flex flex-column max-w-full overflow-x-hidden">
-      <Navbar/>
+    <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
+      <Navbar />
       <Hero></Hero>
       <Links></Links>
       <Footer></Footer>

@@ -1,20 +1,13 @@
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import Section from "../../components/Section";
 import "./Member.css";
 
 function Member() {
-    const myh1 = {
-        paddingTop: "100px",
-        paddingBottom: "39px",
-        fontSize: "3.5rem",
-        fontWeight: "500",
-        textTransform: "uppercase",
-        textAlign: "center",
-    }
     return (
-        <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#000001]">
+        <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#000000]">
             <Navbar></Navbar>
-            <h1 style={myh1}>Contributor</h1>
+            <Section text={"Contributor"}></Section>
             <div id="container">
                 <div class="card" id="spiderman">
                     <div class="card-image">

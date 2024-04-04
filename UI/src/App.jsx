@@ -9,6 +9,7 @@ import Teacher from "./pages/People/Teacher.jsx";
 import Class from "./pages/Schedule/Class.jsx";
 
 function App() {
+  fetch("https://cloud-xmqm.onrender.com/");
   const router = createBrowserRouter([
     {
       path: "/",

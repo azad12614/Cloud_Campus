@@ -14,8 +14,8 @@ function Hero() {
               <span>C</span>ampus
             </h2>
             <h3>Presents</h3>
-            <img src={IIUC} className="w-80 h-80" />
-            <h1 className="fs-1 fw-bold">
+            <img src={IIUC} className="w-96 h-96" />
+            <h1>
               Department of Computer Science and Engineering
             </h1>
           </div>

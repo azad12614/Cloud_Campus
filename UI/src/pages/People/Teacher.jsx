@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Section from "../../components/Section";
 import "./Teacher.css";
 import { useEffect, useState } from "react";
 
@@ -56,10 +57,10 @@ function Teacher() {
   }
 
   return (
-    <div>
+    <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
       <Navbar></Navbar>
-      <h1 style={myh1}>Faculty & Staff</h1>
-      <div class="container">
+      <Section text={"Faculty & Staff"}></Section>
+      <div class="container mt-36">
         <div class="row">
 
           {

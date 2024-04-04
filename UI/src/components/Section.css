@@ -1,0 +1,29 @@
+.header-ui {
+    margin-top: 6rem;
+    position: relative;
+    height: 90px;
+}
+
+.header-ui>img {
+    display: block;
+    position: absolute;
+    width: 120%;
+    top: -280%;
+    left: 0%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.header-title {
+    text-align: center;
+    /* color: #fff; */
+    background: -webkit-linear-gradient(left, #1900ff, #4430fa, #7775f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: xx-large;
+    font-weight: bolder;
+    position: absolute;
+    left: 25%;
+    top: 73%;
+    z-index: 2;
+}

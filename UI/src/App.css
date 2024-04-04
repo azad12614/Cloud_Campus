@@ -10,7 +10,6 @@
 
 html {
   font-size: 50%;
-  background-color: #000;
 }
 
 a {
@@ -30,7 +29,7 @@ li {
   height: 10rem;
   display: grid;
   grid-template-columns: 10rem 1fr 1fr 1fr 10rem;
-  background-color: #000;
+  background-color: #00d9ff;
   position: fixed;
   z-index: 1000;
 }
@@ -46,8 +45,8 @@ li {
 }
 
 .logo h2 {
-  font-size: 3.5rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 600;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#be05f7, #7406f1, rgb(20, 3, 248));
   -webkit-background-clip: text;
@@ -56,7 +55,7 @@ li {
 
 .logo h2 span {
   font-size: 5rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* ----------- Main Link part start ----------- */
@@ -171,7 +170,7 @@ li {
   }
 
   .mobile-menu-link {
-    background-color: #089e71;
+    background-color: #00d9ff;
     height: 40rem;
     display: grid;
     grid-column: 2/5;
@@ -218,7 +217,7 @@ li {
   .social-media .hamburger-menu {
     display: block;
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #3500b1;
   }
 
 }
@@ -245,7 +244,7 @@ li {
   .social-media .hamburger-menu {
     display: block;
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #000000;
   }
 }
 
@@ -287,16 +286,16 @@ li {
 }
 
 .hero-title h1 {
-  font-size: 3.5rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 600;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(#0123e6, #00d3f8, rgb(133, 5, 252));
+  background: -webkit-linear-gradient(#5b40f5, #20dbfc, rgb(161, 65, 252));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero-title h3 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 500;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#0123e6, #00d3f8, rgb(133, 5, 252));

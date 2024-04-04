@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Banner from "../../components/Section";
 import Links from "../../components/Links";
 import "./Class.css";
 import React from "react";
@@ -35,10 +36,10 @@ function Class() {
     }
 
     return (
-        <>
+        <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
             <Navbar></Navbar>
-            <h1 style={myh1}>Class Schedule</h1>
-            <div className="bg-list px-20 pb-24 text-center justify-center">
+            <Banner text={"Class Schedule"}></Banner>
+            <div className="mt-36 bg-list px-20 pb-20 text-center justify-center">
                 <ol>
                     {
                         Sections.map((section) => (
@@ -51,7 +52,7 @@ function Class() {
             <div className="fixed bottom-0 w-full">
                 <Footer></Footer>
             </div>
-        </>
+        </div>
     );
 }
 
