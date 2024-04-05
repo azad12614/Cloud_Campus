@@ -14,40 +14,59 @@ function Teacher() {
       .then((data) => setSir(data));
   }, []);
 
-  const myh1 = {
-    paddingTop: "100px",
-    paddingBottom: "39px",
-    fontSize: "3.5rem",
-    fontWeight: "500",
-    textTransform: "uppercase",
-    textAlign: "center",
-  }
-
   function single(Teacher) {
     return (
       <>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-
         <div class="col-12 col-sm-6 col-lg-3">
 
           <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style={{ visibility: "visible", animationDelay: "0.2s", animationName: "fadeInUp", }}>
             <div class="advisor_thumb"><img src={Teacher?.image} alt="" />
+
               <div class="social-info">
-                <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
-                <a href="#"><i class="fa-brands fa-researchgate fa-lg"></i></a>
-                <a href="#"><i class="fa-brands fa-orcid fa-lg"></i></a>
+                <a href={Teacher?.gs} class="icon">
+                  <span class="tooltip">Google Scholar</span>
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </a>
+                <a href={Teacher?.rg} class="icon">
+                  <span class="tooltip">Research Gate</span>
+                  <i class="fa-brands fa-researchgate fa-lg"></i>
+                </a>
+                <a href={Teacher?.od} class="icon">
+                  <span class="tooltip">ORCID</span>
+                  <i class="fa-brands fa-orcid fa-lg"></i>
+                </a>
+                <a href="#" class="icon">
+                  <span class="tooltip">Education</span>
+                  <i class="fa-solid fa-book"
+                    onClick={() => document.getElementById(`${Teacher?.name}+${Teacher?.role}`).showModal()}
+                  ></i>
+                  <dialog id={`${Teacher?.name}+${Teacher?.role}`} className="modal">
+                    <div className="modal-box box">
+                      <h5 className="designation mb-4">Education Info</h5>
+                      <h4 className="designation"> Ph.D.: {Teacher?.phd}</h4>
+                      <h4 className="designation"> M.Sc.: {Teacher?.msc}</h4>
+                      <h4 className="designation"> B.Sc.: {Teacher?.bsc}</h4>
+                      <div className="modal-action">
+                        <form method="dialog" className='mx-auto'>
+                          <button className="btn edu1">Close</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+                </a>
               </div>
+
             </div>
 
             <div class="single_advisor_details_info">
               <h6 className='font-extrabold'>{Teacher?.name}</h6>
-              <p className="designation text-3xl font-bold"> {Teacher?.role}</p>
-              <p className="designation text-xl pt-2 font-semibold"> Ph.D.: {Teacher?.phd}</p>
-              <p className="designation text-xl pt-2 font-semibold"> M.Sc.: {Teacher?.msc}</p>
-              <p className="designation text-xl py-2  font-semibold"> B.Sc.: {Teacher?.bsc}</p>
-              <p className="designation text-xl py-1 font-serif font-medium"> Mobile: {Teacher?.number}</p>
-              <p className="designation text-xl font-medium"> E-mail: {Teacher?.email}</p>
+              <h5 className="designation font-bold"> {Teacher?.role}</h5>
+
+              <h4 className="designation font-semibold pt-1"> Mobile: {Teacher?.number}</h4>
+              <h4 className="designation font-semibold"> E-mail: {Teacher?.email}</h4>
+
             </div>
           </div>
 
@@ -60,7 +79,7 @@ function Teacher() {
     <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
       <Navbar></Navbar>
       <Section text={"Faculty & Staff"}></Section>
-      <div class="container mt-36">
+      <div class="container my-36">
         <div class="row">
 
           {

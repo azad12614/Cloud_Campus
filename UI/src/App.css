@@ -28,7 +28,7 @@ li {
   width: 100%;
   height: 10rem;
   display: grid;
-  grid-template-columns: 10rem 1fr 1fr 1fr 10rem;
+  grid-template-columns: 6rem 1fr 1.8fr 1.2fr 4rem;
   background-color: #00d9ff;
   position: fixed;
   z-index: 1000;
@@ -134,10 +134,10 @@ li {
 }
 
 /* -----------responsive css style PC----------- */
-@media (max-width: 1080px) {
+@media (max-width: 1150px) {
   .main-nav {
     height: 8rem;
-    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+    grid-template-columns: 2rem 1.5fr 3fr 1.5fr 2rem;
   }
 
   .logo,
@@ -148,7 +148,7 @@ li {
 }
 
 /* -----------responsive css style Tablet----------- */
-@media (max-width: 998px) {
+@media (max-width: 1080px) {
   .main-nav {
     height: 7rem;
     grid-template-columns: 2rem 2fr 3fr 2rem 2rem;

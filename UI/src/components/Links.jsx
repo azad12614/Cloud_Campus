@@ -11,7 +11,7 @@ function Links() {
   }
   return (
     <>
-      <div className="py-60 px-8">
+      <div className="p-8 pb-60">
         <h1 className="text-6xl font-bold text-center text-[#FFFFFF]">General Links</h1>
         <hr className="border-[#FFFFFF] border-4" />
         <ul className="text-3xl grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 text-center justify-center">

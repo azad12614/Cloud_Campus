@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body {
     margin-top: 20px;
 }
@@ -30,7 +32,7 @@ body {
     width: 150%;
     height: 80px;
     bottom: -45px;
-    left: -25%;
+    left: -30%;
     content: "";
     background-color: #ffffff;
     -webkit-transform: rotate(-15deg);
@@ -49,7 +51,7 @@ body {
     z-index: 1;
     width: 100%;
     bottom: 0;
-    right: 30px;
+    right: 10%;
     text-align: right;
 }
 
@@ -59,13 +61,88 @@ body {
     padding: 0 5px;
 }
 
+.single_advisor_profile .advisor_thumb .social-info a:last-child {
+    padding-right: 0;
+}
+
+.single_advisor_profile .advisor_thumb .social-info .tooltip {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: -5%;
+    font-size: 14px;
+    font-weight: bold;
+    background: #ffffff;
+    color: #000000;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.single_advisor_profile .advisor_thumb .social-info .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.single_advisor_profile .advisor_thumb .social-info .icon:hover .tooltip {
+    top: -55px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
 .single_advisor_profile .advisor_thumb .social-info a:hover,
 .single_advisor_profile .advisor_thumb .social-info a:focus {
     color: #3f43fd;
 }
 
-.single_advisor_profile .advisor_thumb .social-info a:last-child {
-    padding-right: 0;
+.single_advisor_profile .advisor_thumb .social-info .box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: xx-large;
+    background: #000;
+    color: #ffffff;
+    min-width: 500px;
+}
+
+.single_advisor_profile .advisor_thumb .social-info .edu1 {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size: medium;
+    background: #ffffff;
+    color: #000;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.single_advisor_profile .advisor_thumb .social-info h5 {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 0.15rem;
+    font-size: 25px;
+}
+
+.single_advisor_profile .advisor_thumb .social-info h4 {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 0.15rem;
+    font-size: 16px;
+    padding-bottom: 4px;
 }
 
 .single_advisor_profile .single_advisor_details_info {
@@ -85,37 +162,36 @@ body {
     transition-duration: 500ms;
     position: absolute;
     z-index: 1;
-    width: 75px;
+    width: 100px;
     height: 3px;
     background-color: #3f43fd;
     content: "";
-    top: 12px;
-    right: 30px;
+    top: 8px;
+    right: 10%;
 }
 
 .single_advisor_profile .single_advisor_details_info h6 {
+    margin-bottom: 0.3rem;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    font-size: 15px;
+    font-family: "Merriweather", serif;
+}
+
+.single_advisor_profile .single_advisor_details_info h5 {
     margin-bottom: 0.25rem;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
+    font-size: 15px;
+    font-family: "Playfair Display", serif;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single_advisor_profile .single_advisor_details_info h6 {
-        font-size: 14px;
-    }
-}
-
-.single_advisor_profile .single_advisor_details_info p {
+.single_advisor_profile .single_advisor_details_info h4 {
+    margin-bottom: 0.20rem;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
-    margin-bottom: 0;
     font-size: 14px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single_advisor_profile .single_advisor_details_info p {
-        font-size: 12px;
-    }
+    font-family: "Montserrat", sans-serif;
 }
 
 .single_advisor_profile:hover .advisor_thumb::after,
@@ -150,7 +226,12 @@ body {
     color: #ffffff;
 }
 
-.single_advisor_profile:hover .single_advisor_details_info p,
-.single_advisor_profile:focus .single_advisor_details_info p {
+.single_advisor_profile:hover .single_advisor_details_info h5,
+.single_advisor_profile:focus .single_advisor_details_info h5 {
+    color: #ffffff;
+}
+
+.single_advisor_profile:hover .single_advisor_details_info h4,
+.single_advisor_profile:focus .single_advisor_details_info h4 {
     color: #ffffff;
 }
