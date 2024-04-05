@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Course from "./pages/Course/Course.jsx";
 import Home from "./pages/Home/Home.jsx";
@@ -10,37 +10,20 @@ import Class from "./pages/Schedule/Class.jsx";
 
 function App() {
   fetch("https://cloud-xmqm.onrender.com/");
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/courses",
-      element: <Course />,
-    },
-    {
-      path: "/class",
-      element: <Class />,
-    },
-    {
-      path: "/teacher",
-      element: <Teacher />,
-    },
-    {
-      path: "/member",
-      element: <Member />,
-    },
-    {
-      path: "/ac",
-      element: <Academic />,
-    },
-    {
-      path: "/syllabus",
-      element: <Syllabus />,
-    },
-  ]);
-  return <RouterProvider router={router} />;
+
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="courses" element={<Course />} />
+        <Route path="class" element={<Class />} />
+        <Route path="teacher" element={<Teacher />} />
+        <Route path="member" element={<Member />} />
+        <Route path="ac" element={<Academic />} />
+        <Route path="syllabus" element={<Syllabus />} />
+      </Routes>
+    </div>
+  )
 }
 
 export default App;
