@@ -17,7 +17,7 @@ function Form() {
         const rg = event.target.rg.value;
         const od = event.target.od.value;
         const image = event.target.image.value;
-        const sir = {
+        const Teacher = {
             name,
             email,
             number,
