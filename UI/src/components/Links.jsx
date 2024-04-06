@@ -2,16 +2,18 @@ function Links() {
   const myli = {
     backgroundColor: "#EEE",
     color: "#000000",
-    padding: "auto",
     width: "30rem",
+    padding: "auto",
     margin: "1rem",
     boxShadow: "0px 4px #AAA",
+    paddingTop: "5px",
+    paddingBottom: "5px",
     marginLeft: "auto",
     marginRight: "auto",
   }
   return (
     <>
-      <div className="p-8 pb-60">
+      <div className="p-12 pb-36">
         <h1 className="text-6xl font-bold text-center text-[#FFFFFF]">General Links</h1>
         <hr className="border-[#FFFFFF] border-4" />
         <ul className="text-3xl grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 text-center justify-center">

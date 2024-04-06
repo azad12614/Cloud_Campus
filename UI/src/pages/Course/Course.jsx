@@ -64,7 +64,7 @@ function Course() {
             <Section text={"Course Offer"}></Section>
             <h2 style={myh2}>Select Semester</h2>
 
-            <div role="tablist" className="tabs tabs-lifted px-4">
+            <div role="tablist" className="tabs tabs-lifted mb-16">
 
                 <input type="radio" name="my_tabs_2" role="tab tab-active" className="tab text-white text-5xl h-20 bg-[#0275dd]" aria-label="1st" defaultChecked />
                 <div role="tabpanel" className="tab-content text-white">
