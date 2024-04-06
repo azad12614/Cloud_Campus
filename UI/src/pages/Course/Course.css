@@ -1,6 +1,6 @@
 .ag-format-container {
     width: 1142px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 body {
@@ -13,18 +13,14 @@ body {
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
-
     padding: 50px 0;
 }
 
 .ag-courses_item {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
     flex-basis: calc(33.33333% - 30px);
-
     margin: 0 15px 30px;
-
     overflow: hidden;
-
     border-radius: 28px;
 }
 
@@ -32,9 +28,7 @@ body {
     display: block;
     padding: 30px 20px;
     background-color: #121212;
-
     overflow: hidden;
-
     position: relative;
 }
 
@@ -54,13 +48,10 @@ body {
     min-height: 80px;
     margin-top: -32px;
     margin-bottom: 10px;
-
     overflow: hidden;
-
     font-weight: bold;
     font-size: 30px;
     color: #FFF;
-
     z-index: 2;
     position: relative;
 }
