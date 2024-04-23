@@ -21,10 +21,11 @@ h2 {
 .card {
     margin: 0 30px;
     height: 500px;
-    width: 250px;
+    width: 300px;
     background-color: #fff;
     border: 5px solid black;
     box-shadow: 0 0 0 7px #fff, 0 0 8px 5px #000;
+    margin: 16px;
 }
 
 .card-image {
@@ -41,7 +42,7 @@ h2 {
 }
 
 #hulk>.card-image {
-    height: 55%;
+    height: 65%;
     background-color: #FFDD33;
 }
 
@@ -56,8 +57,8 @@ h2 {
     color: #59C887;
     letter-spacing: 1px;
     text-align: center;
-    margin-top: 30px;
-    font-size: 6rem;
+    margin-top: 4px;
+    font-size: 5.5rem;
 }
 
 /* 
@@ -69,7 +70,7 @@ h2 {
 } */
 
 #hulk>.card-text {
-    height: 45%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,19 +84,18 @@ h2 {
 #hulk>.card-text>div>div:first-child {
     display: flex;
     align-items: center;
-    padding: 5px;
 }
 
 #hulk>.card-text>div>div:first-child>span:first-child {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    padding-right: 1.5px;
+    padding-left: 16px;
 }
 
 #hulk>.card-text>div>div:first-child>span:last-child {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    padding-left: 1.5px;
+    padding-right: 16px;
 }
 
 #hulk>.card-text>div>div:last-child {
@@ -106,16 +106,13 @@ h2 {
     border: 5px solid black;
     border-right: none;
     border-bottom: none;
-    padding: 10px;
+    padding-inline: 5px;
+    padding-block: 2px;
 }
 
 #hulk>.card-text>div>div:last-child>span:first-child {
     font-size: 2rem;
     font-weight: bold;
-}
-
-#hulk>.card-text>div>div:last-child>span:last-child {
-    font-weight: 500;
 }
 
 #spiderman>.card-image {
@@ -131,33 +128,33 @@ h2 {
 }
 
 #spiderman h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     color: #2E5579;
 }
 
 #spiderman>.card-text {
-    margin-top: 15px;
-    margin-bottom: -15px;
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 #spiderman>.card-text>div {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #spiderman>.card-text>div>div:first-child {
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 #spiderman>.card-text>div>div:first-child>span {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 25px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
@@ -166,14 +163,9 @@ h2 {
 }
 
 #spiderman>.card-text>div>div:last-child>span:first-child {
-    font-size: 5rem;
+    font-size: 10rem;
     font-weight: 800;
-    line-height: 60px;
-}
-
-#spiderman>.card-text>div>div:last-child>span:last-child {
-    font-weight: 600;
-    font-size: 1.3rem;
+    line-height: 80px;
 }
 
 #deadpool>.card-image {
@@ -186,7 +178,9 @@ h2 {
 }
 
 #deadpool img {
-    height: 90%;
+    height: 110%;
+    width: 50%;
+    margin-left: 55%;
 }
 
 #deadpool>.card-text {
@@ -206,7 +200,7 @@ h2 {
 } */
 
 #deadpool>.card-text>div:first-child {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
@@ -227,16 +221,14 @@ h2 {
 #deadpool>.card-text>div:last-child {
     border-top: 3px solid black;
     border-left: 3px solid black;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    margin-left: 10px;
+    margin-left: 50px;
 }
 
 #deadpool>.card-text>div:last-child>span:first-child {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
     margin-bottom: 3px;
 }
@@ -254,9 +246,28 @@ h2 {
 
 #deadpool>.card-image p {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    bottom: 40px;
+    left: 40px;
     z-index: 3;
     font-weight: 600;
+    font-size: 2.5rem;
     color: #fff;
+}
+
+/* -----------responsive css style Tablet----------- */
+@media (max-width: 998px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 0 30px;
+        height: 500px;
+        width: 350px;
+        background-color: #fff;
+        border: 5px solid black;
+        box-shadow: 0 0 0 7px #fff, 0 0 8px 5px #000;
+        margin: 16px;
+    }
 }

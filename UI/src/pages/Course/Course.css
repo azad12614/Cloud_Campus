@@ -8,6 +8,10 @@ body {
     color: #FFF;
 }
 
+.tabList {
+    margin-left: 5rem;
+}
+
 .ag-courses_box {
     display: flex;
     align-items: center;
@@ -147,12 +151,17 @@ body {
         width: 96%;
     }
 
+    .ag-courses_item {
+        -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    }
+
 }
 
 @media only screen and (max-width: 639px) {
     .ag-courses_item {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     }
 
     .ag-courses-item_title {

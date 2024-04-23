@@ -6,6 +6,7 @@ import map from "../assets/google-maps.png";
 import fb from "../assets/facebook.png";
 import yt from "../assets/youtube.png";
 import ln from "../assets/linkedin.png";
+import cc from "../assets/Cloud_Campus1.png";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -15,10 +16,7 @@ const Navbar = () => {
         {/* 1st logo part  */}
         <div className="logo">
           <Link to='/'>
-            <h2>
-              <span>C</span>loud
-              <span>C</span>ampus
-            </h2>
+            <img src={cc} className="w-36 h-36 rounded-full" />
           </Link>
         </div>
 
@@ -41,7 +39,7 @@ const Navbar = () => {
                   role="button"
                   className="group flex font-bold"
                 >
-                  Schedule
+                  <span>Schedule</span>
                   <svg
                     className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180
   transition duration-150 ease-in-out"
@@ -51,7 +49,7 @@ const Navbar = () => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <div className="dropdown-content menu z-[2] font-bold bg-[#00d9ff] w-80">
+                <div className="dropdown-content menu z-[2] font-bold bg-[#02a9f7] w-80">
                   <div>
                     <li className="p-2">
                       <Link to={"/class"}>Class Schedule</Link>
@@ -70,7 +68,7 @@ const Navbar = () => {
                   role="button"
                   className="group flex font-bold"
                 >
-                  People
+                  <span>People</span>
                   <svg
                     className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180
   transition duration-150 ease-in-out"
@@ -80,7 +78,7 @@ const Navbar = () => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <div className="dropdown-content menu z-[2] font-bold bg-[#00d9ff] w-80">
+                <div className="dropdown-content menu z-[2] font-bold bg-[#02a9f7] w-80">
                   <div>
                     <li className="p-2">
                       <Link to="/teacher">Faculty & Staff</Link>
@@ -102,7 +100,7 @@ const Navbar = () => {
                   role="button"
                   className="group flex font-bold"
                 >
-                  Education
+                  <span>Education</span>
                   <svg
                     className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180
   transition duration-150 ease-in-out"
@@ -112,7 +110,7 @@ const Navbar = () => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <div className="dropdown-content menu z-[2] font-bold bg-[#00d9ff] w-96">
+                <div className="dropdown-content menu z-[2] font-bold bg-[#02a9f7] w-96">
                   <div>
                     <li className="p-2">
                       <Link to="/ac">Academic Calender</Link>
@@ -137,7 +135,7 @@ const Navbar = () => {
                   role="button"
                   className="group flex font-bold"
                 >
-                  Others
+                  <span>Others</span>
                   <svg
                     className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180
   transition duration-150 ease-in-out"
@@ -147,7 +145,7 @@ const Navbar = () => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <div className="dropdown-content menu z-[2] font-bold bg-[#00d9ff] w-80">
+                <div className="dropdown-content menu z-[2] font-bold bg-[#02a9f7] w-80">
                   <div>
                     <li className="p-2">
                       <Link to="/cgpa">CGPA Calculator</Link>

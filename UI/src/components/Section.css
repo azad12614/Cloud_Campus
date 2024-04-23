@@ -1,153 +1,52 @@
+:root {
+    --gold: #ffb338;
+    --light-shadow: #77571d;
+    --dark-shadow: #3e2904;
+}
+
 .header-ui {
-    margin-top: -24rem;
+    margin-top: 10rem;
 }
 
-img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
+.wrapper {
+    /* background: radial-gradient(#272727, #1b1b1b); */
+    background: #d4f0fc;
+    display: grid;
+    grid-template-areas: 'overlap';
+    place-content: center;
+    text-transform: uppercase;
+    height: 10vh;
 }
 
-.header-title {
-    text-align: center;
-    background: -webkit-linear-gradient(left, #1900ff, #4430fa, #7775f3);
+.wrapper>div {
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: xx-large;
-    font-weight: bolder;
-    margin-top: -53rem;
-    margin-left: -23rem;
-    position: relative;
-    z-index: 10;
+    color: #363833;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: clamp(4rem, 8vw, 15rem);
+    padding-top: clamp(1rem, 2vw, 3rem);
+    grid-area: overlap;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 4px transparent;
 }
 
-
-/* -----------responsive css style PC----------- */
-@media (max-width: 1080px) {
-    .header-ui {
-        margin-top: -24rem;
-    }
-
-    img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 1000px;
-    }
-
-    .header-title {
-        text-align: center;
-        background: -webkit-linear-gradient(left, #1900ff, #4430fa, #7775f3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: xx-large;
-        font-weight: bolder;
-        margin-top: -53rem;
-        margin-left: -23rem;
-        position: relative;
-        z-index: 10;
-    }
+div.bg {
+    background-image: repeating-linear-gradient(105deg,
+            var(--gold) 0%,
+            var(--dark-shadow) 5%,
+            var(--gold) 12%);
+    color: transparent;
+    filter: drop-shadow(5px 15px 15px black);
+    transform: scaleY(1.05);
+    transform-origin: top;
 }
 
-/* -----------responsive css style Tablet----------- */
-@media (max-width: 998px) {
-    .header-ui {
-        margin-top: -20rem;
-    }
-
-    img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 800px;
-    }
-
-    .header-title {
-        text-align: center;
-        background: -webkit-linear-gradient(left, #1900ff, #4430fa, #7775f3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: xx-large;
-        font-weight: bolder;
-        margin-top: -42.5rem;
-        margin-left: -21rem;
-        position: relative;
-        z-index: 10;
-    }
-}
-
-/* -----------responsive css style i-pad----------- */
-@media (max-width: 760px) {
-    .header-ui {
-        margin-top: -20rem;
-    }
-
-    img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 800px;
-    }
-
-    .header-title {
-        text-align: center;
-        background: -webkit-linear-gradient(left, #1900ff, #4430fa, #7775f3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: xx-large;
-        font-weight: 700;
-        margin-top: -39rem;
-        margin-left: -20.3rem;
-        position: relative;
-        z-index: 10;
-    }
-}
-
-/* -----------responsive css style Mobile----------- */
-@media (max-width: 690px) {
-    .header-ui {
-        margin-top: -18rem;
-    }
-
-    img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 800px;
-    }
-
-    .header-title {
-        text-align: center;
-        background: -webkit-linear-gradient(left, #1900ff, #4430fa, #7775f3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: xx-large;
-        font-weight: 700;
-        margin-top: -37rem;
-        margin-left: -20.3rem;
-        position: relative;
-        z-index: 10;
-    }
-}
-
-/* -----------responsive css style small Mobile----------- */
-@media (max-width: 500px) {
-    .header-ui {
-        margin-top: -6rem;
-    }
-
-    img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 800px;
-    }
-
-    .header-title {
-        text-align: center;
-        background: -webkit-linear-gradient(left, #1900ff, #4430fa, #7775f3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: large;
-        font-weight: 700;
-        margin-top: -20rem;
-        margin-left: -10rem;
-        position: relative;
-        z-index: 10;
-    }
+div.fg {
+    background-image: repeating-linear-gradient(5deg,
+            var(--gold) 0%,
+            var(--light-shadow) 23%,
+            var(--gold) 31%);
+    color: #1e2127;
+    transform: scale(1);
 }

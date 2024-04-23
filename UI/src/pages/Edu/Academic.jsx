@@ -7,10 +7,10 @@ import "./Academic.css";
 
 function Academic() {
     return (
-        <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
+        <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#d4f0fc]">
             <Navbar></Navbar>
             <Section text={"Academic Calendar"}></Section>
-            <h1 className='text-5xl mt-36 mb-4 text-[#00d9ff] font-bold'>Spring Semester - 2024</h1>
+            <h1 className='text-5xl mt-36 mb-4 text-[#01303f] font-bold'>Spring Semester - 2024</h1>
             <section class="design-section">
                 <div class="timeline">
 

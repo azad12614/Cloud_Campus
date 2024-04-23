@@ -5,7 +5,7 @@ import "./Member.css";
 
 function Member() {
     return (
-        <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#000000]">
+        <div className="d-flex flex-column max-w-full vh-100 overflow-x-hidden bg-[#d4f0fc]">
             <Navbar></Navbar>
             <Section text={"Contributor"}></Section>
             <div id="container">
@@ -23,7 +23,7 @@ function Member() {
                             <div>
                                 <span>
                                     <a href="" target="_blank">
-                                        <button className="mt-20 px-4 btn text-center font-bold sm:text-2xl md:text-3xl lg:text-4xl text-[#EE0000] bg-blue hover:bg-[#000000] hover:text-[#FFFFFF] border-0 rounded-3xl">
+                                        <button className="px-4 btn text-center font-bold sm:text-2xl md:text-3xl lg:text-4xl text-[#EE0000] bg-blue hover:bg-[#000000] hover:text-[#FFFFFF] border-0 rounded-3xl">
                                             Details
                                         </button>
                                     </a>
@@ -52,7 +52,7 @@ function Member() {
                     </div>
                     <div class="card-image">
                         <p>&copy; 2024 Cloud <br />Campus Team</p>
-                        <img src="https://www.pngkey.com/png/full/82-824923_deadpool-deadpool-marvel-comics.png" />
+                        <img src="https://upload.wikimedia.org/wikipedia/th/thumb/a/a7/%E0%B9%80%E0%B8%94%E0%B8%94%E0%B8%9E%E0%B8%B9%E0%B8%A5.png/178px-%E0%B9%80%E0%B8%94%E0%B8%94%E0%B8%9E%E0%B8%B9%E0%B8%A5.png" />
                     </div>
                 </div>
 

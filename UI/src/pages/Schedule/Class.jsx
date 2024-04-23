@@ -36,7 +36,7 @@ function Class() {
     }
 
     return (
-        <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
+        <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#d4f0fc]">
             <Navbar></Navbar>
             <Banner text={"Class Schedule"}></Banner>
             <div className="mt-36 bg-list px-20 pb-20 text-center justify-center">

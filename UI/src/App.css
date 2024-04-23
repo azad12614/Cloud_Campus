@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -28,8 +27,8 @@ li {
   width: 100%;
   height: 10rem;
   display: grid;
-  grid-template-columns: 6rem 1fr 1.8fr 1.2fr 4rem;
-  background-color: #00d9ff;
+  grid-template-columns: 5rem 1fr 3fr 1.5fr 5rem;
+  background-color: #02a9f7;
   position: fixed;
   z-index: 1000;
 }
@@ -62,7 +61,7 @@ li {
 
 .menu-link {
   grid-column: 3/4;
-  color: #9400e7;
+  color: #000000;
 }
 
 .menu-link ul {
@@ -79,11 +78,12 @@ li {
 
 .menu-link ul li a {
   text-transform: capitalize;
-  color: rgba(148, 0, 231, 0.9);
+  color: #000000;
   transition: 0.5s;
 }
 
-.menu-link ul li:hover>a {
+.menu-link ul li:hover>a,
+.menu-link ul li:hover {
   transform-origin: left;
   color: rgb(255, 255, 255);
   text-decoration: underline;
@@ -119,6 +119,8 @@ li {
 
 .social-media .hamburger-menu {
   display: none;
+  font-size: 3rem;
+  color: #000000;
 }
 
 .facebook {
@@ -136,22 +138,20 @@ li {
 /* -----------responsive css style PC----------- */
 @media (max-width: 1150px) {
   .main-nav {
-    height: 8rem;
-    grid-template-columns: 2rem 1.5fr 3fr 1.5fr 2rem;
+    /* grid-template-columns: 2rem 1.5fr 3fr 1.5fr 2rem; */
   }
 
   .logo,
   .menu-link ul,
   .social-media ul {
-    height: 8rem;
+    /* height: 8rem; */
   }
 }
 
 /* -----------responsive css style Tablet----------- */
 @media (max-width: 1080px) {
   .main-nav {
-    height: 7rem;
-    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+    /* grid-template-columns: 2rem 2fr 3fr 2rem 2rem; */
   }
 
   .menu-link {
@@ -160,7 +160,7 @@ li {
 
   .logo,
   .social-media ul {
-    height: 7rem;
+    /* height: 7rem; */
   }
 
   .mobile-menu-link {
@@ -170,7 +170,7 @@ li {
   }
 
   .mobile-menu-link {
-    background-color: #00d9ff;
+    background-color: #02a9f7;
     height: 40rem;
     display: grid;
     grid-column: 2/5;
@@ -208,7 +208,7 @@ li {
   }
 
   .social-media {
-    height: 7rem;
+    /* height: 7rem; */
     display: flex;
     justify-self: end;
     align-items: center;
@@ -216,8 +216,6 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    font-size: 2.5rem;
-    color: #3500b1;
   }
 
 }
@@ -225,17 +223,16 @@ li {
 /* -----------responsive css style i-pad----------- */
 @media (max-width: 798px) {
   .main-nav {
-    height: 6rem;
-    grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+    grid-template-columns: 5rem 2fr 2fr 2fr 5rem;
   }
 
   .logo,
   .social-media ul {
-    height: 6rem;
+    /* height: 6rem; */
   }
 
   .social-media {
-    height: 6rem;
+    /* height: 6rem; */
     display: flex;
     justify-self: end;
     align-items: center;
@@ -243,29 +240,28 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    font-size: 2.5rem;
-    color: #000000;
+    /* font-size: 2.5rem; */
+    /* color: #000000; */
   }
 }
 
 /* -----------responsive css style Mobile----------- */
 @media (max-width: 520px) {
   .main-nav {
-    height: 6rem;
-    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+    grid-template-columns: 2rem 2fr 2fr 2fr 2rem;
   }
 
   .logo,
   .social-media ul {
-    height: 6rem;
+    /* height: 6rem; */
   }
 
   .logo h2 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .social-media {
-    height: 6rem;
+    /* height: 6rem; */
     display: flex;
     justify-self: end;
     align-items: center;
@@ -273,21 +269,37 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    font-size: 2.5rem;
-    color: #ffffff;
+    /* font-size: 2.5rem; */
+    /* color: #ffffff; */
   }
 }
 
 /* -----------Hero part Start----------- */
 #HV {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
 }
 
+/*.hero-content img {
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  width: 90%;
+  max-width: 400px;
+}*/
+
+/* .hero-title {
+  background: #02577a;
+  padding: 50px;
+  padding-left: 125px;
+  padding-right: 125px;
+  border-radius: 100%;
+  background-image: url("https://yt3.googleusercontent.com/dgqyEcZOrvmDeHde_rnn6Up1vBSgWWsnaoJu6IYCESpNwuzlHjbM2YYz0V-aAx7N1i_XK2XuYvk=s900-c-k-c0x00ffffff-no-rj");
+} */
+
 .hero-title h1 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#5b40f5, #20dbfc, rgb(161, 65, 252));
   -webkit-background-clip: text;
@@ -307,6 +319,9 @@ li {
   margin: auto;
   display: flex;
   align-items: center;
+  aspect-ratio: 1/1;
+  width: clamp(20rem, 40vw, 40rem);
+  border-radius: 50%;
 }
 
 /* Section */

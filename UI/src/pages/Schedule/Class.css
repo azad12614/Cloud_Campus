@@ -3,7 +3,7 @@
 
 .bg-list {
     --color: rgba(0, 0, 0);
-    --bgColor: #ffffff;
+    --bgColor: #d4f0fc;
     display: grid;
     align-content: center;
     gap: 2rem;

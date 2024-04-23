@@ -76,7 +76,7 @@ function Teacher() {
   }
 
   return (
-    <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
+    <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#d4f0fc]">
       <Navbar></Navbar>
       <Section text={"Faculty & Staff"}></Section>
       <div class="container my-36">

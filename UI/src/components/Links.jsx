@@ -1,11 +1,11 @@
 function Links() {
   const myli = {
-    backgroundColor: "#EEE",
-    color: "#000000",
+    backgroundColor: "#01303f",
+    color: "#d4f0fc",
     width: "30rem",
     padding: "auto",
     margin: "1rem",
-    boxShadow: "0px 4px #AAA",
+    boxShadow: "0px 4px #02a9f7",
     paddingTop: "5px",
     paddingBottom: "5px",
     marginLeft: "auto",
@@ -14,8 +14,8 @@ function Links() {
   return (
     <>
       <div className="p-12 pb-36">
-        <h1 className="text-6xl font-bold text-center text-[#FFFFFF]">General Links</h1>
-        <hr className="border-[#FFFFFF] border-4" />
+        <h1 className="text-6xl font-bold text-center text-[#01303f]">General Links</h1>
+        <hr className="border-[#01303f] border-4" />
         <ul className="text-3xl grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 text-center justify-center">
 
           <a href={`https://www.iiuc.ac.bd/academic/bcalendar/`} target="_blank">
