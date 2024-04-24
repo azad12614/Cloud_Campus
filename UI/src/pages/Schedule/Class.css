@@ -1,6 +1,7 @@
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap");
 
+
 .bg-list {
     --color: rgba(0, 0, 0);
     --bgColor: #d4f0fc;
@@ -35,23 +36,27 @@ li:nth-child(6n + 1) {
 }
 
 li:nth-child(6n + 2) {
-    --accent-color: #4cbccb
+    --accent-color: #FFC949
 }
 
 li:nth-child(6n + 3) {
-    --accent-color: #7197d3
+    --accent-color: #D20040
 }
 
 li:nth-child(6n + 4) {
-    --accent-color: #ae78cb
+    --accent-color: #F06130
 }
 
 li:nth-child(6n + 5) {
-    --accent-color: #7dc7a4
+    --accent-color: #8DECB4
 }
 
 li:nth-child(6n + 6) {
-    --accent-color: #f078c2
+    --accent-color: #F078C2
+}
+
+li:nth-child(6n + 7) {
+    --accent-color: #F6F5F0
 }
 
 ol li {
@@ -64,6 +69,8 @@ ol li {
     justify-content: center;
     padding-left: calc(var(--borderS) + 4rem);
     position: relative;
+    background-color: #02577a;
+    border-radius: 50%;
 }
 
 ol li::before,
@@ -97,6 +104,7 @@ ol li .icon {
     font-size: 4rem;
     color: var(--accent-color);
     text-align: center;
+    padding-left: 1.7rem;
 }
 
 ol li .title {

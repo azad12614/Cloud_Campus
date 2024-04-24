@@ -1,7 +1,10 @@
 :root {
-    --gold: #ffb338;
+    /* --gold: #ffb338;
     --light-shadow: #77571d;
-    --dark-shadow: #3e2904;
+    --dark-shadow: #3e2904; */
+    --gold: #02a9f7;
+    --light-shadow: #02577a;
+    --dark-shadow: #01303f;
 }
 
 .header-ui {

@@ -1,10 +1,12 @@
-import Navbar from "../../components/Navbar";
+import React, { useEffect, useState } from "react";
+import { SiGoogleclassroom } from "react-icons/si";
 import Footer from "../../components/Footer";
-import Banner from "../../components/Section";
 import Links from "../../components/Links";
+import Navbar from "../../components/Navbar";
+import Banner from "../../components/Section";
 import "./Class.css";
-import React from "react";
-import { useEffect, useState } from "react";
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 function Class() {
 
@@ -18,8 +20,8 @@ function Class() {
     function single(section) {
         return (
             <>
-                <li className="bg-[#ffffff] rounded-full" key={section?._id}>
-                    <div class="icon"><i class="fa-solid fa-section"></i></div>
+                <li key={section?._id}>
+                    <div class="icon"><SiGoogleclassroom /></div>
                     <div class="title"><a href={section?.image}>{section?.name}</a></div>
                 </li>
             </>
