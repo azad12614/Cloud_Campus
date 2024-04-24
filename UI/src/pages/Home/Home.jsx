@@ -5,11 +5,11 @@ import Footer from "../../components/Footer";
 
 function Home() {
   return (
-    <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#000]">
+    <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#d4f0fc]">
       <Navbar />
       <Hero></Hero>
-      {/* <Links></Links> */}
-      {/* <Footer></Footer> */}
+      <Links></Links>
+      <Footer></Footer>
     </div>
   );
 }

@@ -15,15 +15,6 @@ function Class() {
             .then((data) => setSections(data));
     }, []);
 
-    const myh1 = {
-        paddingTop: "100px",
-        paddingBottom: "39px",
-        fontSize: "3.5rem",
-        fontWeight: "500",
-        textTransform: "uppercase",
-        textAlign: "center",
-    }
-
     function single(section) {
         return (
             <>
@@ -49,9 +40,9 @@ function Class() {
                 </ol>
             </div>
             <Links></Links>
-            <div className="fixed bottom-0 w-full">
-                <Footer></Footer>
-            </div>
+            {/* <div className="fixed bottom-0 w-full"> */}
+            <Footer></Footer>
+            {/* </div> */}
         </div>
     );
 }

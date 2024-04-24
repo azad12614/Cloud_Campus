@@ -14,7 +14,7 @@
 }
 
 h1 {
-    text-align: center
+    text-align: center;
 }
 
 ol {
@@ -62,7 +62,7 @@ ol li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: calc(var(--borderS) + 3rem);
+    padding-left: calc(var(--borderS) + 4rem);
     position: relative;
 }
 
@@ -97,7 +97,6 @@ ol li .icon {
     font-size: 4rem;
     color: var(--accent-color);
     text-align: center;
-    padding-left: 1.2rem;
 }
 
 ol li .title {

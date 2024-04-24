@@ -15,7 +15,6 @@
     grid-template-areas: 'overlap';
     place-content: center;
     text-transform: uppercase;
-    height: 10vh;
 }
 
 .wrapper>div {
