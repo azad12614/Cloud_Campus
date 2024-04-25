@@ -13,7 +13,7 @@ function Footer() {
         </div>
         <hr className="border-[#555] border-3" />
         <h4 className="text-3xl text-[#000] font-medium text-center py-2">
-          © Copyright 2024. All Rights Reserved.
+          © ALL OF THE RIGHTS RESERVED.
         </h4>
       </footer>
     </>

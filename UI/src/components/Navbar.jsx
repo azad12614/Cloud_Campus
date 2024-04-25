@@ -163,6 +163,9 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
 
