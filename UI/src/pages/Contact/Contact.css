@@ -117,6 +117,7 @@ textarea {
     font: 200 20px 'Lato', sans-serif;
     font-style: italic;
     letter-spacing: 1.9px;
+    font-size: clamp(15px, 2.1vh, 20px);
 }
 
 .contact-text a:hover {
@@ -211,20 +212,26 @@ hr {
     }
 
     .direct-contact-container {
-        margin-top: 60px;
+        margin-block: 30px;
         max-width: 300px;
     }
 
-    .social-media-list li {
+    .social-media-list a li {
         height: 60px;
         width: 60px;
         line-height: 60px;
     }
 
-    .social-media-list li:after {
+    .social-media-list a li:after {
         width: 60px;
         height: 60px;
         line-height: 60px;
+    }
+
+    .social-media-list a li img {
+        aspect-ratio: 1/1;
+        width: 30px;
+        margin: 15px;
     }
 }
 
@@ -250,7 +257,7 @@ hr {
     }
 
     .direct-contact-container {
-        margin-top: 60px;
+        margin-block: 30px;
         max-width: 280px;
     }
 
@@ -258,17 +265,23 @@ hr {
         left: 0;
     }
 
-    .social-media-list li {
+    .social-media-list a li {
         height: 55px;
         width: 55px;
         line-height: 55px;
         font-size: 2rem;
     }
 
-    .social-media-list li:after {
+    .social-media-list a li:after {
         width: 55px;
         height: 55px;
         line-height: 55px;
+    }
+
+    .social-media-list a li img {
+        aspect-ratio: 1/1;
+        width: 28px;
+        margin: 14px;
     }
 
 }
