@@ -4,10 +4,10 @@ import "./Section.css";
 function Section({ text }) {
     return (
         <>
-            <header class="header-ui">
-                <div class="wrapper">
-                    <div class="bg">  {text} </div>
-                    <div class="fg">  {text} </div>
+            <header className="header-ui">
+                <div className="wrapper">
+                    <div className="bg">  {text} </div>
+                    <div className="fg">  {text} </div>
                 </div>
             </header>
         </>

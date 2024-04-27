@@ -1,5 +1,7 @@
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 
 
 .bg-list {
@@ -9,7 +11,6 @@
     align-content: center;
     gap: 2rem;
     padding: 2rem;
-    font-family: "Exo 2", sans-serif;
     color: var(--color);
     background: var(--bgColor);
 }
@@ -31,35 +32,35 @@ ol {
     /* counter-reset: stepnr; */
 }
 
-li:nth-child(6n + 1) {
+a:nth-child(6n + 1) {
     --accent-color: #b8df4e
 }
 
-li:nth-child(6n + 2) {
+a:nth-child(6n + 2) {
     --accent-color: #FFC949
 }
 
-li:nth-child(6n + 3) {
+a:nth-child(6n + 3) {
     --accent-color: #D20040
 }
 
-li:nth-child(6n + 4) {
+a:nth-child(6n + 4) {
     --accent-color: #F06130
 }
 
-li:nth-child(6n + 5) {
+a:nth-child(6n + 5) {
     --accent-color: #8DECB4
 }
 
-li:nth-child(6n + 6) {
+a:nth-child(6n + 6) {
     --accent-color: #F078C2
 }
 
-li:nth-child(6n + 7) {
+a:nth-child(6n + 7) {
     --accent-color: #F6F5F0
 }
 
-ol li {
+ol a {
     /* counter-increment: stepnr; */
     width: 20rem;
     --borderS: 2rem;
@@ -73,8 +74,8 @@ ol li {
     border-radius: 50%;
 }
 
-ol li::before,
-ol li::after {
+ol a::before,
+ol a::after {
     inset: 0;
     position: absolute;
     border-radius: 50%;
@@ -91,24 +92,152 @@ ol li::after {
     overflow: hidden;
 } */
 
-ol li::after {
+ol a::after {
     content: "";
     filter: drop-shadow(-0.25rem 0.25rem .0675rem rgba(0, 0, 0, 0.75)) blur(5px);
 }
 
-ol li>* {
+ol a>* {
     width: 7.5rem
 }
 
-ol li .icon {
-    font-size: 4rem;
-    color: var(--accent-color);
+ol a li {
+    align-items: center;
     text-align: center;
-    padding-left: 1.7rem;
 }
 
-ol li .title {
-    font-size: 4rem;
-    font-weight: 500;
+ol a li .icon {
     color: var(--accent-color);
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+ol a li .title {
+    color: var(--accent-color);
+    font-size: 4rem;
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: -1rem;
+}
+
+/* Semester Tittle*/
+
+.deconstructed {
+    position: relative;
+    margin: auto;
+    height: 1em;
+    width: 50vw;
+    color: transparent;
+    font-family: 'Cambay', sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.03em;
+}
+
+.deconstructed>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #02a9f7;
+    pointer-events: none;
+}
+
+.deconstructed>div:nth-child(1) {
+    -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+    mask-image: linear-gradient(black 25%, transparent 25%);
+    animation: deconstructed1 5s infinite;
+}
+
+.deconstructed>div:nth-child(2) {
+    -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    animation: deconstructed2 5s infinite;
+}
+
+.deconstructed>div:nth-child(3) {
+    -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    animation: deconstructed3 5s infinite;
+}
+
+.deconstructed>div:nth-child(4) {
+    -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+    mask-image: linear-gradient(transparent 75%, black 75%);
+    animation: deconstructed4 5s infinite;
+}
+
+@keyframes deconstructed1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    26% {
+        transform: translateX(0%);
+    }
+
+    83% {
+        transform: translateX(-0.1%);
+    }
+
+    100% {
+        transform: translateX(-120%);
+    }
+}
+
+@keyframes deconstructed2 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    24% {
+        transform: translateX(0.5%);
+    }
+
+    82% {
+        transform: translateX(-0.2%);
+    }
+
+    100% {
+        transform: translateX(-125%);
+    }
+}
+
+@keyframes deconstructed3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    22% {
+        transform: translateX(0%);
+    }
+
+    81% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-130%);
+    }
+}
+
+@keyframes deconstructed4 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    80% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-135%);
+    }
 }
