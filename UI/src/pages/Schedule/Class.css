@@ -127,10 +127,10 @@ ol a li .title {
     position: relative;
     margin: auto;
     height: 1em;
-    width: 50vw;
+    width: max(65vw, 30px);
     color: transparent;
     font-family: 'Cambay', sans-serif;
-    font-size: 5vw;
+    font-size: max(10vw, 20px);
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.03em;
