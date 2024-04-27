@@ -287,12 +287,13 @@ li {
 } */
 
 .hero-title img {
-  margin: auto;
   display: flex;
-  align-items: center;
   aspect-ratio: 1/1;
   width: clamp(20rem, 40vw, 40rem);
   border-radius: 50%;
+  margin: auto;
+  margin-top: max(20vh, 20rem);
+  align-items: center;
 }
 
 /* -----------Footer part Start----------- */

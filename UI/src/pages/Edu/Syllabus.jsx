@@ -23,9 +23,9 @@ function Syllabus() {
                         </iframe>
                     </object>
                 </div>
-                <div className="fixed bottom-0 w-full z-[10]">
-                    <Footer></Footer>
-                </div>
+                {/* <div className="fixed bottom-0 w-full z-[10]"> */}
+                <Footer></Footer>
+                {/* </div> */}
             </div>
         </>
     )

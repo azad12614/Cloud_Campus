@@ -18,6 +18,7 @@
     grid-template-areas: 'overlap';
     place-content: center;
     text-transform: uppercase;
+    margin-inline: auto;
 }
 
 .wrapper>div {

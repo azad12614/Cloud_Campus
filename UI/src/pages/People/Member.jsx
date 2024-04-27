@@ -78,9 +78,9 @@ function Member() {
                     </div>
                 </div>
             </div>
-            <div className="mt-auto mb-0">
-                <Footer></Footer>
-            </div>
+            {/* <div className="mt-auto mb-0"> */}
+            <Footer></Footer>
+            {/* </div> */}
         </div>
     );
 }
