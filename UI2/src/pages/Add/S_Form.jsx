@@ -21,7 +21,7 @@ function M_Form() {
       .then((res) => res.json())
       .then((data) => {
         if (data.acknowledged) {
-          navigate("/add-section");
+          navigate("/manage-section");
         }
       });
   }
