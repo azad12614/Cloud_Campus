@@ -148,6 +148,9 @@ const Navbar = () => {
                 <div className="dropdown-content menu z-[2] font-bold bg-[#02a9f7] w-80">
                   <div>
                     <li className="p-2">
+                      <Link to="/others">Extra</Link>
+                    </li>
+                    <li className="p-2">
                       <Link to="/cgpa">CGPA Calculator</Link>
                     </li>
                     <li className="p-2">

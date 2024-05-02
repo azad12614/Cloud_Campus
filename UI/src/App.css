@@ -43,20 +43,6 @@ li {
   align-items: center;
 }
 
-/* .logo h2 {
-  font-size: 4rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  background: -webkit-linear-gradient(#be05f7, #7406f1, rgb(20, 3, 248));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
-/* .logo h2 span {
-  font-size: 5rem;
-  font-weight: 500;
-} */
-
 /* ----------- Main Link part start ----------- */
 
 .menu-link {
@@ -135,18 +121,12 @@ li {
   color: #ff0000;
 }
 
-/* -----------responsive css style PC----------- */
-@media (max-width: 1150px) {}
-
 /* -----------responsive css style Tablet----------- */
 @media (max-width: 1080px) {
-
 
   .menu-link {
     display: none;
   }
-
-
 
   .mobile-menu-link {
     grid-column: 2/4;
@@ -252,40 +232,6 @@ li {
   object-fit: cover;
 }
 
-/*.hero-content img {
-  border-radius: 100%;
-  aspect-ratio: 1/1;
-  width: 90%;
-  max-width: 400px;
-}*/
-
-/* .hero-title {
-  background: #02577a;
-  padding: 50px;
-  padding-left: 125px;
-  padding-right: 125px;
-  border-radius: 100%;
-  background-image: url("https://yt3.googleusercontent.com/dgqyEcZOrvmDeHde_rnn6Up1vBSgWWsnaoJu6IYCESpNwuzlHjbM2YYz0V-aAx7N1i_XK2XuYvk=s900-c-k-c0x00ffffff-no-rj");
-} */
-
-/* .hero-title h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: -webkit-linear-gradient(#5b40f5, #20dbfc, rgb(161, 65, 252));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
-/* .hero-title h3 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  background: -webkit-linear-gradient(#0123e6, #00d3f8, rgb(133, 5, 252));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
 .hero-title img {
   display: flex;
   aspect-ratio: 1/1;
@@ -312,17 +258,20 @@ footer {
 }
 
 .gLinks h1 {
-  font-size: 3.75rem;
+  font-size: 5rem;
   line-height: 1;
   font-weight: bold;
   text-align: center;
   color: #01303f;
+  margin-bottom: 0.6rem;
 }
 
 .gLinks hr {
   border-radius: 1rem;
+  border-width: 0.6rem;
   border-style: double;
   border-color: #01303f;
+  margin-bottom: 3.6rem;
 }
 
 .gLinks ul {
