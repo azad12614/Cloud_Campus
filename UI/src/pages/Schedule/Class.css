@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-
-
-.bg-list {
+.List {
     --color: rgba(0, 0, 0);
     --bgColor: #d4f0fc;
     display: grid;
@@ -15,18 +13,29 @@
     background: var(--bgColor);
 }
 
-h1 {
-    text-align: center;
+.tabList2 {
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: bold;
+    height: 50px;
+    width: 75px;
+    background: #02a9f7;
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
 }
 
 ol {
-    width: min(100rem, 96%);
+    width: min(50vw, 96%);
     margin-inline: auto;
+    margin-block: 4vh;
 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    row-gap: 4vh;
+    column-gap: 2vw;
 
     list-style: none;
     /* counter-reset: stepnr; */
@@ -62,15 +71,15 @@ a:nth-child(6n + 7) {
 
 ol a {
     /* counter-increment: stepnr; */
-    width: 20rem;
+    width: 25rem;
     --borderS: 2rem;
     aspect-ratio: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: calc(var(--borderS) + 4rem);
+    padding-left: calc(var(--borderS) + 5rem);
     position: relative;
-    background-color: #02577a;
+    background-color: #01303f;
     border-radius: 50%;
 }
 
@@ -108,136 +117,30 @@ ol a li {
 
 ol a li .icon {
     color: var(--accent-color);
-    font-size: 4rem;
-    padding-left: 2rem;
+    font-size: 5rem;
+    padding-left: 3rem;
 }
 
 ol a li .title {
     color: var(--accent-color);
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: "Lugrasimo", cursive;
     font-weight: 400;
     font-style: normal;
     margin-left: -1rem;
 }
 
-/* Semester Tittle*/
-
-.deconstructed {
-    position: relative;
-    margin: auto;
-    height: 1em;
-    width: max(56vw, 28px);
-    color: transparent;
-    font-family: 'Cambay', sans-serif;
-    font-size: max(7vw, 28px);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.03em;
+ol a:hover .icon,
+ol a:hover .title {
+    display: none;
 }
 
-.deconstructed>div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #02a9f7;
-    pointer-events: none;
-}
-
-.deconstructed>div:nth-child(1) {
-    -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
-    mask-image: linear-gradient(black 25%, transparent 25%);
-    animation: deconstructed1 5s infinite;
-}
-
-.deconstructed>div:nth-child(2) {
-    -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
-    mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
-    animation: deconstructed2 5s infinite;
-}
-
-.deconstructed>div:nth-child(3) {
-    -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
-    mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
-    animation: deconstructed3 5s infinite;
-}
-
-.deconstructed>div:nth-child(4) {
-    -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
-    mask-image: linear-gradient(transparent 75%, black 75%);
-    animation: deconstructed4 5s infinite;
-}
-
-@keyframes deconstructed1 {
-    0% {
-        transform: translateX(100%);
-    }
-
-    26% {
-        transform: translateX(0%);
-    }
-
-    83% {
-        transform: translateX(-0.1%);
-    }
-
-    100% {
-        transform: translateX(-120%);
-    }
-}
-
-@keyframes deconstructed2 {
-    0% {
-        transform: translateX(100%);
-    }
-
-    24% {
-        transform: translateX(0.5%);
-    }
-
-    82% {
-        transform: translateX(-0.2%);
-    }
-
-    100% {
-        transform: translateX(-125%);
-    }
-}
-
-@keyframes deconstructed3 {
-    0% {
-        transform: translateX(100%);
-    }
-
-    22% {
-        transform: translateX(0%);
-    }
-
-    81% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-130%);
-    }
-}
-
-@keyframes deconstructed4 {
-    0% {
-        transform: translateX(100%);
-    }
-
-    20% {
-        transform: translateX(0%);
-    }
-
-    80% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-135%);
-    }
+ol a:hover li::before {
+    content: "Click!";
+    color: var(--accent-color);
+    font-size: 6rem;
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: -3rem;
 }

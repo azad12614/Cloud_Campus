@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import "./Navbar.css";
 
 import map from "../assets/google-maps.png";
 import fb from "../assets/facebook.png";
@@ -49,7 +50,7 @@ const Navbar = () => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <div className="dropdown-content menu z-[2] font-bold bg-[#02a9f7] w-80">
+                <div className="dropdown-content menu-2">
                   <div>
                     <li className="p-2">
                       <Link to={"/class"}>Class Schedule</Link>
@@ -78,7 +79,7 @@ const Navbar = () => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <div className="dropdown-content menu z-[2] font-bold bg-[#02a9f7] w-80">
+                <div className="dropdown-content menu-2">
                   <div>
                     <li className="p-2">
                       <Link to="/teacher">Faculty & Staff</Link>
@@ -110,7 +111,7 @@ const Navbar = () => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <div className="dropdown-content menu z-[2] font-bold bg-[#02a9f7] w-96">
+                <div className="dropdown-content menu-2">
                   <div>
                     <li className="p-2">
                       <Link to="/ac">Academic Calender</Link>
@@ -145,7 +146,7 @@ const Navbar = () => {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </div>
-                <div className="dropdown-content menu z-[2] font-bold bg-[#02a9f7] w-80">
+                <div className="dropdown-content menu-2">
                   <div>
                     <li className="p-2">
                       <Link to="/others">Extra</Link>

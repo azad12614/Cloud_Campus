@@ -8,7 +8,7 @@ h2 {
     font-weight: 300;
     text-transform: uppercase;
     margin-top: 60px;
-    margin-left: 5rem;
+    margin-left: 45vw;
     color: #01303f;
 }
 
@@ -25,8 +25,9 @@ h2 {
     border-bottom-right-radius: 8%;
 }
 
-.tabList:nth-child(16n+1) {
-    margin-left: 5rem;
+.tabList:nth-child(1) {
+    margin-left: 34vw;
+    margin-right: 0;
 }
 
 .ag-format-container {
@@ -48,6 +49,7 @@ h2 {
     overflow: hidden;
     border-radius: 28px;
     margin: 0 15px 20px;
+
 }
 
 .ag-courses-item_link {
@@ -155,7 +157,35 @@ h2 {
     transform: scale(10);
 }
 
+@media only screen and (max-width: 1600px) {
+    h2 {
+        margin-left: 44vw;
+    }
+
+    .tabList:nth-child(1) {
+        margin-left: 32vw;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    h2 {
+        margin-left: 43vw;
+    }
+
+    .tabList:nth-child(1) {
+        margin-left: 28vw;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
+    h2 {
+        margin-left: 42vw;
+    }
+
+    .tabList:nth-child(1) {
+        margin-left: 25vw;
+    }
+
     .ag-format-container {
         width: 80%;
     }
@@ -168,11 +198,11 @@ h2 {
 
 @media only screen and (max-width: 1000px) {
     h2 {
-        margin-left: 3rem;
+        margin-left: 41vw;
     }
 
-    .tabList:nth-child(16n+1) {
-        margin-left: 3rem;
+    .tabList:nth-child(1) {
+        margin-left: 18vw;
     }
 
     .ag-format-container {
@@ -193,11 +223,11 @@ h2 {
 
 @media only screen and (max-width: 800px) {
     h2 {
-        margin-left: 2rem;
+        margin-left: 38vw;
     }
 
-    .tabList:nth-child(16n+1) {
-        margin-left: 2rem;
+    .tabList:nth-child(1) {
+        margin-left: 12vw;
     }
 
     .ag-format-container {
@@ -219,11 +249,11 @@ h2 {
 
 @media only screen and (max-width: 700px) {
     h2 {
-        margin-left: 1rem;
+        margin-left: 2vw;
     }
 
-    .tabList:nth-child(16n+1) {
-        margin-left: 1rem;
+    .tabList:nth-child(1) {
+        margin-left: 2vw;
     }
 
     .ag-courses_item {
@@ -252,6 +282,14 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
+    h2 {
+        margin-left: 3vw;
+    }
+
+    .tabList:nth-child(1) {
+        margin-left: 3vw;
+    }
+
     .tabList {
         font-size: large;
         font-weight: bold;
@@ -269,7 +307,12 @@ h2 {
 
 @media only screen and (max-width: 490px) {
     h2 {
-        margin-left: 0.5rem;
+        margin-left: 2vw;
+        font-size: 2rem;
+    }
+
+    .tabList:nth-child(1) {
+        margin-left: 2vw;
     }
 
     .tabList {
@@ -279,10 +322,6 @@ h2 {
         width: 6.5rem;
         border-bottom-left-radius: 16%;
         border-bottom-right-radius: 16%;
-    }
-
-    .tabList:nth-child(16n+1) {
-        margin-left: 0.5rem;
     }
 
     .ag-courses_item {
@@ -303,5 +342,16 @@ h2 {
     .ag-courses-item_co,
     .ag-courses-item_pre {
         font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    h2 {
+        margin-left: 1vw;
+    }
+
+    .tabList:nth-child(1) {
+        margin-left: 1vw;
     }
 }

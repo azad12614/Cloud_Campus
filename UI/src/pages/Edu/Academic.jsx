@@ -12,7 +12,7 @@ function Academic() {
             <div className='custom-section'>
                 <Section text={"Academic Calendar"}></Section>
             </div>
-            <h1 className='text-5xl mt-36 mb-4 text-[#01303f] font-bold'>Spring Semester - 2024</h1>
+            <h2 className='text-5xl mt-36 mb-4 text-[#01303f] font-bold'>Spring Semester - 2024</h2>
             <section class="design-section">
                 <div class="timeline">
 
