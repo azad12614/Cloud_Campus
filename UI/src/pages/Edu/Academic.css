@@ -86,6 +86,6 @@
 /*Section CSS Custom*/
 @media (max-width: 1250px) {
     .custom-section {
-        margin-left: 25vw;
+        font-style: italic;
     }
 }

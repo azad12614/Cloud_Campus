@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
 body {
     background-color: #ffffff;
     color: #FFF;
@@ -8,8 +11,10 @@ h2 {
     font-weight: 300;
     text-transform: uppercase;
     margin-top: 60px;
-    margin-left: 45vw;
+    margin-bottom: 20px;
+    text-align: center;
     color: #01303f;
+    font-family: "Merriweather", "Serif";
 }
 
 .tabList {
@@ -158,9 +163,6 @@ h2 {
 }
 
 @media only screen and (max-width: 1600px) {
-    h2 {
-        margin-left: 44vw;
-    }
 
     .tabList:nth-child(1) {
         margin-left: 32vw;
@@ -168,9 +170,6 @@ h2 {
 }
 
 @media only screen and (max-width: 1400px) {
-    h2 {
-        margin-left: 43vw;
-    }
 
     .tabList:nth-child(1) {
         margin-left: 28vw;
@@ -178,9 +177,6 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
-    h2 {
-        margin-left: 42vw;
-    }
 
     .tabList:nth-child(1) {
         margin-left: 25vw;
@@ -197,9 +193,6 @@ h2 {
 }
 
 @media only screen and (max-width: 1000px) {
-    h2 {
-        margin-left: 41vw;
-    }
 
     .tabList:nth-child(1) {
         margin-left: 18vw;
@@ -222,9 +215,6 @@ h2 {
 }
 
 @media only screen and (max-width: 800px) {
-    h2 {
-        margin-left: 38vw;
-    }
 
     .tabList:nth-child(1) {
         margin-left: 12vw;
@@ -249,11 +239,12 @@ h2 {
 
 @media only screen and (max-width: 700px) {
     h2 {
-        margin-left: 2vw;
+        margin-left: 3vw;
+        text-align: start;
     }
 
     .tabList:nth-child(1) {
-        margin-left: 2vw;
+        margin-left: 3vw;
     }
 
     .ag-courses_item {

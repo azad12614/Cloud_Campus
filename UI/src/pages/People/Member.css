@@ -1,273 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 
-* {
-    font-family: 'Raleway', serif;
-}
-
-h2 {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 4rem;
-}
-
-#container {
-    padding-top: 100px;
-    width: 100vw;
-    background-color: transparent;
+.section-team {
+    font-family: "Poppins", sans-serif;
+    padding: 2vw;
+    margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    text-align: center;
+    justify-content: space-around;
+    height: min(100vh);
 }
 
-.card {
-    margin: 0 30px;
-    height: 500px;
-    width: 300px;
-    background-color: #fff;
-    border: 5px solid black;
-    box-shadow: 0 0 0 7px #fff, 0 0 8px 5px #000;
-    margin: 16px;
+.section-team .single-person {
+    margin-top: 30px;
+    padding: 30px;
+    background: rgba(137, 214, 251, 0.5);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
-.card-image {
+.section-team .single-person:hover {
+    background: linear-gradient(to right, #016cec, #00b5f7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.section-team .single-person .person-image {
     position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    border: 4px dashed transparent;
+    transition: padding .4s;
+    width: 250px;
+    aspect-ratio: 1/1;
+}
+
+.section-team .single-person:hover .person-image {
+    padding: 12px;
+    border: 4px dashed #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+}
+
+.section-team .single-person .person-image img {
     width: 100%;
-    border-bottom: 5px solid #000;
-    z-index: 1;
+    border-radius: 50%;
+    transition: padding .4s;
 }
 
-.card-image>img {
+.section-team .single-person .person-image .icon {
     position: absolute;
-    z-index: 2;
-    height: 100%;
-}
-
-#hulk>.card-image {
-    height: 65%;
-    background-color: #FFDD33;
-}
-
-#hulk>.card-image>img {
-    width: 150%;
-    height: 100%;
+    bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
-}
-
-#hulk h2 {
-    color: #59C887;
-    letter-spacing: 1px;
+    transform: translate(-50%, 50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
-    margin-top: 4px;
-    font-size: 5.5rem;
-}
-
-/* 
-#hulk p {
-    font-size: 2rem;
-    line-height: 30px;
-    font-weight: 500;
-    text-align: center;
-} */
-
-#hulk>.card-text {
-    height: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card-text>div {
-    display: flex;
-    justify-content: space-between;
-}
-
-#hulk>.card-text>div>div:first-child {
-    display: flex;
-    align-items: center;
-}
-
-#hulk>.card-text>div>div:first-child>span:first-child {
-    font-size: 2.5rem;
-    font-weight: 800;
-    padding-left: 16px;
-}
-
-#hulk>.card-text>div>div:first-child>span:last-child {
-    font-size: 2.5rem;
-    font-weight: 600;
-    padding-right: 16px;
-}
-
-#hulk>.card-text>div>div:last-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid black;
-    border-right: none;
-    border-bottom: none;
-    padding-inline: 5px;
-    padding-block: 2px;
-}
-
-#hulk>.card-text>div>div:last-child>span:first-child {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-#spiderman>.card-image {
-    height: 72%;
-    background-color: #5CAAB4;
-}
-
-#spiderman>.card-image>img {
-    width: 130%;
-    height: 90%;
-    margin-top: 20px;
-    margin-left: -30px;
-}
-
-#spiderman h2 {
-    font-size: 5rem;
-    text-align: center;
-    color: #2E5579;
-}
-
-#spiderman>.card-text {
-    margin-top: 10px;
-    margin-bottom: -10px;
-}
-
-#spiderman>.card-text>div {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#spiderman>.card-text>div>div:first-child {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-#spiderman>.card-text>div>div:first-child>span {
-    font-size: 2.5rem;
-    line-height: 25px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-#spiderman>.card-text>div>div:last-child {
-    display: flex;
-}
-
-#spiderman>.card-text>div>div:last-child>span:first-child {
-    font-size: 10rem;
-    font-weight: 800;
-    line-height: 80px;
-}
-
-#deadpool>.card-image {
-    height: calc(80% - 5px);
-    background-color: #A01F29;
-    border-top: 5px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#deadpool img {
-    height: 110%;
-    width: 50%;
-    margin-left: 55%;
-}
-
-#deadpool>.card-text {
-    display: flex;
-    justify-content: center;
-    height: 20%;
-    color: #AA0000;
-}
-
-#deadpool>.card-text>div {
-    width: 100%;
-}
-
-/* 
-#deadpool>.card-text>div:last-child {
-    border-left: 3px solid black;
-} */
-
-#deadpool>.card-text>div:first-child {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-}
-
-#deadpool>.card-text>div:first-child>span:first-child {
-    font-size: 4rem;
-    font-weight: 900;
-    text-align: center;
-}
-
-/* 
-#deadpool>.card-text>div:first-child>span:last-child {
-    font-size: 4rem;
-    font-weight: 900;
-} */
-
-#deadpool>.card-text>div:last-child {
-    border-top: 3px solid black;
-    border-left: 3px solid black;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
-#deadpool>.card-text>div:last-child>span:first-child {
-    font-size: 4rem;
-    font-weight: 600;
-    margin-bottom: 3px;
-}
-
-/* 
-#deadpool>.card-text>div:last-child>span:nth-of-type(2) {
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-
-#deadpool>.card-text>div:last-child>span:last-child {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-} */
-
-#deadpool>.card-image p {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    z-index: 3;
-    font-weight: 600;
-    font-size: 2.5rem;
+    background: linear-gradient(to right, #016cec, #00b5f7);
     color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
 }
 
-/* -----------responsive css style Tablet----------- */
-@media (max-width: 998px) {
-    #container {
-        display: flex;
-        flex-direction: column;
-    }
+.section-team .single-person:hover .person-image .icon {
+    background: none;
+    background-color: #fff;
+    color: #016cec;
+}
 
-    .card {
-        margin: 0 30px;
-        height: 500px;
-        width: 350px;
-        background-color: #fff;
-        border: 5px solid black;
-        box-shadow: 0 0 0 7px #fff, 0 0 8px 5px #000;
-        margin: 16px;
-    }
+.section-team .single-person .person-info .full-name {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #01303f;
+}
+
+.section-team .single-person .person-info .speciality {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #016cec;
+}
+
+.section-team .single-person:hover .full-name,
+.section-team .single-person:hover .speciality {
+    color: #fff;
 }
