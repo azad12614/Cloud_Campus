@@ -2,12 +2,12 @@ import Navbar from "../../components/Navbar";
 import Links from "../../components/Links";
 import Footer from "../../components/Footer";
 import "./Home.css";
+import IIUC_CSE from "../../assets/IIUC_CSE.png";
 
 function Heros() {
     return (
         <>
             <Navbar />
-
             <section class="section-hero">
 
                 <div class="heros">
@@ -22,14 +22,13 @@ function Heros() {
                     </div>
                     <div class="hero-img-box">
                         <img
-                            src="https://yt3.googleusercontent.com/dgqyEcZOrvmDeHde_rnn6Up1vBSgWWsnaoJu6IYCESpNwuzlHjbM2YYz0V-aAx7N1i_XK2XuYvk=s900-c-k-c0x00ffffff-no-rj"
+                            src={IIUC_CSE}
                             alt="IIUC LOGO"
                             class="hero-img"
                         />
                     </div>
                 </div>
             </section>
-
             <Links></Links>
             <Footer></Footer>
         </>

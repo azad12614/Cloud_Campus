@@ -101,7 +101,9 @@ function Contact() {
                 </div>
             </section>
             <Links></Links>
+            {/* <div className="mt-auto mb-0"> */}
             <Footer></Footer>
+            {/* </div> */}
         </div>
     );
 }
