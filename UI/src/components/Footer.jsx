@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import cc from "../assets/Cloud_Campus1.png";
+import cc from "../assets/Cloud_Campus.png";
 
 function Footer() {
   return (
@@ -8,7 +8,7 @@ function Footer() {
       <footer className="max-w-screen bg-[#00d9ff] text-white px-5">
         <div className="footer-logo">
           <Link to='/'>
-            <img src={cc} className="w-36 h-36 rounded-full" />
+            <img src={cc} />
           </Link>
         </div>
         <hr className="border-[#555] border-3" />

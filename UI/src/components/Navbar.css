@@ -47,6 +47,7 @@ li {
     grid-column: 2/3;
     /* justify-content: start; */
     align-items: center;
+    width: 13rem;
 }
 
 /* ----------- Main Link part start ----------- */
@@ -165,7 +166,7 @@ li {
         grid-column: 2/5;
         align-items: center;
         padding-left: 3rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         transition: all 4s linear;
         transform-origin: top;
         /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,

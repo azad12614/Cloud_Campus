@@ -25,6 +25,7 @@ footer {
 .footer-logo a img {
   display: block;
   margin: auto;
+  width: 13rem;
 }
 
 /*--------------General Links Start----------------*/

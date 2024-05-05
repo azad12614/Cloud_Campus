@@ -7,7 +7,7 @@ import map from "../assets/google-maps.png";
 import fb from "../assets/facebook.png";
 import yt from "../assets/youtube.png";
 import ln from "../assets/linkedin.png";
-import cc from "../assets/Cloud_Campus1.png";
+import cc from "../assets/Cloud_Campus.png";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* 1st logo part  */}
         <div className="logo">
           <Link to='/'>
-            <img src={cc} className="w-36 h-36 rounded-full" />
+            <img src={cc} />
           </Link>
         </div>
 
