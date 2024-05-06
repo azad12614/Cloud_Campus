@@ -80,14 +80,80 @@ function Teacher() {
       <Navbar></Navbar>
       <Section text={"Faculty & Staff"}></Section>
       <div class="container my-36">
+        <h2>Chairman & Coordinator</h2>
         <div class="row">
-
           {
             Sir.map((Teacher) => (
-              single(Teacher)
+              <>
+                {
+                  Teacher?.role == "Chairman & Associate Professor" ? (single(Teacher)) : (<></>)
+                }
+                {
+                  Teacher?.role == "Associate Professor & Coordinator" ? (single(Teacher)) : (<></>)
+                }
+              </>
             ))
           }
-
+        </div>
+        <h2>Professor</h2>
+        <div class="row">
+          {
+            Sir.map((Teacher) => (
+              <>
+                {
+                  Teacher?.role == "Professor" ? (single(Teacher)) : (<></>)
+                }
+              </>
+            ))
+          }
+        </div>
+        <h2>Associate Professor</h2>
+        <div class="row">
+          {
+            Sir.map((Teacher) => (
+              <>
+                {
+                  Teacher?.role == "Associate Professor" ? (single(Teacher)) : (<></>)
+                }
+              </>
+            ))
+          }
+        </div>
+        <h2>Assistant Professor</h2>
+        <div class="row">
+          {
+            Sir.map((Teacher) => (
+              <>
+                {
+                  Teacher?.role == "Assistant Professor" ? (single(Teacher)) : (<></>)
+                }
+              </>
+            ))
+          }
+        </div>
+        <h2>Lecturer</h2>
+        <div class="row">
+          {
+            Sir.map((Teacher) => (
+              <>
+                {
+                  Teacher?.role == "Lecturer" ? (single(Teacher)) : (<></>)
+                }
+              </>
+            ))
+          }
+        </div>
+        <h2>Assistant Lecturer</h2>
+        <div class="row">
+          {
+            Sir.map((Teacher) => (
+              <>
+                {
+                  Teacher?.role == "Assistant Lecturer" ? (single(Teacher)) : (<></>)
+                }
+              </>
+            ))
+          }
         </div>
       </div>
       {/* <div className="fixed bottom-0 w-full z-[10]"> */}
