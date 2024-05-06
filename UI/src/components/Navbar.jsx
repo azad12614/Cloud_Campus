@@ -149,7 +149,7 @@ const Navbar = () => {
                 <div className="dropdown-content menu-2">
                   <div>
                     <li className="p-2">
-                      <Link to="/others">Extra</Link>
+                      <Link to="/others">Gallery</Link>
                     </li>
                     <li className="p-2">
                       <Link to="/cgpa">CGPA Calculator</Link>
