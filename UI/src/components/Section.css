@@ -8,12 +8,12 @@
 }
 
 .header-ui {
-    margin-top: 10rem;
+    padding-top: 10rem;
 }
 
 .wrapper {
     /* background: radial-gradient(#272727, #1b1b1b); */
-    background: #d4f0fc;
+    /* background: #d4f0fc; */
     display: grid;
     grid-template-areas: 'overlap';
     place-content: center;

@@ -2,22 +2,21 @@ import React from 'react';
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Section from "../../components/Section";
-import "./Fee.css";
 
 function fee() {
 
     return (
         <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#d4f0fc]">
             <Navbar></Navbar>
-            <Section text={"Fee Calculator"}></Section>
+            <Section text={"Fee Structures"}></Section>
 
             <div class="relative font-inter antialiased text-[#000]">
 
                 <main class="relative flex flex-col justify-center bg-slate-50 overflow-hidden">
-                    <div class="w-full max-w-6xl mx-auto px-4 md:px-5 py-24">
+                    <div class="w-full mx-auto px-4 md:px-5 py-10">
                         <div class="flex justify-center">
 
-                            <div class="w-full max-w-2xl bg-white shadow-xl rounded-2xl">
+                            <div class="w-full max-w-6xl bg-white shadow-xl rounded-2xl">
                                 <div class="p-3">
 
                                     {/* <!-- Table --> */}
@@ -273,6 +272,13 @@ function fee() {
                     </div>
                 </main>
             </div>
+
+            <div className='max-w-2xl mx-auto mb-8'>
+                <a class="enroll" href='https://www.iiuc.ac.bd/home/fee-calculator'>
+                    Fee Calculator
+                </a>
+            </div>
+
             {/* <div className="fixed bottom-0 w-full z-[10]"> */}
             <Footer></Footer>
             {/* </div> */}

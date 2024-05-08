@@ -5,11 +5,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: Jost;
     /* background-color: #1f1f1f; */
     /* min-height: 100vh; */
     /* padding: 100px 0; */
-    padding-bottom: 100px;
-    font-family: Jost;
+    /* padding-bottom: 100px; */
 }
 
 .timeline {
@@ -22,29 +22,35 @@
 }
 
 .timeline-content {
-    padding: 20px;
-    background: #108fa5;
-    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    /* background: #108fa5;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
+    border-radius: 6px;
+    padding: 20px; */
+    background: rgb(0, 46, 131, 0.9);
+    border-radius: 16px;
     box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 10px #353535, -5px -5px 10px #3b3b3b;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: rgb(255, 255, 255);
-    padding: 1.75rem;
     transition: 0.4s ease;
     overflow-wrap: break-word !important;
+    padding: 1.75rem;
     margin: 1rem;
     margin-bottom: 20px;
-    border-radius: 6px;
     font-weight: bold;
     font-size: large;
+    text-align: center;
 }
 
 .timeline-content>h3 {
     font-size: 23px;
-    color: #ffa641;
+    color: #00fff2;
 }
 
 .timeline-content>p>span {
-    color: #1900ff;
+    color: #00ff0d;
 }
 
 .timeline-component {
@@ -58,16 +64,12 @@
         width: 50%;
     }
 
-    .timeline-middle {
+    /* .timeline-middle {
         position: relative;
         background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
         width: 3px;
         height: 100%;
         margin-top: 5px;
-    }
-
-    .main-middle {
-        opacity: 0;
     }
 
     .timeline-circle {
@@ -80,12 +82,10 @@
         background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-    }
+    } */
 }
 
 /*Section CSS Custom*/
-@media (max-width: 1250px) {
-    .custom-section {
-        font-style: italic;
-    }
+.custom-section {
+    font-style: italic;
 }

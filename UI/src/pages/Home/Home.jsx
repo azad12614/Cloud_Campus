@@ -24,7 +24,7 @@ function Heros() {
                         <img
                             src={IIUC_CSE}
                             alt="IIUC LOGO"
-                            class="hero-img"
+                            className="hero-img"
                         />
                     </div>
                 </div>

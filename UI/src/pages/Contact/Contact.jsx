@@ -12,7 +12,7 @@ import ln from "../../assets/linkedin.png";
 
 function Contact() {
     return (
-        <div className="d-flex flex-column max-w-full overflow-x-hidden bg-[#d4f0fc]">
+        <div className="d-flex flex-column max-w-full bg-[#d4f0fc]">
             <Navbar />
             <section id="contact">
 

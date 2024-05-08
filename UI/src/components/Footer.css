@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+
+:root {
+    --m: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+footer p,
+footer p a {
+    font-style: italic;
+    font-weight: 500;
+    font-size: calc(0.55 * var(--m));
+    margin: 0;
+}
+
+footer h1 {
+    font-weight: 500;
+    font-size: calc(0.7 * var(--m));
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+footer h3 {
+    font-weight: 500;
+    font-size: calc(0.5 * var(--m));
+    margin: 0;
+    padding-top: 1rem;
+}
+
+footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 3rem;
+    position: relative;
+
+    background: rgba(1, 48, 63, 0.5);
+    border-top-left-radius: 60px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+footer .col {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
+    width: 30%;
+}
+
+footer .col2,
+footer .col3 {
+    background-color: #02577a;
+    border-radius: calc(0.5 * var(--m));
+    max-width: 40rem;
+    padding: 3rem;
+}
+
+#footer_logo {
+    height: calc(3 * var(--m));
+}
+
+footer img {
+    height: calc(0.7 * var(--m));
+    object-fit: cover;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+footer .link {
+    width: calc(0.8 * var(--m));
+    height: calc(0.8 * var(--m));
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: calc(0.1 * var(--m));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --m: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    footer {
+        flex-direction: column;
+        padding: 5rem;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    footer .col {
+        width: 100%;
+    }
+}

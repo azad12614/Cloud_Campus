@@ -155,7 +155,7 @@ const Navbar = () => {
                       <Link to="/cgpa">CGPA Calculator</Link>
                     </li>
                     <li className="p-2">
-                      <Link to="/fee">FEE Calculator</Link>
+                      <Link to="/fee">FEE Structures</Link>
                     </li>
                     <li className="p-2">
                       <a href="https://opac.iiuc.ac.bd/" target="_blank">Library</a>

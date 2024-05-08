@@ -31,16 +31,16 @@ function Course() {
                                 {`${course?.credit}`}
                             </span>
                         </div>
-                        <div className="ag-courses-item_co">
-                            Co-requisite:
-                            <span className="ag-courses-item_value">
-                                {`${course?.coCourse}`}
-                            </span>
-                        </div>
                         <div className="ag-courses-item_pre">
                             Pre-requisite:
                             <span className="ag-courses-item_value">
                                 {`${course?.preCourse}`}
+                            </span>
+                        </div>
+                        <div className="ag-courses-item_co">
+                            Co-requisite:
+                            <span className="ag-courses-item_value">
+                                {`${course?.coCourse}`}
                             </span>
                         </div>
                     </a>
