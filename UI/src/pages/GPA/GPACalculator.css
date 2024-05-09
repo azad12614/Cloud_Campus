@@ -7,7 +7,7 @@
 
 }
 
-.container {
+.cgpa_container {
     padding: 0;
     margin: 0;
     display: flex;
@@ -19,7 +19,7 @@
     font-weight: bold;
 }
 
-.container h1 {
+.cgpa_container h1 {
     margin: 0;
     margin-bottom: 10px;
     text-align: center;

@@ -60,7 +60,7 @@ const GPACalculator = () => {
         <>
             <Navbar />
             <Section text={"CGPA Calculator"}></Section>
-            <div className='container'>
+            <div className='cgpa_container'>
                 <div className="section">
                     <CourseForm onAddCourse={handleAddCourse} />
                     <CourseList courses={courses} onDeleteCourse={handleDeleteCourse} calculateGPA={calculateGPA} totalCredit={totalCredit} />
