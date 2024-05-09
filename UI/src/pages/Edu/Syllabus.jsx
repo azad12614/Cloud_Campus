@@ -7,17 +7,17 @@ function Syllabus() {
         <>
             <div className="d-flex flex-column max-w-full overflow-x-hidden">
                 <Navbar />
-                <div className='lg:mt-40 mt-28'>
+                <div className='mt-44'>
                     <object
                         data='../../src\assets\CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf'
                         type="application/pdf"
                         width="100%"
-                        height="850"
+                        height="680"
                     >
                         <iframe
-                            src='../../src\assets\CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf'
+                            src='../../src/assets/CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf'
                             width="100%"
-                            height="850"
+                            height="680"
                         >
                             <p>This browser does not support PDF!</p>
                         </iframe>
