@@ -10,6 +10,7 @@ import Photo from "./pages/Others/Photo.jsx";
 import Member from "./pages/People/Member.jsx";
 import Teacher from "./pages/People/Teacher.jsx";
 import Class from "./pages/Schedule/Class.jsx";
+import GPACalculator from "./pages/GPA/GPACalculator.jsx";
 
 function App() {
   fetch("https://cloud-xmqm.onrender.com/");
@@ -27,6 +28,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="photo" element={<Photo />} />
         <Route path="fee" element={<Fee />} />
+        <Route path="cgpa" element={<GPACalculator />} />
       </Routes>
     </div>
   )
