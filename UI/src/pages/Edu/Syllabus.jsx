@@ -9,7 +9,7 @@ function Syllabus() {
                 <Navbar />
                 <div className='mt-44'>
                     <object
-                        data='../../src\assets\CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf'
+                        data='../../src/assets/CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf'
                         type="application/pdf"
                         width="100%"
                         height="680"
