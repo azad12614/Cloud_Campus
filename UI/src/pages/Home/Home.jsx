@@ -1,8 +1,9 @@
-import Navbar from "../../components/Navbar";
-import Links from "../../components/Links";
-import Footer from "../../components/Footer";
-import "./Home.css";
 import IIUC_CSE from "../../assets/IIUC_CSE.png";
+import Footer from "../../components/Footer";
+import Links from "../../components/Links";
+import Navbar from "../../components/Navbar";
+// import Testimonials from "../../components/Testimonials";
+import "./Home.css";
 
 function Heros() {
     return (
@@ -29,6 +30,7 @@ function Heros() {
                     </div>
                 </div>
             </section>
+            {/* <Testimonials></Testimonials> */}
             <Links></Links>
             <Footer></Footer>
         </>
