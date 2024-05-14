@@ -27,7 +27,7 @@
     border-radius: 5px; 
     border-radius: 6px;
     padding: 20px; */
-    background: rgb(0, 46, 131, 0.9);
+    background: #01303f;
     border-radius: 16px;
     box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     -webkit-box-shadow: 5px 5px 10px #353535, -5px -5px 10px #3b3b3b;
@@ -50,7 +50,7 @@
 }
 
 .timeline-content>p>span {
-    color: #00ff0d;
+    color: #FF0000;
 }
 
 .timeline-component {
