@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.testimonial-box {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+}
+
+.th1 {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    color: #01303f;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.thr {
+    border-radius: 1rem;
+    border-width: 0.6rem;
+    border-style: double;
+    border-color: #01303f;
+    color: #01303f;
+    margin-inline: 5rem;
+    margin-bottom: 0.6rem;
+}
+
+.testimonial-box .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    background-color: #01303f;
+    color: #FFF;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    width: 70%;
+    position: relative;
+}
+
+.testimonial-box .stars {
+    font-size: 20px;
+}
+
+.testimonial-box .testimonial {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    height: 100%;
+    line-height: 28px;
+    margin: 0;
+}
+
+.testimonial-box .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testimonial-box .user .user-image {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.testimonial-box .user .user-details {
+    text-align: center;
+}
+
+.testimonial-box .user .username {
+    margin: 0;
+    font-size: 20px;
+}
+
+.testimonial-box .user .role {
+    margin: 0;
+    font-size: 16px;
+}
+
+.testimonial-box .progress-dots {
+    display: flex;
+    gap: 5px;
+}
+
+.testimonial-box .progress-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.testimonial-box .progress-dot.active {
+    background-color: #555;
+}
+
+.testimonial-box .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    color: #01303f;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.testimonial-box .btn:hover {
+    background-color: #eee;
+}
+
+.testimonial-box #btn-prev {
+    left: 25px;
+}
+
+.testimonial-box #btn-next {
+    right: 25px;
+}
+
+@media screen and (max-width: 500px) {
+    .testimonial-box .testimonial-container {
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+    }
+}

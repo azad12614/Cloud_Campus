@@ -2,7 +2,7 @@ import IIUC_CSE from "../../assets/IIUC_CSE.png";
 import Footer from "../../components/Footer";
 import Links from "../../components/Links";
 import Navbar from "../../components/Navbar";
-// import Testimonials from "../../components/Testimonials";
+import Testimonials from "../../components/Testimonials";
 import "./Home.css";
 
 function Heros() {
@@ -30,7 +30,7 @@ function Heros() {
                     </div>
                 </div>
             </section>
-            {/* <Testimonials></Testimonials> */}
+            <Testimonials></Testimonials>
             <Links></Links>
             <Footer></Footer>
         </>
