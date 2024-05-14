@@ -56,7 +56,7 @@ const Navbar = () => {
                       <Link to={"/class"}>Class Schedule</Link>
                     </li>
                     <li className="p-2">
-                      <a href={"https://www.iiuc.ac.bd/home/transport"} target="_blank">Bus Schedule</a>
+                      <Link to={"/bus"}>Bus Schedule</Link>
                     </li>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-// import Testimonials from "./components/Testimonials.jsx";
+import Bus from "./pages/Schedule/Bus.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Course from "./pages/Course/Courses.jsx";
 import Academic from "./pages/Edu/Academic.jsx";
@@ -26,7 +26,7 @@ function App() {
         <Route path="member" element={<Member />} />
         <Route path="ac" element={<Academic />} />
         <Route path="syllabus" element={<Syllabus />} />
-        {/* <Route path="que" element={<Testimonials />} /> */}
+        <Route path="bus" element={<Bus />} />
         <Route path="photo" element={<Photo />} />
         <Route path="cgpa" element={<GPACalculator />} />
         <Route path="fee" element={<Fee />} />

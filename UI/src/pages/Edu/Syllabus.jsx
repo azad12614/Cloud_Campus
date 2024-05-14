@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import pdf from "../../assets/CSE_Syllabus.pdf";
 
 function Syllabus() {
     return (
@@ -8,24 +9,16 @@ function Syllabus() {
             <div className="d-flex flex-column max-w-full overflow-x-hidden">
                 <Navbar />
                 <div className='mt-44'>
-                    {/* <object
-                        data='../../src/assets/CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf'
-                        type="application/pdf"
-                        width="100%"
+                    <iframe
+                        src={pdf}
+                        width="1000"
                         height="680"
                     >
-                        <iframe
-                            src='../../src/assets/CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf'
-                            width="100%"
-                            height="680"
-                        >
-                            <p>This browser does not support PDF!</p>
-                        </iframe>
-                    </object> */}
-                    <object data="../../src/assets/CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf" type="application/pdf"
+                    </iframe>
+                    {/* <object data="../../src/assets/CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf" type="application/pdf"
                         width="100%"
                         height="680"
-                    ></object>
+                    ></object> */}
                 </div>
                 {/* <div className="fixed bottom-0 w-full z-[10]"> */}
                 <Footer></Footer>
