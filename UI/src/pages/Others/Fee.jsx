@@ -10,7 +10,7 @@ function fee() {
             <Navbar></Navbar>
             <Section text={"Fee Structures"}></Section>
 
-            <div class="relative font-inter antialiased text-[#000]">
+            <div class="relative font-inter antialiased text-[#000] my-8">
 
                 <main class="relative flex flex-col justify-center bg-slate-50 overflow-hidden">
                     <div class="w-full mx-auto px-4 md:px-5 py-10">
@@ -273,7 +273,7 @@ function fee() {
                 </main>
             </div>
 
-            <div className='max-w-2xl mx-auto mb-8'>
+            <div className='max-w-2xl mx-auto mt-2 mb-8'>
                 <a class="enroll" href='https://www.iiuc.ac.bd/home/fee-calculator'>
                     Fee Calculator
                 </a>

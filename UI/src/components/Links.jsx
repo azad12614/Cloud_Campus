@@ -8,12 +8,6 @@ function Links() {
         <hr />
         <ul>
 
-          <a href={`https://www.iiuc.ac.bd/academic/bcalendar/`} target="_blank">
-            <li className="text-4xl">
-              Academic Calendar
-            </li>
-          </a>
-
           <a href={`https://www.iiuc.ac.bd/home/transport`} target="_blank">
             <li className="text-4xl">
               Bus Schedule

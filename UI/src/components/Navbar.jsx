@@ -120,10 +120,7 @@ const Navbar = () => {
                       <Link to="/syllabus">Syllabus</Link>
                     </li>
                     <li className="p-2">
-                      <Link to="/que">Question</Link>
-                    </li>
-                    <li className="p-2">
-                      <Link to="/resource">Resource</Link>
+                      <a href="https://drive.google.com/drive/folders/1j6P06WLqRLESwiWYiPlTa4ui-m8g8C1i" target="_blank">Resource</a>
                     </li>
                   </div>
                 </div>
@@ -152,7 +149,7 @@ const Navbar = () => {
                       <Link to="/photo">Gallery</Link>
                     </li>
                     <li className="p-2">
-                      <Link to="/cgpa">CGPA Calculator</Link>
+                      <Link to="/cgpa">GPA Calculator</Link>
                     </li>
                     <li className="p-2">
                       <Link to="/fee">FEE Structures</Link>

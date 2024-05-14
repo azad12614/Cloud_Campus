@@ -8,8 +8,6 @@
 }
 
 .cgpa_container {
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,6 +147,6 @@ input {
 }
 
 .section2 h3 {
-    font-size: 14px;
+    font-size: 26px;
     text-align: center;
 }

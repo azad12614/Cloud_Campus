@@ -8,7 +8,7 @@ function Syllabus() {
             <div className="d-flex flex-column max-w-full overflow-x-hidden">
                 <Navbar />
                 <div className='mt-44'>
-                    <object
+                    {/* <object
                         data='../../src/assets/CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf'
                         type="application/pdf"
                         width="100%"
@@ -21,7 +21,11 @@ function Syllabus() {
                         >
                             <p>This browser does not support PDF!</p>
                         </iframe>
-                    </object>
+                    </object> */}
+                    <object data="../../src/assets/CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf" type="application/pdf"
+                        width="100%"
+                        height="680"
+                    ></object>
                 </div>
                 {/* <div className="fixed bottom-0 w-full z-[10]"> */}
                 <Footer></Footer>

@@ -60,7 +60,7 @@ footer .col2,
 footer .col3 {
     background-color: #02577a;
     border-radius: calc(0.5 * var(--m));
-    max-width: 35rem;
+    max-width: 40rem;
     padding: 3rem;
 }
 
