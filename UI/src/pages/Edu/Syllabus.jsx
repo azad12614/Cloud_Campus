@@ -11,8 +11,8 @@ function Syllabus() {
                 <div className='mt-44'>
                     <iframe
                         src={pdf}
-                        width="1000"
-                        height="680"
+                        width="100%"
+                        height="100%"
                     >
                     </iframe>
                     {/* <object data="../../src/assets/CSE_Syllabus-Autumn-2022-UGC (updated 20.09.22) 12PM.pdf" type="application/pdf"
