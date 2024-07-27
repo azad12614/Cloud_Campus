@@ -27,10 +27,9 @@ This project was completed within a timeframe of 3-4 months as a team effort by 
 
 **Team Members:**
 
-* [https://github.com/ariful213026](Ariful)
-* [https://github.com/abdur65](Abdur)
-* [https://github.com/azad12614](Azad)
-
+* [Ariful](https://github.com/ariful213026)
+* [Abdur](https://github.com/abdur65)
+* [Azad]([Azad](https://github.com/azad12614))
 
 **Technology Stack:**
 
