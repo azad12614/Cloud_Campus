@@ -5,10 +5,10 @@ import Navbar from "../../components/Navbar";
 import Section from "../../components/Section";
 import "./Contact.css";
 
-import map from "../../assets/google-maps.png";
 import fb from "../../assets/facebook.png";
-import yt from "../../assets/youtube.png";
+import map from "../../assets/google-maps.png";
 import ln from "../../assets/linkedin.png";
+import yt from "../../assets/youtube.png";
 
 function Contact() {
     return (
@@ -16,14 +16,11 @@ function Contact() {
             <Navbar />
             <section id="contact">
 
-                {/* <h1 class="section-header">Contact</h1> */}
-
                 <Section text={"Contact"}></Section>
 
                 <div class="contact-wrapper">
 
                     {/* <!-- Left contact page --> */}
-
                     <form action='mailto:c213106@ugrad.iiuc.ac.bd' id="contact-form" class="form-horizontal" method='POST'>
                         <div class="group">
                             <div class="col-sm-12">
@@ -48,8 +45,7 @@ function Contact() {
 
                     </form>
 
-                    {/* <!-- Left contact page --> */}
-
+                    {/* <!-- Right contact page --> */}
                     <div class="direct-contact-container">
                         <ul class="contact-list">
                             <li class="list-item"><i class="fa fa-map-marker fa-2xl"><span class="contact-text place"><a href='https://www.google.com/maps/place/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95+%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%80+%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F+%E0%A6%9A%E0%A6%9F%E0%A7%8D%E0%A6%9F%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE/@22.4965971,91.7210784,17z/data=!3m1!4b1!4m6!3m5!1s0x30ad2777a615585d:0xdcf908f6e4f3a713!8m2!3d22.4965971!4d91.7210784!16zL20vMDkwejU0?entry=ttu' title='Take me to a ride' target='_blank'>Kumira, Chattogram-4318</a></span></i></li>

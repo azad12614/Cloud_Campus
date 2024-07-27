@@ -1,24 +1,7 @@
-/* body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    padding-bottom: 100px;
-} */
-
 #contact {
     width: 100%;
     height: 100%;
 }
-
-/* .section-header {
-    text-align: center;
-    margin: 0 auto;
-    padding: 40px 0;
-    font: 300 60px 'Oswald', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-} */
 
 .contact-wrapper {
     display: flex;
@@ -31,7 +14,6 @@
 }
 
 /* Left contact page */
-
 .form-horizontal {
     float: left;
     max-width: 400px;
