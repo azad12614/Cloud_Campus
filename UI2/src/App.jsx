@@ -37,7 +37,7 @@ function App() {
       path: "/view-member",
       element: <ViewMember />,
       loader: function () {
-        return fetch(URL + "/all-members");
+        return fetch(`${URL}/all-members`);
       },
     },
     {
@@ -62,14 +62,14 @@ function App() {
       path: "/view-course",
       element: <ViewCourse />,
       loader: function () {
-        return fetch(`https://cloud-campus-backend.onrender.com/all-courses`);
+        return fetch(`${URL}/all-courses`);
       },
     },
     {
       path: "/manage-course",
       element: <ManageCourse />,
       loader: function () {
-        return fetch(`https://cloud-campus-backend.onrender.com/-courses`);
+        return fetch(`${URL}/all-courses`);
       },
     },
     {
