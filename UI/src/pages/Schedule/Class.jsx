@@ -12,7 +12,7 @@ function Class() {
 
     const [Sections, setSections] = useState([]);
     useEffect(() => {
-        fetch(`https://cloud-campus-backend.onrender.comsections`)
+        fetch(`https://cloud-campus-backend.onrender.com/sections`)
             .then((res) => res.json())
             .then((data) => setSections(data));
     }, []);

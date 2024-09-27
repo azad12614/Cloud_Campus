@@ -69,7 +69,7 @@ function App() {
       path: "/manage-course",
       element: <ManageCourse />,
       loader: function () {
-        return fetch(`https://cloud-campus-backend.onrender.coml-courses`);
+        return fetch(`https://cloud-campus-backend.onrender.com/-courses`);
       },
     },
     {

@@ -29,7 +29,7 @@ function M_Form() {
       od,
       image,
     };
-    fetch("https://cloud-campus-backend.onrender.comnrender.com/add-sir", {
+    fetch("https://cloud-campus-backend.onrender.com/add-sir", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
