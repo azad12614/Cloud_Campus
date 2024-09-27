@@ -23,7 +23,7 @@ import ManageTeacher from "./pages/Manage/Teacher";
 import UpdateTeacher from "./pages/Update/Teacher";
 
 function App() {
-  const URL = "https://cloud-campus-backend.onrender.com
+  const URL = "https://cloud-campus-backend.onrender.com"
   const router = createBrowserRouter([
     {
       path: "/",
