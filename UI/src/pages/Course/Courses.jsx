@@ -8,7 +8,7 @@ function Course() {
 
     const [Courses, setCourses] = useState([]);
     useEffect(() => {
-        fetch(`https://cloud-xmqm.onrender.com/all-courses`)
+        fetch(`https://cloud-campus-devloper.onrender.com/all-courses`)
             .then((res) => res.json())
             .then((data) => setCourses(data));
     }, []);

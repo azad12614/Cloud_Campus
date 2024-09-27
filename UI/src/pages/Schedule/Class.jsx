@@ -12,7 +12,7 @@ function Class() {
 
     const [Sections, setSections] = useState([]);
     useEffect(() => {
-        fetch(`https://cloud-xmqm.onrender.com/all-sections`)
+        fetch(`https://cloud-campus-devloper.onrender.com/all-sections`)
             .then((res) => res.json())
             .then((data) => setSections(data));
     }, []);

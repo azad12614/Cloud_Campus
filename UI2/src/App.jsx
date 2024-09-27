@@ -23,7 +23,7 @@ import ManageTeacher from "./pages/Manage/Teacher";
 import UpdateTeacher from "./pages/Update/Teacher";
 
 function App() {
-  const URL = "https://cloud-xmqm.onrender.com";
+  const URL = "https://cloud-campus-devloper.onrender.com";
   const router = createBrowserRouter([
     {
       path: "/",
@@ -62,14 +62,14 @@ function App() {
       path: "/view-course",
       element: <ViewCourse />,
       loader: function () {
-        return fetch(`https://cloud-xmqm.onrender.com/all-courses`);
+        return fetch(`https://cloud-campus-devloper.onrender.com/all-courses`);
       },
     },
     {
       path: "/manage-course",
       element: <ManageCourse />,
       loader: function () {
-        return fetch(`https://cloud-xmqm.onrender.com/all-courses`);
+        return fetch(`https://cloud-campus-devloper.onrender.com/all-courses`);
       },
     },
     {

@@ -14,7 +14,7 @@ import Teacher from "./pages/People/Teacher.jsx";
 import Class from "./pages/Schedule/Class.jsx";
 
 function App() {
-  fetch("https://cloud-xmqm.onrender.com/");
+  fetch("https://cloud-campus-devloper.onrender.com/");
 
   return (
     <div className="App">

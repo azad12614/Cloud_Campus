@@ -18,7 +18,7 @@ function Form() {
       company,
       image
     };
-    fetch(`https://cloud-xmqm.onrender.com/update-member/${member?._id}`, {
+    fetch(`https://cloud-campus-devloper.onrender.com/update-member/${member?._id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
