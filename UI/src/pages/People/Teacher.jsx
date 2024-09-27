@@ -9,7 +9,7 @@ function Teacher() {
 
   const [Sir, setSir] = useState([]);
   useEffect(() => {
-    fetch(`https://cloud-campus-devloper.onrender.com/all-sir`)
+    fetch(`https://cloud-campus-backend.onrender.comll-sir`)
       .then((res) => res.json())
       .then((data) => setSir(data));
   }, []);

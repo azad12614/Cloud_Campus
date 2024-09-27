@@ -22,7 +22,7 @@ function Form() {
             preCourse,
             image,
         };
-        fetch(`https://cloud-campus-devloper.onrender.com/update-course/${course?._id}`, {
+        fetch(`https://cloud-campus-backend.onrender.com/update-course/${course?._id}`, {
             method: "PUT",
             headers: {
                 "Content-type": "application/json",

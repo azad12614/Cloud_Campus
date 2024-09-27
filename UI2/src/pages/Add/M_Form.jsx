@@ -17,7 +17,7 @@ function M_Form() {
       company,
       image,
     };
-    fetch("https://cloud-campus-devloper.onrender.com/add-member", {
+    fetch("https://cloud-campus-backend.onrender.com/add-member", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
