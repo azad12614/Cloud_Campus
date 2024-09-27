@@ -11,7 +11,7 @@ function M_Form() {
       name,
       image,
     };
-    fetch("https://cloud-xmqm.onrender.com/add-section", {
+    fetch("https://cloud-campus-devloper.onrender.com/add-section", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
