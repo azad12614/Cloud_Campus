@@ -21,7 +21,7 @@ function M_Form() {
       preCourse,
       image,
     };
-    fetch("https://cloud-campus-devloper.onrender.com/add-course", {
+    fetch("https://cloud-campus-backend.onrender.com/add-course", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

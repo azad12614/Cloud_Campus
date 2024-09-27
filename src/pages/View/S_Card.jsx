@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const Card = () => {
     const [Sections, setSections] = useState([]);
     useEffect(() => {
-        fetch(`https://cloud-campus-devloper.onrender.com/all-sections`)
+        fetch(`https://cloud-campus-backend.onrender.com/all-sections`)
             .then((res) => res.json())
             .then((data) => setSections(data));
     }, []);

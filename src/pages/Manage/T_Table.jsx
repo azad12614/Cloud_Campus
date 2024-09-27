@@ -8,7 +8,7 @@ function Table() {
   const navigate = useNavigate();
   const Teacher = useLoaderData();
   function handleDelete(id) {
-    fetch(`https://cloud-campus-devloper.onrender.com/delete-sir/${id}`, {
+    fetch(`https://cloud-campus-backend.onrender.com/delete-sir/${id}`, {
       method: "DELETE"
     }).then((res) => res.json())
       .then((data) => {
