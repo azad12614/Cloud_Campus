@@ -46,7 +46,3 @@ This project was completed within a timeframe of 3-4 months as a team effort by 
 4. Start the development server using `npm start`. (This will typically run the application on port 3000 by default.)
 
 Feel free to explore my work and connect with me!
-
-#MIT License
-
-**Copyright (c) 2024 Abdullah Al Azad**
