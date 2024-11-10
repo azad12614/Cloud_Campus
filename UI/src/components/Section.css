@@ -27,7 +27,7 @@
     color: #363833;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    font-size: clamp(4rem, 8vw, 15rem);
+    font-size: clamp(4rem, 6vw, 15rem);
     padding-top: clamp(1rem, 2vw, 3rem);
     grid-area: overlap;
     letter-spacing: 1px;

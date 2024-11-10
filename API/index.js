@@ -9,10 +9,13 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-const uri = `${process.env.DB_URL}`;
+// https://github.com/iamshaunjp/MERN-Auth-Tutorial/tree/lesson-17
+// https://www.youtube.com/watch?v=3yaHWZdH0FM&list=PL4cUxeGkcC9g8OhpOZxNdhXggFz2lOuCT&index=10&ab_channel=NetNinja
+
+const url = `${process.env.DB_URL}`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
-const client = new MongoClient(uri, {
+const client = new MongoClient(url, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
