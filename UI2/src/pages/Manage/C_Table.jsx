@@ -38,30 +38,25 @@ function Table() {
     setError(null);
 
     console.log(course);
+    const updatedCourse = { ...course, semester: "9" };
+    console.log(updatedCourse);
 
-    try {
-      const updatedCourse = { ...course, semester: "9" };
-      console.log(updatedCourse);
-      fetch(
-        `https://cloud-campus-backend.onrender.com/update-course/${course?._id}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify(updatedCourse),
+    fetch(
+      `https://cloud-campus-backend.onrender.com/update-course/${course?._id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(updatedCourse),
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.acknowledged) {
+          navigate("/manage-course");
         }
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.acknowledged) {
-            navigate("/manage-course");
-          }
-        });
-    } catch (error) {
-      console.error("Error updating courses:", error);
-      setError(error.message); // Set the error message from the caught error
-    }
+      });
   };
 
   return (
