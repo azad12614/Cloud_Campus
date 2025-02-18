@@ -1,348 +1,353 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
 
 body {
-    background-color: #ffffff;
-    color: #FFF;
+  background-color: #ffffff;
+  color: #fff;
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #01303f;
-    font-family: "Merriweather", "Serif";
+  font-size: 3rem;
+  font-weight: 300;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #01303f;
+  font-family: "Merriweather", "Serif";
 }
 
 .tabList {
-    color: #ffffff;
-    font-size: x-large;
-    font-weight: bold;
-    height: 50px;
-    width: 75px;
-    background: #02a9f7;
-    padding: 0;
-    margin: 0;
-    border-bottom-left-radius: 8%;
-    border-bottom-right-radius: 8%;
+  color: #ffffff;
+  font-size: x-large;
+  font-weight: bold;
+  height: 50px;
+  width: 75px;
+  background: #02a9f7;
+  padding: 0;
+  margin: 0;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
 }
 
 .tabList:nth-child(1) {
-    margin-left: 34vw;
-    margin-right: 0;
+  margin-left: 34vw;
+  margin-right: 0;
 }
 
 .ag-format-container {
-    width: 1142px;
-    margin: auto;
+  width: 1142px;
+  margin: auto;
+}
+
+.semester-credits {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  color: #01303f;
+  font-family: "Merriweather", "Serif";
+  font-weight: bold;
 }
 
 .ag-courses_box {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-wrap: wrap;
-    padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
 }
 
 .ag-courses_item {
-    -ms-flex-preferred-size: calc(33.33333% - 30px);
-    flex-basis: calc(33.33333% - 30px);
-    overflow: hidden;
-    border-radius: 28px;
-    margin: 0 15px 20px;
-
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+  overflow: hidden;
+  border-radius: 28px;
+  margin: 0 15px 20px;
 }
 
 .ag-courses-item_link {
-    display: block;
-    padding: 30px 20px;
-    background-color: #121212;
-    overflow: hidden;
-    position: relative;
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  overflow: hidden;
+  position: relative;
 }
 
 #ag-courses-item_code {
-    overflow: hidden;
-    font-weight: bold;
-    font-size: 35px;
-    color: #89d6fb;
-    z-index: 2;
-    position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 35px;
+  color: #89d6fb;
+  z-index: 2;
+  position: relative;
 }
 
 .ag-courses-item_name {
-    overflow: hidden;
-    font-weight: bold;
-    font-size: 30px;
-    color: #FFF;
-    z-index: 2;
-    position: relative;
-    min-height: 13rem;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  min-height: 13rem;
 }
 
 .ag-courses-item_credit {
-    padding-top: 3rem;
-    font-size: 20px;
-    color: #FFF;
-    z-index: 2;
-    position: relative;
+  padding-top: 3rem;
+  font-size: 20px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
 }
 
 .ag-courses-item_co {
-    font-size: 20px;
-    color: #FFF;
-    z-index: 2;
-    position: relative;
+  font-size: 20px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
 }
 
 .ag-courses-item_pre {
-    font-size: 20px;
-    color: #FFF;
-    z-index: 2;
-    position: relative;
+  font-size: 20px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
 }
 
 .ag-courses-item_value {
-    padding-left: 2px;
-    font-weight: bold;
-    color: #02a9f7;
-    -webkit-transition: color .5s ease;
-    -o-transition: color .5s ease;
-    transition: color .5s ease
+  padding-left: 2px;
+  font-weight: bold;
+  color: #02a9f7;
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 .ag-courses-item_bg {
-    height: 128px;
-    width: 128px;
-    background-color: #02a9f7;
-    z-index: 1;
-    position: absolute;
-    top: -75px;
-    right: -75px;
-    border-radius: 50%;
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+  height: 128px;
+  width: 128px;
+  background-color: #02a9f7;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-    background-color: #3ecd5e;
+  background-color: #3ecd5e;
 }
 
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-    background-color: #e44002;
+  background-color: #e44002;
 }
 
 .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-    background-color: #952aff;
+  background-color: #952aff;
 }
 
 .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-    background-color: #cd3e94;
+  background-color: #cd3e94;
 }
 
 .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-    background-color: #4c49ea;
+  background-color: #4c49ea;
 }
 
 .ag-courses-item_link:hover,
 .ag-courses-item_link:hover .ag-courses-item_value,
 .ag-courses-item_link:hover #ag-courses-item_code {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
-    -webkit-transform: scale(10);
-    -ms-transform: scale(10);
-    transform: scale(10);
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
 }
 
 @media only screen and (max-width: 1600px) {
-
-    .tabList:nth-child(1) {
-        margin-left: 32vw;
-    }
+  .tabList:nth-child(1) {
+    margin-left: 32vw;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-
-    .tabList:nth-child(1) {
-        margin-left: 28vw;
-    }
+  .tabList:nth-child(1) {
+    margin-left: 28vw;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
+  .tabList:nth-child(1) {
+    margin-left: 25vw;
+  }
 
-    .tabList:nth-child(1) {
-        margin-left: 25vw;
-    }
+  .ag-format-container {
+    width: 80%;
+  }
 
-    .ag-format-container {
-        width: 80%;
-    }
-
-    .ag-courses_item {
-        -ms-flex-preferred-size: calc(50% - 30px);
-        flex-basis: calc(50% - 30px);
-    }
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
 }
 
 @media only screen and (max-width: 1000px) {
+  .tabList:nth-child(1) {
+    margin-left: 18vw;
+  }
 
-    .tabList:nth-child(1) {
-        margin-left: 18vw;
-    }
+  .ag-format-container {
+    width: 90%;
+  }
 
-    .ag-format-container {
-        width: 90%;
-    }
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
 
-    .ag-courses_item {
-        -ms-flex-preferred-size: calc(50% - 30px);
-        flex-basis: calc(50% - 30px);
-    }
-
-    .ag-courses-item_name,
-    .ag-courses-item_code {
-        font-size: 24px;
-        margin-bottom: -15px;
-    }
+  .ag-courses-item_name,
+  .ag-courses-item_code {
+    font-size: 24px;
+    margin-bottom: -15px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+  .tabList:nth-child(1) {
+    margin-left: 12vw;
+  }
 
-    .tabList:nth-child(1) {
-        margin-left: 12vw;
-    }
+  .ag-format-container {
+    width: 90%;
+  }
 
-    .ag-format-container {
-        width: 90%;
-    }
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 10px);
+    flex-basis: calc(50% - 10px);
+    margin: 0 5px 10px;
+  }
 
-    .ag-courses_item {
-        -ms-flex-preferred-size: calc(50% - 10px);
-        flex-basis: calc(50% - 10px);
-        margin: 0 5px 10px;
-    }
-
-    .ag-courses-item_name,
-    .ag-courses-item_code {
-        font-size: 20px;
-        margin-bottom: -15px;
-    }
+  .ag-courses-item_name,
+  .ag-courses-item_code {
+    font-size: 20px;
+    margin-bottom: -15px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    h2 {
-        margin-left: 3vw;
-        text-align: start;
-    }
+  h2 {
+    margin-left: 3vw;
+    text-align: start;
+  }
 
-    .tabList:nth-child(1) {
-        margin-left: 3vw;
-    }
+  .tabList:nth-child(1) {
+    margin-left: 3vw;
+  }
 
-    .ag-courses_item {
-        -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
-        margin: auto;
-        margin-bottom: 15px;
-    }
+  .ag-courses_item {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
 
-    .ag-courses-item_name,
-    .ag-courses-item_code {
-        min-height: 7rem;
-        line-height: 1.2;
-        font-size: 22px;
-    }
+  .ag-courses-item_name,
+  .ag-courses-item_code {
+    min-height: 7rem;
+    line-height: 1.2;
+    font-size: 22px;
+  }
 
-    .ag-courses-item_link {
-        padding: 20px 30px;
-    }
+  .ag-courses-item_link {
+    padding: 20px 30px;
+  }
 
-    .ag-courses-item_credit,
-    .ag-courses-item_co,
-    .ag-courses-item_pre {
-        font-size: 18px;
-    }
+  .ag-courses-item_credit,
+  .ag-courses-item_co,
+  .ag-courses-item_pre {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    h2 {
-        margin-left: 3vw;
-    }
+  h2 {
+    margin-left: 3vw;
+  }
 
-    .tabList:nth-child(1) {
-        margin-left: 3vw;
-    }
+  .tabList:nth-child(1) {
+    margin-left: 3vw;
+  }
 
-    .tabList {
-        font-size: large;
-        font-weight: bold;
-        height: 5rem;
-        width: 7.5rem;
-        border-bottom-left-radius: 12%;
-        border-bottom-right-radius: 12%;
-    }
+  .tabList {
+    font-size: large;
+    font-weight: bold;
+    height: 5rem;
+    width: 7.5rem;
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 12%;
+  }
 
-    .ag-courses_item {
-        -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
-    }
+  .ag-courses_item {
+    -ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+  }
 }
 
 @media only screen and (max-width: 490px) {
-    h2 {
-        margin-left: 2vw;
-        font-size: 2rem;
-    }
+  h2 {
+    margin-left: 2vw;
+    font-size: 2rem;
+  }
 
-    .tabList:nth-child(1) {
-        margin-left: 2vw;
-    }
+  .tabList:nth-child(1) {
+    margin-left: 2vw;
+  }
 
-    .tabList {
-        font-size: medium;
-        font-weight: bold;
-        height: 4rem;
-        width: 6.5rem;
-        border-bottom-left-radius: 16%;
-        border-bottom-right-radius: 16%;
-    }
+  .tabList {
+    font-size: medium;
+    font-weight: bold;
+    height: 4rem;
+    width: 6.5rem;
+    border-bottom-left-radius: 16%;
+    border-bottom-right-radius: 16%;
+  }
 
-    .ag-courses_item {
-        -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
-    }
+  .ag-courses_item {
+    -ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+  }
 
-    .ag-courses-item_name,
-    .ag-courses-item_code {
-        font-size: 20px;
-    }
+  .ag-courses-item_name,
+  .ag-courses-item_code {
+    font-size: 20px;
+  }
 
-    .ag-courses-item_link {
-        padding: 20px 20px;
-    }
+  .ag-courses-item_link {
+    padding: 20px 20px;
+  }
 
-    .ag-courses-item_credit,
-    .ag-courses-item_co,
-    .ag-courses-item_pre {
-        font-size: 16px;
-    }
+  .ag-courses-item_credit,
+  .ag-courses-item_co,
+  .ag-courses-item_pre {
+    font-size: 16px;
+  }
 }
 
-
 @media only screen and (max-width: 450px) {
-    h2 {
-        margin-left: 1vw;
-    }
+  h2 {
+    margin-left: 1vw;
+  }
 
-    .tabList:nth-child(1) {
-        margin-left: 1vw;
-    }
+  .tabList:nth-child(1) {
+    margin-left: 1vw;
+  }
 }

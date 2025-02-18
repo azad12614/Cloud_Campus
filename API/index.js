@@ -33,7 +33,6 @@ async function run() {
     // API 1
     app.post("/add-member", async (req, res) => {
       const member = req.body;
-      // insert mongodb
       const result = await Alumni.insertOne(member);
       res.send(result);
     });
@@ -57,7 +56,6 @@ async function run() {
       const memberId = { _id: new ObjectId(id) };
       const memberUpdate = req.body;
       const updates = { $set: memberUpdate };
-      // update mongodb
       const result = await Alumni.updateOne(memberId, updates);
       res.send(result);
     });
@@ -66,7 +64,6 @@ async function run() {
     app.delete("/delete-member/:id", async (req, res) => {
       const id = req.params.id;
       const memberId = { _id: new ObjectId(id) };
-      // delete mongodb
       const result = await Alumni.deleteOne(memberId);
       res.send(result);
     });
@@ -74,7 +71,6 @@ async function run() {
     //API 6
     app.post("/add-course", async (req, res) => {
       const subject = req.body;
-      // insert mongodb
       const result = await Course.insertOne(subject);
       res.send(result);
     });
@@ -98,7 +94,6 @@ async function run() {
       const subjectId = { _id: new ObjectId(id) };
       const subjectUpdate = req.body;
       const updates = { $set: subjectUpdate };
-      // update mongodb
       const result = await Course.updateOne(subjectId, updates);
       res.send(result);
     });
@@ -107,7 +102,6 @@ async function run() {
     app.delete("/delete-course/:id", async (req, res) => {
       const id = req.params.id;
       const subjectId = { _id: new ObjectId(id) };
-      // delete mongodb
       const result = await Course.deleteOne(subjectId);
       res.send(result);
     });
@@ -115,7 +109,6 @@ async function run() {
     // API 11
     app.post("/add-section", async (req, res) => {
       const section = req.body;
-      // insert mongodb
       const result = await Section.insertOne(section);
       res.send(result);
     });
@@ -139,7 +132,6 @@ async function run() {
       const sectionId = { _id: new ObjectId(id) };
       const sectionUpdate = req.body;
       const updates = { $set: sectionUpdate };
-      // update mongodb
       const result = await Section.updateOne(sectionId, updates);
       res.send(result);
     });
@@ -148,7 +140,6 @@ async function run() {
     app.delete("/delete-section/:id", async (req, res) => {
       const id = req.params.id;
       const sectionId = { _id: new ObjectId(id) };
-      // delete mongodb
       const result = await Section.deleteOne(sectionId);
       res.send(result);
     });
@@ -156,7 +147,6 @@ async function run() {
     // API 16
     app.post("/add-sir", async (req, res) => {
       const sir = req.body;
-      // insert mongodb
       const result = await Teacher.insertOne(sir);
       res.send(result);
     });
@@ -180,7 +170,6 @@ async function run() {
       const sirId = { _id: new ObjectId(id) };
       const sirUpdate = req.body;
       const updates = { $set: sirUpdate };
-      // update mongodb
       const result = await Teacher.updateOne(sirId, updates);
       res.send(result);
     });
@@ -189,7 +178,6 @@ async function run() {
     app.delete("/delete-sir/:id", async (req, res) => {
       const id = req.params.id;
       const sirId = { _id: new ObjectId(id) };
-      // delete mongodb
       const result = await Teacher.deleteOne(sirId);
       res.send(result);
     });
@@ -212,5 +200,7 @@ app.get("/", (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
-  console.log(`Example app listening at https://cloud-campus-backend.onrender.com/`);
+  console.log(
+    `Example app listening at https://cloud-campus-backend.onrender.com/`
+  );
 });

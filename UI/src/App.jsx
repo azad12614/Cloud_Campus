@@ -15,6 +15,7 @@ import Class from "./pages/Schedule/Class.jsx";
 
 function App() {
   fetch("https://cloud-campus-backend.onrender.com/");
+  // fetch("http://localhost:3000/");
 
   return (
     <div className="App">
@@ -33,7 +34,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
       </Routes>
     </div>
-  )
+  );
 }
 
 export default App;

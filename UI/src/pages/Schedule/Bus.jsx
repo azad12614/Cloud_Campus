@@ -1,45 +1,51 @@
-import React from 'react';
-import './Bus.css';
+import React, { useState, useCallback } from "react";
+import "./Bus.css";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Section from "../../components/Section";
 
 function Bus() {
-    function image() {
-        var thumbnails = document.getElementById("thumbnails")
-        var imgs = thumbnails.getElementsByTagName("img")
-        var main = document.getElementById("main")
-        var counter = 0;
+  const [mainImage, setMainImage] = useState(
+    "https://drive.google.com/uc?export=view&id=1DiDz1SaJaEKkEfNbKNTkZdDJURHZnQ91" // Corrected URL
+  );
 
-        for (let i = 0; i < imgs.length; i++) {
-            let img = imgs[i]
+  const imageSources = [
+    "https://drive.google.com/uc?export=view&id=1DiDz1SaJaEKkEfNbKNTkZdDJURHZnQ91", // Corrected URL
+    "https://drive.google.com/uc?export=view&id=1LEAPi_xpcqDQlqFyN1AY9cGZZvg1c-i6", // Corrected URL
+    "https://drive.google.com/uc?export=view&id=1bKUzpG2MBnJGIe0lYl_TbZ56TwKK_mXd", // Corrected URL
+    "https://drive.google.com/uc?export=view&id=1JwmMijWTL5jpoZPRiYVPTmzpgxG8-SHk", // Corrected URL
+    "https://drive.google.com/uc?export=view&id=1SfGgdgBjKowdz1JoI-tSg4aWo_i5fZuj", // Corrected URL
+    "https://drive.google.com/uc?export=view&id=1O2t_Z1rnrrfUfSYKRlgyW7q8I7C0XNUR", // Corrected URL
+    "https://drive.google.com/uc?export=view&id=1lZMNZe2Cvu0lMb_f95pM-3vYzuoebBKx", // Corrected URL
+  ];
 
+  const handleThumbnailClick = useCallback((src) => {
+    setMainImage(src);
+  }, []);
 
-            img.addEventListener("click", function () {
-                main.src = this.src
-            })
-
-        }
-    }
-    return (
-        <>
-            <Navbar />
-            <Section text={"Bus Schedule"}></Section>
-            <div className='buses'>
-                <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaeAXjhMIBZhtdDlSJoOz1kDZzEMM33mjeh_GesB0OlwUeMeW72QwJaXrwytaI9ZnupfwjAGxzhkBsbbp_zGlgHw3rvYyeR-XM=s1600-rw-v1" id="main" />
-                <div id="thumbnails">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaeAXjhMIBZhtdDlSJoOz1kDZzEMM33mjeh_GesB0OlwUeMeW72QwJaXrwytaI9ZnupfwjAGxzhkBsbbp_zGlgHw3rvYyeR-XM=s1600-rw-v1" onClick={image} />
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihY1gI8zw_iM7LaktYbGqzGWgQLFAzsf81CBiKwCvk-Ipdjf8L7BKYo9X93NiNmjucCjzSgxZiikVhC406EBtej1BvYQHyURkiY=s1600-rw-v1" onClick={image} />
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZIFhsreGFZdEhFJMegu-sq9nV3XV6R5e6T_IL4pfVEDmCRnsCITmzA_rcPi2kk3Ni1RVc2yDSsQ0YOFES82lRf_826DEcKHeU=s1600-rw-v1" onClick={image} />
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZv75eJ-oeqIDQ-7q3pRGBoqBC0-zW2oud31xltgcZRiHt7y9TStkswP_rbMOnRws7C36e1cek03YZTtTzzQXf0WFSq29vK6bY=s1600-rw-v1" onClick={image} />
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbKf0aJCyy1F5aFsAB3aSW69ynzp8UYUAmHqv_-2L1koo4qQdfr4jFzxgnzmC-Uj6V6fboQXvRRESA33eAZhmulGcuNNsBdDFE=s1600-rw-v1" onClick={image} />
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha_tVenZ4xfp7hftpbF466mrVMjbw0Kx82cO00EpZNoAEOtyGSUPJ2P1EJ-upK8w3Z8z0I64oKgiaF4xbc9_FFz-HKYJCWPRpg=s1600-rw-v1" onClick={image} />
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYOrnDsMcqBkAu30PcrHu3pY-YBCNDrsns6rGpF7xkIQe6bGlJQVK0hkAqNMfoeS75qedy9ybFzeVhNLF8hN0eJD4zEvjEQvxk=s1600-rw-v1" onClick={image} />
-                </div>
-            </div>
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <Section text={"Bus Schedule"} />
+      <div className="buses">
+        <img src={mainImage} id="main" alt="Main Bus Schedule" />{" "}
+        {/* Added alt text */}
+        <div id="thumbnails">
+          {imageSources.map((src, index) => (
+            <a href={src} target="_blank">
+              <img
+                key={index}
+                src={src}
+                onClick={() => handleThumbnailClick(src)}
+                alt={`Bus Schedule ${index + 1}`}
+              />
+            </a>
+          ))}
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default Bus;
