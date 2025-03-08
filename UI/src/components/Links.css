@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+/* @import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
 
 .gLinks {
@@ -43,4 +43,54 @@
     margin: 1rem;
     margin-right: auto;
     margin-left: auto;
+} */
+
+.links-container {
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #01303f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links-container h2 {
+  text-align: center;
+  color: #f0f8ff;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.links-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links-container li {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #f0f8ff; /* Light blue list item background */
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.links-container li:hover {
+  background-color: #e0f7ff; /* Slightly darker blue on hover */
+  transform: translateX(5px);
+}
+
+.links-container a {
+  text-decoration: none;
+  color: #01303f; /* Dark blue on hover */
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.links-container a:hover {
+  color: #02a9f7; /* Bright blue link text */
 }

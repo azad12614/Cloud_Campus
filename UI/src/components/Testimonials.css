@@ -1,143 +1,75 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-
-.testimonial-box {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0;
-    padding: 10px;
+.testimonials-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff; /* White background for the full section */
+  text-align: center;
 }
 
-.th1 {
-    font-size: 5rem;
-    line-height: 1;
-    font-weight: bold;
-    text-align: center;
-    color: #01303f;
-    margin: 0;
-    margin-top: 1rem;
+.testimonials-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #01303f; /* Dark blue text for the heading */
 }
 
-.thr {
-    border-radius: 1rem;
-    border-width: 0.6rem;
-    border-style: double;
-    border-color: #01303f;
-    color: #01303f;
-    margin-inline: 5rem;
-    margin-bottom: 0.6rem;
+.testimonials-slider {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.testimonial-box .testimonial-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2rem;
-    background-color: #01303f;
-    color: #FFF;
-    border-radius: 15px;
-    margin: 20px auto;
-    padding: 50px 80px;
-    width: 70%;
-    position: relative;
+.testimonial-card {
+  background: #01303f; /* Dark blue background for cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 0 1rem; /* Gap between cards */
+  text-align: left;
+  transition: transform 0.3s ease;
 }
 
-.testimonial-box .stars {
-    font-size: 20px;
+.testimonial-card:hover {
+  transform: translateY(-10px);
 }
 
-.testimonial-box .testimonial {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 900;
-    height: 100%;
-    line-height: 28px;
-    margin: 0;
+.testimonial-quote {
+  font-size: 3.5rem; /* Large font size for the quote */
+  line-height: 1.2;
+  color: #ffffff; /* White text for the quote */
+  margin-bottom: 1.5rem;
 }
 
-.testimonial-box .user {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.testimonial-author h3 {
+  font-size: 2.5rem;
+  color: #02a9f7; /* Bright blue for the author's name */
+  margin-bottom: 0.5rem;
 }
 
-.testimonial-box .user .user-image {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
+.testimonial-author p {
+  font-size: 2rem;
+  color: #ffffff; /* White text for the author's role */
 }
 
-.testimonial-box .user .user-details {
-    text-align: center;
+/* Customize slick slider dots */
+.slick-dots li button:before {
+  color: #01303f; /* Dark blue dots */
 }
 
-.testimonial-box .user .username {
-    margin: 0;
-    font-size: 20px;
+.slick-dots li.slick-active button:before {
+  color: #02a9f7; /* Bright blue for active dot */
 }
 
-.testimonial-box .user .role {
-    margin: 0;
-    font-size: 16px;
+/* Add gap between slides */
+.slick-slide {
+  padding: 0 10px; /* Adjust the gap between cards */
 }
 
-.testimonial-box .progress-dots {
-    display: flex;
-    gap: 5px;
+.slick-arrow {
+  display: none !important; /* Hide all Slick arrows */
 }
 
-.testimonial-box .progress-dot {
-    width: 5px;
-    height: 5px;
-    background-color: #eee;
-    border-radius: 50%;
-}
-
-.testimonial-box .progress-dot.active {
-    background-color: #555;
-}
-
-.testimonial-box .btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #eee;
-    color: #01303f;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.1s ease;
-}
-
-.testimonial-box .btn:hover {
-    background-color: #eee;
-}
-
-.testimonial-box #btn-prev {
-    left: 25px;
-}
-
-.testimonial-box #btn-next {
-    right: 25px;
-}
-
-@media screen and (max-width: 500px) {
-    .testimonial-box .testimonial-container {
-        margin: 10px;
-        padding: 10px;
-        width: 90%;
-    }
+@media screen and (max-width: 700px) {
+  .testimonial-quote {
+    font-size: 2.5rem; /* Large font size for the quote */
+    line-height: 1.2;
+    font-weight: 400;
+  }
 }
