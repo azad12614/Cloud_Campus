@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function M_Form() {
+function Form() {
   const navigate = useNavigate();
 
   function formHandle(event) {
@@ -172,4 +172,4 @@ function M_Form() {
   );
 }
 
-export default M_Form;
+export default Form;
