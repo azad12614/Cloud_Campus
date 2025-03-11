@@ -3,20 +3,7 @@ import "./Links.css"; // Import the CSS file
 
 const Links = () => {
   const links = [
-    { url: "https://opac.iiuc.ac.bd/", text: "Library" },
     { url: "https://www.iiuc.ac.bd/alumni/adirectory", text: "Alumni List" },
-    {
-      url: "https://www.facebook.com/IIUCCPS/",
-      text: "IIUC Competitive Programming Society",
-    },
-    {
-      url: "https://www.facebook.com/groups/1134953564340876/?ref=share",
-      text: "IIUC Competitions Hub",
-    },
-    {
-      url: "https://www.facebook.com/computerclubiiuc2021/",
-      text: "IIUC Computer Club",
-    },
     {
       url: "https://t.me/+-0idhqk_Od1jMDhl",
       text: "Class Records (1st-3rd MID)",
@@ -25,8 +12,13 @@ const Links = () => {
       url: "https://drive.google.com/drive/folders/1j6P06WLqRLESwiWYiPlTa4ui-m8g8C1i",
       text: "CSE Resources",
     },
-    { url: "https://t.me/quesbankofcse", text: "Que Bank" },
+    {
+      url: "https://www.facebook.com/groups/1134953564340876/?ref=share",
+      text: "IIUC Competitions Hub",
+    },
     { url: "https://www.iiuc.ac.bd/home/career/", text: "Job Offer" },
+    { url: "https://opac.iiuc.ac.bd/", text: "Library" },
+    { url: "https://t.me/quesbankofcse", text: "Que Bank" },
   ];
 
   return (

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import IIUC_CSE from "../../assets/IIUC_CSE.png";
+import Clubs from "../../components/Clubs";
 import Footer from "../../components/Footer";
 import Links from "../../components/Links";
 import Navbar from "../../components/Navbar";
@@ -9,7 +10,8 @@ import "./Home.css";
 function Heros() {
   return (
     <>
-      <Navbar />
+      <Navbar></Navbar>
+
       <section className="hero-section">
         <div className="hero-content">
           {/* Logo and Title */}
@@ -80,6 +82,7 @@ function Heros() {
         </div>
       </section>
 
+      <Clubs></Clubs>
       <Testimonials></Testimonials>
       <Links></Links>
       <Footer></Footer>

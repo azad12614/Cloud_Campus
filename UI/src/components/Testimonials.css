@@ -1,14 +1,15 @@
 .testimonials-section {
   padding: 4rem 2rem;
-  background-color: #ffffff; /* White background for the full section */
+  background-color: #01303fff;
   text-align: center;
 }
 
 .testimonials-section h2 {
   text-align: center;
   font-size: 2.5rem;
+  margin: 0;
   margin-bottom: 2rem;
-  color: #01303f; /* Dark blue text for the heading */
+  color: #ffffff;
 }
 
 .testimonials-slider {
@@ -17,11 +18,11 @@
 }
 
 .testimonial-card {
-  background: #01303f; /* Dark blue background for cards */
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  margin: 0 1rem; /* Gap between cards */
+  margin: 0 1rem;
   text-align: left;
   transition: transform 0.3s ease;
 }
@@ -31,44 +32,44 @@
 }
 
 .testimonial-quote {
-  font-size: 3.5rem; /* Large font size for the quote */
+  font-size: 3.5rem;
   line-height: 1.2;
-  color: #ffffff; /* White text for the quote */
+  color: #01303f;
   margin-bottom: 1.5rem;
 }
 
 .testimonial-author h3 {
   font-size: 2.5rem;
-  color: #02a9f7; /* Bright blue for the author's name */
+  color: #02a9f7;
   margin-bottom: 0.5rem;
 }
 
 .testimonial-author p {
   font-size: 2rem;
-  color: #ffffff; /* White text for the author's role */
+  color: #01303f;
 }
 
 /* Customize slick slider dots */
 .slick-dots li button:before {
-  color: #01303f; /* Dark blue dots */
+  color: #ffffff;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #02a9f7; /* Bright blue for active dot */
+  color: #02a9f7;
 }
 
 /* Add gap between slides */
 .slick-slide {
-  padding: 0 10px; /* Adjust the gap between cards */
+  padding: 0 10px;
 }
 
 .slick-arrow {
-  display: none !important; /* Hide all Slick arrows */
+  display: none !important;
 }
 
 @media screen and (max-width: 700px) {
   .testimonial-quote {
-    font-size: 2.5rem; /* Large font size for the quote */
+    font-size: 2.5rem;
     line-height: 1.2;
     font-weight: 400;
   }

@@ -1,91 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
-
-.design-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-family: Jost;
-    /* background-color: #1f1f1f; */
-    /* min-height: 100vh; */
-    /* padding: 100px 0; */
-    /* padding-bottom: 100px; */
+/* General Styles */
+.academic-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #d4f0fc;
 }
 
-.timeline {
-    width: 80%;
-    height: max-content;
-    max-width: 800px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+.academic-content {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.timeline-content {
-    /* background: #108fa5;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 5px; 
-    border-radius: 6px;
-    padding: 20px; */
-    background: #01303f;
-    border-radius: 16px;
-    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    -webkit-box-shadow: 5px 5px 10px #353535, -5px -5px 10px #3b3b3b;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: rgb(255, 255, 255);
-    transition: 0.4s ease;
-    overflow-wrap: break-word !important;
-    padding: 1.75rem;
-    margin: 1rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: large;
-    text-align: center;
+.semester-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #01303f;
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
-.timeline-content>h3 {
-    font-size: 23px;
-    color: #00fff2;
+.calendar-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-content>p>span {
-    color: #FF0000;
+.calendar-events {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
 
-.timeline-component {
-    margin: 0px 20px 20px 20px;
+.event-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-    .timeline {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
-
-    /* .timeline-middle {
-        position: relative;
-        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
-        width: 3px;
-        height: 100%;
-        margin-top: 5px;
-    }
-
-    .timeline-circle {
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-    } */
+.event-card h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  color: #01303f;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-/*Section CSS Custom*/
-.custom-section {
-    font-style: italic;
+.event-card p {
+  color: #111;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+
+.holidays-title {
+  font-size: 2.5rem;
+  color: #02a9f7;
+  margin-top: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.holidays-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.holidays-list li {
+  color: #f9f9f9;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #01303f;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .semester-title {
+    font-size: 2.5rem;
+  }
+
+  .calendar-events {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card {
+    padding: 1rem;
+  }
+
+  .holidays-list li {
+    font-size: 1.25rem;
+  }
+
+  .calendar-box {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* For larger screens (desktop) */
+  .semester-title {
+    font-size: 3rem;
+  }
+
+  .event-card h4 {
+    font-size: 2rem;
+  }
+
+  .event-card p {
+    font-size: 1.5rem;
+  }
+
+  .holidays-title {
+    font-size: 2.5rem;
+  }
+
+  .holidays-list li {
+    font-size: 1.5rem;
+  }
 }

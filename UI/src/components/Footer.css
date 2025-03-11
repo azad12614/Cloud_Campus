@@ -12,19 +12,23 @@ footer {
   --border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
   --glassmorphism-blur: blur(10px); /* Glassmorphism effect */
   --border-radius: 20px; /* Rounded corners */
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--text-color);
   width: 100%;
   padding: 4rem 2rem;
+
   background: var(--background-color);
   backdrop-filter: var(--glassmorphism-blur);
   -webkit-backdrop-filter: var(--glassmorphism-blur);
   border-top-left-radius: var(--border-radius);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

@@ -1,7 +1,7 @@
 .links-container {
   max-width: 600px;
   font-family: Arial, sans-serif;
-  margin: 50px auto;
+  margin: 4rem auto;
   padding: 30px;
   background-color: #01303f;
   border-radius: 12px;
@@ -11,6 +11,7 @@
 .links-container h2 {
   text-align: center;
   color: #f0f8ff;
+  margin: 0;
   margin-bottom: 25px;
   font-size: 24px;
   font-weight: bold;
