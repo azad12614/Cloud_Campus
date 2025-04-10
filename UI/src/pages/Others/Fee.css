@@ -1,0 +1,94 @@
+/* src/pages/Fee.css */
+.fee-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-inter, "Inter", sans-serif);
+}
+
+.fee-wrapper {
+  position: relative;
+  margin: 0;
+}
+
+.fee-main {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fee-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: var(--space-md);
+  margin: 0 auto;
+}
+
+.fee-table-box {
+  display: flex;
+  justify-content: center;
+}
+
+.fee-table-wrapper {
+  width: 100%;
+  background-color: var(--bg-dark);
+  border: 2px solid var(--border-glow);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+  color: var(--text-light);
+}
+
+.fee-table thead {
+  background-color: var(--bg-dark);
+  font-size: var(--fs-lg);
+  color: var(--color-primary);
+}
+
+.fee-table th,
+.fee-table td {
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.fee-table th:first-child,
+.fee-table td:first-child {
+  padding-left: 1rem;
+}
+
+.fee-table th:last-child,
+.fee-table td:last-child {
+  padding-right: 1rem;
+}
+
+.fee-calculator {
+  max-width: 500px;
+  margin: 1rem auto 2rem;
+  text-align: center;
+}
+
+.fee-calculator-btn {
+  background-color: var(--color-primary);
+  color: var(--text-light);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 0 0 1rem 0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.fee-calculator-btn:hover {
+  background-color: var(--color-secondary);
+}

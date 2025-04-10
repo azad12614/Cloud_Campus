@@ -1,3 +1,154 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* =============================
+   🌐 GLOBAL CSS + ROOT VARIABLES
+   ============================= */
+
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Sans:wght@300;500;700&family=Jost:wght@400;600&family=Fira+Sans:wght@400;500&family=Source+Code+Pro:wght@400;500&display=swap");
+
+/* ========== Root Variables ========== */
+:root {
+  /* === Font Families === */
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Jost", sans-serif;
+  --font-mono: "Source Code Pro", monospace;
+  --font-ibm: "IBM Plex Sans", sans-serif;
+  --font-fira: "Fira Sans", sans-serif;
+
+  /* === Brand Colors === */
+  --color-primary: #02a9f7;
+  --color-primary-dark: #02577a;
+  --color-secondary: #01303f;
+  --color-secondary-dark: #0f172a;
+  --color-accent: #00f7ff;
+  --color-accent-dark: #0891b2;
+  --color-light: #e2e8f0;
+  --color-hover: #38bdf8;
+  --color-muted: #64748b;
+
+  /* === Text Colors === */
+  --text-light: #f0f4f8;
+  --text-dark: #1a1a1a;
+  --text-muted: #9bbcc7;
+
+  /* === Backgrounds === */
+  --bg-light: #f9fcfe;
+  --bg-dark: #0b1c24;
+  --bg-glass: rgba(1, 47, 63, 0.75);
+  --bg-glass-light: rgba(1, 47, 63, 0.25);
+
+  /* === Shadows & Effects === */
+  --shadow-soft: 0 4px 20px rgba(2, 169, 247, 0.1);
+  --shadow-glow: 0 0 16px rgba(14, 165, 233, 0.3);
+  --shadow-hard: 0 6px 18px rgba(0, 0, 0, 0.25);
+  --glass-blur: blur(12px);
+
+  /* === Borders === */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(14, 165, 233, 0.25);
+  --border-radius: 10px;
+  --border-radius1: 20px;
+  --border-radius2: 30px;
+
+  /* Feedback Colors */
+  --color-error: #ca191c;
+  --color-success: #22c55e;
+  --color-warning: #facc15;
+  --color-violet: #6f00ff;
+
+  /* === Font Sizes === */
+  --fs-5xl: 6rem;
+  --fs-4xl: 4.8rem;
+  --fs-3xl: 4rem;
+  --fs-2xl: 3.6rem;
+  --fs-xl: 3.2rem;
+  --fs-lg: 2.6rem;
+  --fs-md: 2.2rem;
+  --fs-sm: 1.8rem;
+  --fs-xs: 1.4rem;
+  --fs-2xs: 1rem;
+
+  /* === Spacing === */
+  --space-xl: 5rem;
+  --space-lg: 3rem;
+  --space-md: 2rem;
+  --space-sm: 1rem;
+  --space-xs: 0.5rem;
+
+  /* === Border Radius === */
+  --rounded-xl: 3rem;
+  --rounded-lg: 2rem;
+  --rounded-md: 1rem;
+  --rounded-sm: 0.5rem;
+
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-modal: 1050;
+  --z-tooltip: 1080;
+}
+
+/* ========== Global Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-sans);
+}
+
+html {
+  font-size: 50%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-hover);
+}
+
+ul {
+  list-style: none;
+}
+
+/* ========== Utility Classes (Optional) ========== */
+.glass-card {
+  background: var(--bg-glass);
+  backdrop-filter: var(--glass-blur);
+  border-radius: var(--rounded-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-md);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--text-dark);
+  padding: 1rem 2rem;
+  border-radius: var(--rounded-md);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  color: var(--text-light);
+  background-color: var(--color-hover);
+}

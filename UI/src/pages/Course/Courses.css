@@ -1,39 +1,102 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
-
-body {
-  background-color: #ffffff;
-  color: #fff;
-}
-
-h2 {
+.Courses h2 {
   font-size: 3rem;
   font-weight: 300;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   text-align: center;
-  color: #01303f;
+  color: var(--text-light);
   font-family: "Merriweather", "Serif";
 }
 
-.tabList {
-  color: #ffffff;
-  font-size: x-large;
-  font-weight: bold;
-  height: 50px;
-  width: 75px;
-  background: #02a9f7;
-  padding: 0;
-  margin: 0;
-  border-bottom-left-radius: 8%;
-  border-bottom-right-radius: 8%;
+.tab-wrapper {
+  position: sticky;
+  top: 60px;
+  background-color: var(--bg-dark);
+  padding: 10px 0;
 }
 
-.tabList:nth-child(1) {
-  margin-left: 34vw;
-  margin-right: 0;
+.courses-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.courses-tabs button {
+  padding: 8px 14px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-glass-light);
+  color: var(--text-light);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  font-weight: 800;
+}
+
+.courses-tabs button.active {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  border-color: var(--border-glow);
+}
+
+.courses-tabs button:hover {
+  background-color: var(--color-muted);
+  color: var(--text-dark);
+}
+
+/* 
+.tabLabel {
+  padding: 10px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  background-color: var(--color-glass-light);
+  color: var(--color-text);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tabLabel:hover {
+  background-color: var(--color-glass-dark);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.tabLabel.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary-dark);
+} 
+*/
+
+.tab-content {
+  display: block;
+  padding: 5px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tab-content.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.tab-content:not(.hidden) {
+  opacity: 1;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .ag-format-container {
@@ -45,9 +108,8 @@ h2 {
   font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
-  margin-top: 20px;
   text-align: center;
-  color: #01303f;
+  color: var(--text-light);
   font-family: "Merriweather", "Serif";
   font-weight: bold;
 }
@@ -57,7 +119,7 @@ h2 {
   align-items: center;
   justify-items: center;
   flex-wrap: wrap;
-  padding: 50px 0;
+  padding: 2.5rem 0;
 }
 
 .ag-courses_item {
@@ -65,13 +127,13 @@ h2 {
   flex-basis: calc(33.33333% - 30px);
   overflow: hidden;
   border-radius: 28px;
-  margin: 0 15px 20px;
+  margin: 0 15px 2.5rem;
 }
 
 .ag-courses-item_link {
   display: block;
-  padding: 30px 20px;
-  background-color: #121212;
+  padding: 30px 2.5rem;
+  background-color: var(--bg-glass);
   overflow: hidden;
   position: relative;
 }
@@ -79,48 +141,48 @@ h2 {
 #ag-courses-item_code {
   overflow: hidden;
   font-weight: bold;
-  font-size: 35px;
-  color: #89d6fb;
-  z-index: 2;
+  font-size: 4rem;
+  color: var(--color-primary);
   position: relative;
+  z-index: 2;
 }
 
 .ag-courses-item_name {
   overflow: hidden;
   font-weight: bold;
-  font-size: 30px;
-  color: #fff;
-  z-index: 2;
+  font-size: 3rem;
+  color: var(--text-light);
   position: relative;
-  min-height: 13rem;
+  min-height: 14rem;
+  z-index: 2;
 }
 
 .ag-courses-item_credit {
   padding-top: 3rem;
-  font-size: 20px;
-  color: #fff;
-  z-index: 2;
+  font-size: 2.5rem;
+  color: var(--text-light);
   position: relative;
+  z-index: 2;
 }
 
 .ag-courses-item_co {
-  font-size: 20px;
-  color: #fff;
-  z-index: 2;
+  font-size: 2.5rem;
+  color: var(--text-light);
   position: relative;
+  z-index: 2;
 }
 
 .ag-courses-item_pre {
-  font-size: 20px;
-  color: #fff;
-  z-index: 2;
+  font-size: 2.5rem;
+  color: var(--text-light);
   position: relative;
+  z-index: 2;
 }
 
 .ag-courses-item_value {
   padding-left: 2px;
   font-weight: bold;
-  color: #02a9f7;
+  color: var(--color-accent);
   -webkit-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
@@ -129,7 +191,7 @@ h2 {
 .ag-courses-item_bg {
   height: 128px;
   width: 128px;
-  background-color: #02a9f7;
+  background-color: var(--color-primary);
   z-index: 1;
   position: absolute;
   top: -75px;
@@ -141,7 +203,7 @@ h2 {
 }
 
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
+  background-color: #08d45d;
 }
 
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
@@ -153,18 +215,22 @@ h2 {
 }
 
 .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-  background-color: #cd3e94;
+  background-color: #d41d8b;
 }
 
 .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #4c49ea;
+  background-color: #413ee9;
+}
+
+.ag-courses_item:nth-child(7n) .ag-courses-item_bg {
+  background-color: #c9970f;
 }
 
 .ag-courses-item_link:hover,
 .ag-courses-item_link:hover .ag-courses-item_value,
 .ag-courses-item_link:hover #ag-courses-item_code {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-light);
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
@@ -173,23 +239,7 @@ h2 {
   transform: scale(10);
 }
 
-@media only screen and (max-width: 1600px) {
-  .tabList:nth-child(1) {
-    margin-left: 32vw;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .tabList:nth-child(1) {
-    margin-left: 28vw;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
-  .tabList:nth-child(1) {
-    margin-left: 25vw;
-  }
-
   .ag-format-container {
     width: 80%;
   }
@@ -201,10 +251,6 @@ h2 {
 }
 
 @media only screen and (max-width: 1000px) {
-  .tabList:nth-child(1) {
-    margin-left: 18vw;
-  }
-
   .ag-format-container {
     width: 90%;
   }
@@ -222,10 +268,6 @@ h2 {
 }
 
 @media only screen and (max-width: 800px) {
-  .tabList:nth-child(1) {
-    margin-left: 12vw;
-  }
-
   .ag-format-container {
     width: 90%;
   }
@@ -238,19 +280,15 @@ h2 {
 
   .ag-courses-item_name,
   .ag-courses-item_code {
-    font-size: 20px;
+    font-size: 2.5rem;
     margin-bottom: -15px;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  h2 {
+  .Courses h2 {
     margin-left: 3vw;
     text-align: start;
-  }
-
-  .tabList:nth-child(1) {
-    margin-left: 3vw;
   }
 
   .ag-courses_item {
@@ -268,7 +306,7 @@ h2 {
   }
 
   .ag-courses-item_link {
-    padding: 20px 30px;
+    padding: 2.5rem 30px;
   }
 
   .ag-courses-item_credit,
@@ -279,11 +317,7 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-  h2 {
-    margin-left: 3vw;
-  }
-
-  .tabList:nth-child(1) {
+  .Courses h2 {
     margin-left: 3vw;
   }
 
@@ -303,13 +337,9 @@ h2 {
 }
 
 @media only screen and (max-width: 490px) {
-  h2 {
+  .Courses h2 {
     margin-left: 2vw;
     font-size: 2rem;
-  }
-
-  .tabList:nth-child(1) {
-    margin-left: 2vw;
   }
 
   .tabList {
@@ -328,11 +358,11 @@ h2 {
 
   .ag-courses-item_name,
   .ag-courses-item_code {
-    font-size: 20px;
+    font-size: 2.5rem;
   }
 
   .ag-courses-item_link {
-    padding: 20px 20px;
+    padding: 2.5rem 2.5rem;
   }
 
   .ag-courses-item_credit,
@@ -343,11 +373,7 @@ h2 {
 }
 
 @media only screen and (max-width: 450px) {
-  h2 {
-    margin-left: 1vw;
-  }
-
-  .tabList:nth-child(1) {
+  .Courses h2 {
     margin-left: 1vw;
   }
 }

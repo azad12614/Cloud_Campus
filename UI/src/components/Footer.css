@@ -1,33 +1,17 @@
-/* Import Google Font */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&display=swap");
-
 /* Root Variables */
 footer {
   --m: 4rem; /* Base unit for scaling */
-  --primary-color: #01303f; /* Light blue */
-  --secondary-color: #01303f; /* Dark blue */
-  --background-color: rgba(1, 48, 63, 0.5); /* Semi-transparent dark blue */
-  --text-color: #ffffff; /* White */
-  --hover-color: #02a9f7; /* Bright blue */
-  --border-color: rgba(255, 255, 255, 0.1); /* Subtle border */
-  --glassmorphism-blur: blur(10px); /* Glassmorphism effect */
-  --border-radius: 20px; /* Rounded corners */
 
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-
-  font-family: "IBM Plex Sans", sans-serif;
-  color: var(--text-color);
+  font-family: var(--font-ibm);
+  color: var(--text-light);
   width: 100%;
-  padding: 4rem 2rem;
+  padding: var(--space-sm);
 
-  background: var(--background-color);
-  backdrop-filter: var(--glassmorphism-blur);
-  -webkit-backdrop-filter: var(--glassmorphism-blur);
-  border-top-left-radius: var(--border-radius);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: var(--bg-glass-light);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-top-left-radius: 10rem;
+  box-shadow: var(--shadow-hard);
 
   display: flex;
   flex-direction: row;
@@ -41,15 +25,15 @@ footer {
 footer .col {
   flex: 1;
   min-width: 250px;
-  max-width: 300px;
-  /* padding: 1.5rem; */
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
-  background-color: var(--secondary-color);
+  background-color: var(--color-secondary);
   border-radius: var(--border-radius);
   padding: 2rem;
+  margin: auto 0;
 }
 
 /* Footer Logo */
@@ -65,24 +49,24 @@ footer img {
 
 /* Footer Typography */
 footer h1 {
-  font-size: calc(0.7 * var(--m));
-  font-weight: 500;
-  color: var(--primary-color);
+  font-size: calc(0.8 * var(--m));
+  font-weight: 700;
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 footer h3 {
   font-size: calc(0.5 * var(--m));
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 footer p,
 footer p a {
-  font-size: calc(0.55 * var(--m));
-  font-weight: 300;
-  color: var(--text-color);
+  font-size: calc(0.6 * var(--m));
+  font-weight: 600;
+  color: var(--text-light);
   margin: 0;
   line-height: 1.6;
 }
@@ -94,7 +78,7 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--hover-color);
+  color: var(--color-hover);
 }
 
 /* Social Media Icons */
@@ -105,9 +89,9 @@ footer .social {
 }
 
 footer .link {
-  width: calc(0.8 * var(--m));
-  height: calc(0.8 * var(--m));
-  background-color: var(--background-color);
+  width: calc(0.9 * var(--m));
+  aspect-ratio: 1;
+  background-color: var(--bg-glass-light);
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -116,18 +100,16 @@ footer .link {
 }
 
 footer .link:hover {
-  background-color: var(--hover-color);
+  background-color: var(--color-hover);
 }
 
 /* Copyright Section */
 footer .footer-copyright {
   width: 100%;
   text-align: center;
-  /* margin-top: 3rem; */
   padding-top: 2rem;
-  /* border-top: 1px solid var(--border-color); */
   font-size: calc(0.5 * var(--m));
-  color: var(--primary-color);
+  color: var(--color-muted);
 }
 
 /* Responsive Design */

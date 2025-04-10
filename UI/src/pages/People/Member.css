@@ -1,92 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
 
 .section-team {
-    font-family: "Poppins", sans-serif;
-    padding: 5.7vh;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vw;
-    text-align: center;
-    justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  padding: 2.5rem;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .section-team .single-person {
-    margin-top: 30px;
-    padding: 30px;
-    background: rgba(137, 214, 251, 0.5);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+  margin-top: 30px;
+  padding: 30px;
+  background: var(--bg-glass);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .section-team .single-person:hover {
-    background: linear-gradient(to right, #016cec, #00b5f7);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
 }
 
 .section-team .single-person .person-image {
-    position: relative;
-    margin-bottom: 50px;
-    border-radius: 50%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-    border: 4px dashed transparent;
-    transition: padding .4s;
-    width: 250px;
-    aspect-ratio: 1/1;
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  border: 4px dashed transparent;
+  transition: padding 0.4s;
+  width: 250px;
+  aspect-ratio: 1/1;
 }
 
 .section-team .single-person:hover .person-image {
-    padding: 12px;
-    border: 4px dashed #fff;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+  padding: 12px;
+  border: 4px dashed var(--text-light);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
 }
 
 .section-team .single-person .person-image img {
-    width: 100%;
-    border-radius: 50%;
-    transition: padding .4s;
+  width: 100%;
+  border-radius: 50%;
+  transition: padding 0.4s;
 }
 
 .section-team .single-person .person-image .icon {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background: linear-gradient(to right, #016cec, #00b5f7);
-    color: #fff;
-    border-radius: 50%;
-    font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  color: var(--text-light);
+  border-radius: 50%;
+  font-size: 24px;
 }
 
 .section-team .single-person:hover .person-image .icon {
-    background: none;
-    background-color: #fff;
-    color: #016cec;
+  background: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .section-team .single-person .person-info .full-name {
-    margin-bottom: 10px;
-    font-size: 28px;
-    font-weight: 700;
-    color: #01303f;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-light);
 }
 
 .section-team .single-person .person-info .speciality {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    color: #016cec;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: var(--color-primary);
 }
 
 .section-team .single-person:hover .full-name,
 .section-team .single-person:hover .speciality {
-    color: #fff;
+  color: var(--text-light);
 }

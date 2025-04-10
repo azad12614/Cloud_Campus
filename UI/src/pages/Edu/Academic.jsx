@@ -80,7 +80,7 @@ function Academic() {
   ];
 
   return (
-    <div className="academic-container">
+    <div className="academic-container pages">
       <Navbar />
       <Section text="Academic Calendar" />
 

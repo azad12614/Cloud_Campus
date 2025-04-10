@@ -1,146 +1,219 @@
-@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
-@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap");
 
-.List {
-    --color: rgba(0, 0, 0);
-    --bgColor: #d4f0fc;
-    display: grid;
-    align-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    color: var(--color);
-    background: var(--bgColor);
+.Class h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--text-light);
+  font-family: "Merriweather", "Serif";
 }
 
-.tabList2 {
-    color: #ffffff;
-    font-size: x-large;
-    font-weight: bold;
-    height: 50px;
-    width: 75px;
-    background: #02a9f7;
-    padding: 0;
-    margin: 0;
-    border-bottom-left-radius: 8%;
-    border-bottom-right-radius: 8%;
+.tab-wrapper {
+  position: sticky;
+  top: 60px;
+  background-color: var(--bg-dark);
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.courses-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.courses-tabs button {
+  padding: 8px 14px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-glass-light);
+  color: var(--text-light);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  font-weight: 800;
+}
+
+.courses-tabs button.active {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  border-color: var(--border-glow);
+}
+
+.courses-tabs button:hover {
+  background-color: var(--color-muted);
+  color: var(--text-dark);
+}
+
+/* 
+  .tabLabel {
+    padding: 10px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    background-color: var(--color-glass-light);
+    color: var(--color-text);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .tabLabel:hover {
+    background-color: var(--color-glass-dark);
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+  
+  .tabLabel.active {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary-dark);
+  } 
+  */
+
+.tab-content {
+  display: block;
+  padding: 5px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tab-content.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.tab-content:not(.hidden) {
+  opacity: 1;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.List {
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--bg-dark);
 }
 
 ol {
-    width: min(50vw, 96%);
-    margin-inline: auto;
-    margin-block: 4vh;
+  width: min(50vw, 96%);
+  margin-inline: auto;
+  margin-block: 4vh;
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 4vh;
-    column-gap: 2vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 4vh;
+  column-gap: 2vw;
 
-    list-style: none;
-    /* counter-reset: stepnr; */
+  list-style: none;
 }
 
 a:nth-child(6n + 1) {
-    --accent-color: #b8df4e
+  --color-accent: #b8df4e;
 }
 
 a:nth-child(6n + 2) {
-    --accent-color: #FFC949
+  --color-accent: #ffc949;
 }
 
 a:nth-child(6n + 3) {
-    --accent-color: #D20040
+  --color-accent: #d20040;
 }
 
 a:nth-child(6n + 4) {
-    --accent-color: #F06130
+  --color-accent: #f06130;
 }
 
 a:nth-child(6n + 5) {
-    --accent-color: #8DECB4
+  --color-accent: #8decb4;
 }
 
 a:nth-child(6n + 6) {
-    --accent-color: #F078C2
+  --color-accent: #f078c2;
 }
 
 a:nth-child(6n + 7) {
-    --accent-color: #F6F5F0
+  --color-accent: #f6f5f0;
 }
 
 ol a {
-    /* counter-increment: stepnr; */
-    width: 25rem;
-    --borderS: 2rem;
-    aspect-ratio: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: calc(var(--borderS) + 5rem);
-    position: relative;
-    background-color: #01303f;
-    border-radius: 50%;
+  width: 25rem;
+  --borderS: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: calc(var(--borderS) + 5rem);
+  position: relative;
+  background-color: #01303f;
+  border-radius: 50%;
 }
 
 ol a::before,
 ol a::after {
-    inset: 0;
-    position: absolute;
-    border-radius: 50%;
-    border: var(--borderS) solid var(--bgColor);
-    line-height: 1.1;
+  inset: 0;
+  position: absolute;
+  border-radius: 50%;
+  border: var(--borderS) solid var(--bg-dark);
+  line-height: 1.1;
 }
-
-/* ol li::before {
-    content: counter(stepnr);
-    color: var(--accent-color);
-    padding-left: 9rem;
-    font-size: 12rem;
-    font-weight: 700;
-    overflow: hidden;
-} */
 
 ol a::after {
-    content: "";
-    filter: drop-shadow(-0.25rem 0.25rem .0675rem rgba(0, 0, 0, 0.75)) blur(5px);
+  content: "";
+  filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
 }
 
-ol a>* {
-    width: 7.5rem
+ol a > * {
+  width: 7.5rem;
 }
 
 ol a li {
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 }
 
 ol a li .icon {
-    color: var(--accent-color);
-    font-size: 5rem;
-    padding-left: 3rem;
+  color: var(--color-accent);
+  font-size: 5rem;
+  padding-left: 3rem;
 }
 
 ol a li .title {
-    color: var(--accent-color);
-    font-size: 5rem;
-    font-family: "Lugrasimo", cursive;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: -1rem;
+  color: var(--color-accent);
+  font-size: 5rem;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: -1rem;
 }
 
 ol a:hover .icon,
 ol a:hover .title {
-    display: none;
+  display: none;
 }
 
 ol a:hover li::before {
-    content: "Click!";
-    color: var(--accent-color);
-    font-size: 6rem;
-    font-family: "Lugrasimo", cursive;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: -3rem;
+  content: "Click!";
+  color: var(--color-accent);
+  font-size: 6rem;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: -3rem;
 }

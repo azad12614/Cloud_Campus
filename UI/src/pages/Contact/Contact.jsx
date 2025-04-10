@@ -1,107 +1,101 @@
-import React from 'react';
+// src/pages/Contact.jsx
+import React from "react";
 import Footer from "../../components/Footer";
-import Links from "../../components/Links";
 import Navbar from "../../components/Navbar";
 import Section from "../../components/Section";
 import "./Contact.css";
+import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaGithub,
+  FaYoutube,
+  FaMap,
+} from "react-icons/fa";
 
-import fb from "../../assets/facebook.png";
-import map from "../../assets/google-maps.png";
-import ln from "../../assets/linkedin.png";
-import yt from "../../assets/youtube.png";
+const Contact = () => {
+  return (
+    <>
+      <Navbar />
+      <Section text={"Contact"}></Section>
+      <section className="contact-section">
+        <div className="contact-container glass-card">
+          <h2 className="contact-title">
+            Get in <span className="gradient-text">Touch</span>
+          </h2>
+          <p className="contact-subtitle">We’d love to hear from you!</p>
 
-function Contact() {
-    return (
-        <div className="d-flex flex-column max-w-full bg-[#d4f0fc]">
-            <Navbar />
-            <section id="contact">
+          <div className="contact-grid">
+            {/* Left: Contact Details */}
+            <div className="contact-info">
+              <div className="info-item">
+                <FiMapPin className="info-icon" />
+                <span>IIUC Campus, Kumira, Chattogram-4318</span>
+              </div>
+              <div className="info-item">
+                <FiMail className="info-icon" />
+                <span>mjamalpatiya@gmail.com</span>
+              </div>
+              <div className="info-item">
+                <FiPhone className="info-icon" />
+                <span>+8801768674457</span>
+              </div>
+              <div className="info-item">
+                <FiMail className="info-icon" />
+                <span>mdakhtar16@gmail.com</span>
+              </div>
+              <div className="info-item">
+                <FiPhone className="info-icon" />
+                <span>+8801814942219</span>
+              </div>
 
-                <Section text={"Contact"}></Section>
+              <div className="contact-socials">
+                <a
+                  href="https://www.google.com/maps/place/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95+%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%80+%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F+%E0%A6%9A%E0%A6%9F%E0%A7%8D%E0%A6%9F%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE/@22.4965971,91.7210784,17z/data=!3m1!4b1!4m6!3m5!1s0x30ad2777a615585d:0xdcf908f6e4f3a713!8m2!3d22.4965971!4d91.7210784!16zL20vMDkwejU0?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaMap />
+                </a>
+                <a
+                  href="https://www.facebook.com/iiuc.ac.bd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebookF />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/iiuctg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
+                </a>
+                <a
+                  href="https://www.youtube.com/@internationalislamicuniver5603"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube />
+                </a>
+              </div>
+            </div>
 
-                <div class="contact-wrapper">
-
-                    {/* <!-- Left contact page --> */}
-                    <form action='mailto:c213106@ugrad.iiuc.ac.bd' id="contact-form" class="form-horizontal" method='POST'>
-                        <div class="group">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" required="y"></input>
-                            </div>
-                        </div>
-
-                        <div class="group">
-                            <div class="col-sm-12">
-                                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" required="y"></input>
-                            </div>
-                        </div>
-
-                        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required="y"></textarea>
-
-                        <button class="btn send-button" id="submit" type="submit" value="SEND">
-                            <div class="alt-send-button">
-                                <i id='icon' class="fa-solid fa-paper-plane fa-2xl"></i>
-                                <span class="send-text">SEND</span>
-                            </div>
-                        </button>
-
-                    </form>
-
-                    {/* <!-- Right contact page --> */}
-                    <div class="direct-contact-container">
-                        <ul class="contact-list">
-                            <li class="list-item"><i class="fa fa-map-marker fa-2xl"><span class="contact-text place"><a href='https://www.google.com/maps/place/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95+%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%80+%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F+%E0%A6%9A%E0%A6%9F%E0%A7%8D%E0%A6%9F%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE/@22.4965971,91.7210784,17z/data=!3m1!4b1!4m6!3m5!1s0x30ad2777a615585d:0xdcf908f6e4f3a713!8m2!3d22.4965971!4d91.7210784!16zL20vMDkwejU0?entry=ttu' title='Take me to a ride' target='_blank'>Kumira, Chattogram-4318</a></span></i></li>
-
-                            <li class="list-item"><i class="fa fa-phone fa-2xl"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call" target='_blank'>+8801768674457</a></span></i></li>
-
-                            <li class="list-item"><i class="fa fa-envelope fa-2xl"><span class="contact-text gmail"><a href="mailto:mjamalpatiya@gmail.com" title="Send me an email" target='_blank'>mjamalpatiya@gmail.com</a></span></i></li>
-
-                            <li class="list-item"><i class="fa fa-phone fa-2xl"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call" target='_blank'>+8801814942219</a></span></i></li>
-
-                            <li class="list-item"><i class="fa fa-envelope fa-2xl"><span class="contact-text gmail"><a href="mailto:mdakhtar16@gmail.com" title="Send me an email" target='_blank'>mdakhtar16@gmail.com</a></span></i></li>
-                        </ul>
-                        <hr />
-
-                        <ul class="social-media-list">
-                            <a
-                                href="https://www.google.com/maps/place/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95+%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%80+%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F+%E0%A6%9A%E0%A6%9F%E0%A7%8D%E0%A6%9F%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE/@22.4965971,91.7210784,17z/data=!3m1!4b1!4m6!3m5!1s0x30ad2777a615585d:0xdcf908f6e4f3a713!8m2!3d22.4965971!4d91.7210784!16zL20vMDkwejU0?entry=ttu"
-                                target="_blank" class="contact-icon">
-                                <li>
-                                    <img src={map} />
-                                </li>
-                            </a>
-                            <a
-                                href="https://www.facebook.com/iiuc.ac.bd/"
-                                target="_blank" class="contact-icon">
-                                <li>
-                                    <img src={fb} />
-                                </li>
-                            </a>
-                            <a
-                                href="https://www.youtube.com/@internationalislamicuniver5603"
-                                target="_blank" class="contact-icon">
-                                <li>
-                                    <img src={yt} />
-                                </li>
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/company/iiuctg"
-                                target="_blank" class="contact-icon">
-                                <li>
-                                    <img src={ln} />
-                                </li>
-                            </a>
-                        </ul>
-                        <hr />
-
-                        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED.</div>
-                    </div>
-                </div>
-            </section>
-            <Links></Links>
-            {/* <div className="mt-auto mb-0"> */}
-            <Footer></Footer>
-            {/* </div> */}
+            {/* Right: Contact Form */}
+            <form className="contact-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea rows="5" placeholder="Your Message" required></textarea>
+              <button type="submit" className="btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
-    );
-}
+      </section>
+      <Footer />
+    </>
+  );
+};
 
 export default Contact;

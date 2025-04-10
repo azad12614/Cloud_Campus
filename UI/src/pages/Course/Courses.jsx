@@ -8,6 +8,7 @@ function Course() {
   const [courses, setCourses] = useState([]);
   const [activeTab, setActiveTab] = useState("1");
   const [semesterCredits, setSemesterCredits] = useState({});
+  const semesters = ["1", "2", "3", "4", "5", "6", "7", "8"];
 
   useEffect(() => {
     const fetchCourses = async () => {
@@ -68,10 +69,6 @@ function Course() {
     </div>
   );
 
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-  };
-
   const renderSemesterCourses = (semester) => (
     <div className="ag-format-container">
       <div className="semester-credits">
@@ -86,33 +83,24 @@ function Course() {
   );
 
   return (
-    <div className="d-flex flex-column min-h-screen overflow-x-hidden bg-[#d4f0fc]">
+    <div className="Courses pages">
       <Navbar />
       <Section text={"Course Offer"} />
       <h2>Select Semester</h2>
-      <div role="tablist" className="tabs tabs-lifted">
-        {[1, 2, 3, 4, 5, 6, 7, 8].map((semester) => (
-          <React.Fragment key={semester}>
-            <input
-              type="radio"
-              name="my_tabs_2"
-              role="tab"
-              className="tab tabList"
-              aria-label={`${semester}th`}
-              id={`tab-${semester}`}
-              checked={activeTab === String(semester)}
-              onChange={() => handleTabChange(String(semester))}
-            />
-            <div
-              role="tabpanel"
-              className={`tab-content ${
-                activeTab === String(semester) ? "" : "hidden"
-              }`}
+      <div className="tab-wrapper">
+        <div className="courses-tabs">
+          {semesters.map((semester) => (
+            <button
+              key={semester}
+              onClick={() => setActiveTab(semester)}
+              className={`tabLabel ${activeTab === semester ? "active" : ""}`}
             >
-              {renderSemesterCourses(String(semester))}
-            </div>
-          </React.Fragment>
-        ))}
+              {semester}
+            </button>
+          ))}
+        </div>
+
+        <div className="tab-content">{renderSemesterCourses(activeTab)}</div>
       </div>
       <Footer />
     </div>

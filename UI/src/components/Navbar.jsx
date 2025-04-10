@@ -11,6 +11,19 @@ import cc from "../assets/Cloud_Campus.png";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const [open, setOpen] = useState({
+    schedule: false,
+    people: false,
+    education: false,
+    others: false,
+  });
+
+  const toggle = (key) => {
+    setOpen((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
   return (
     <>
       <nav className="main-nav">
@@ -23,6 +36,8 @@ const Navbar = () => {
 
         {/* 2nd Menu part  */}
         <div
+          onMouseEnter={() => setShowMediaIcons(true)}
+          onMouseLeave={() => setShowMediaIcons(false)}
           className={
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
           }
@@ -35,151 +50,155 @@ const Navbar = () => {
               <Link to="/courses">Courses</Link>
             </li>
             <li>
-              <div className="dropdown dropdown-bottom">
-                <div
-                  tabIndex={0}
-                  role="button"
-                  className="group flex font-bold"
+              <div
+                className="dropdown"
+                onMouseEnter={() => toggle("schedule")}
+                onMouseLeave={() => toggle("schedule")}
+              >
+                <button
+                  className="dropdown-toggle"
+                  onClick={() => toggle("schedule")}
                 >
                   <span>Schedule</span>
-                  <svg
-                    className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180
-  transition duration-150 ease-in-out"
+                  {/* <svg
+                    className={`dropdown-icon ${open ? "rotate" : ""}`}
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                    viewBox="0 0 16 16"
                   >
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </div>
-                <div className="dropdown-content menu-2">
-                  <div>
-                    <li className="p-2">
-                      <Link to={"/class"}>Class Schedule</Link>
-                    </li>
-                    <li className="p-2">
-                      <Link to={"/bus"}>Bus Schedule</Link>
-                    </li>
-                  </div>
-                </div>
+                  </svg> */}
+                </button>
+
+                <ul className={`dropdown-menu ${open.schedule ? "show" : ""}`}>
+                  <li>
+                    <Link to="/class">Class Schedule</Link>
+                  </li>
+                  <li>
+                    <Link to="/bus">Bus Schedule</Link>
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
-              <div className="dropdown dropdown-bottom">
-                <div
-                  tabIndex={0}
-                  role="button"
-                  className="group flex font-bold"
+              <div
+                className="dropdown"
+                onMouseEnter={() => toggle("people")}
+                onMouseLeave={() => toggle("people")}
+              >
+                <button
+                  className="dropdown-toggle"
+                  onClick={() => toggle("people")}
                 >
                   <span>People</span>
-                  <svg
-                    className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180
-  transition duration-150 ease-in-out"
+                  {/* <svg
+                    className={`dropdown-icon ${open ? "rotate" : ""}`}
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                    viewBox="0 0 16 16"
                   >
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </div>
-                <div className="dropdown-content menu-2">
-                  <div>
-                    <li className="p-2">
-                      <Link to="/teacher">Faculty & Staff</Link>
-                    </li>
-                    <li className="p-2">
-                      <Link to="/member">Contributor</Link>
-                    </li>
-                    <li className="p-2">
-                      <a
-                        href="https://www.iiuc.ac.bd/alumni/adirectory"
-                        target="_blank"
-                      >
-                        Alumni
-                      </a>
-                    </li>
-                  </div>
-                </div>
+                  </svg> */}
+                </button>
+
+                <ul className={`dropdown-menu ${open.people ? "show" : ""}`}>
+                  <li>
+                    <Link to="/teacher">Faculty & Staff</Link>
+                  </li>
+                  <li>
+                    <Link to="/member">Contributor</Link>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.iiuc.ac.bd/alumni/adirectory"
+                      target="_blank"
+                    >
+                      Alumni
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
-              <div className="dropdown dropdown-bottom">
-                <div
-                  tabIndex={0}
-                  role="button"
-                  className="group flex font-bold"
+              <div
+                className="dropdown"
+                onMouseEnter={() => toggle("education")}
+                onMouseLeave={() => toggle("education")}
+              >
+                <button
+                  className="dropdown-toggle"
+                  onClick={() => toggle("education")}
                 >
                   <span>Education</span>
-                  <svg
-                    className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180
-  transition duration-150 ease-in-out"
+                  {/* <svg
+                    className={`dropdown-icon ${open ? "rotate" : ""}`}
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                    viewBox="0 0 16 16"
                   >
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </div>
-                <div className="dropdown-content menu-2">
-                  <div>
-                    <li className="p-2">
-                      <Link to="/ac">Academic Calender</Link>
-                    </li>
-                    <li className="p-2">
-                      <Link to="/syllabus">Syllabus</Link>
-                    </li>
-                    <li className="p-2">
-                      <a
-                        href="https://drive.google.com/drive/folders/1j6P06WLqRLESwiWYiPlTa4ui-m8g8C1i"
-                        target="_blank"
-                      >
-                        Resource
-                      </a>
-                    </li>
-                  </div>
-                </div>
+                  </svg> */}
+                </button>
+
+                <ul className={`dropdown-menu ${open.education ? "show" : ""}`}>
+                  <li>
+                    <Link to="/ac">Academic Calender</Link>
+                  </li>
+                  <li>
+                    <Link to="/syllabus">Syllabus</Link>
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/drive/folders/1j6P06WLqRLESwiWYiPlTa4ui-m8g8C1i"
+                      target="_blank"
+                    >
+                      Resource
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
-              <div className="dropdown dropdown-bottom">
-                <div
-                  tabIndex={0}
-                  role="button"
-                  className="group flex font-bold"
+              <div
+                className="dropdown"
+                onMouseEnter={() => toggle("others")}
+                onMouseLeave={() => toggle("others")}
+              >
+                <button
+                  className="dropdown-toggle"
+                  onClick={() => toggle("others")}
                 >
                   <span>Others</span>
-                  <svg
-                    className="fill-current h-12 w-12 pt-2 pl-2 transform group-focus:-rotate-180
-  transition duration-150 ease-in-out"
+                  {/* <svg
+                    className={`dropdown-icon ${open ? "rotate" : ""}`}
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
+                    viewBox="0 0 16 16"
                   >
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </div>
-                <div className="dropdown-content menu-2">
-                  <div>
-                    <li className="p-2">
-                      <Link to="/photo">Gallery</Link>
-                    </li>
-                    <li className="p-2">
-                      <Link to="/cgpa">GPA Calculator</Link>
-                    </li>
-                    <li className="p-2">
-                      <Link to="/fee">FEE Structures</Link>
-                    </li>
-                    <li className="p-2">
-                      <a href="https://opac.iiuc.ac.bd/" target="_blank">
-                        Library
-                      </a>
-                    </li>
-                    <li className="p-2">
-                      <a
-                        href="https://www.iiuc.ac.bd/home/career/"
-                        target="_blank"
-                      >
-                        Career
-                      </a>
-                    </li>
-                  </div>
-                </div>
+                  </svg> */}
+                </button>
+
+                <ul className={`dropdown-menu ${open.others ? "show" : ""}`}>
+                  <li>
+                    <Link to="/photo">Gallery</Link>
+                  </li>
+                  <li>
+                    <Link to="/cgpa">GPA Calculator</Link>
+                  </li>
+                  <li>
+                    <Link to="/fee">FEE Structures</Link>
+                  </li>
+                  <li>
+                    <a href="https://opac.iiuc.ac.bd/" target="_blank">
+                      Library
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.iiuc.ac.bd/home/career/"
+                      target="_blank"
+                    >
+                      Career
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
@@ -196,12 +215,12 @@ const Navbar = () => {
                 href="https://www.google.com/maps/place/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95+%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%80+%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F+%E0%A6%9A%E0%A6%9F%E0%A7%8D%E0%A6%9F%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE/@22.4965971,91.7210784,17z/data=!3m1!4b1!4m6!3m5!1s0x30ad2777a615585d:0xdcf908f6e4f3a713!8m2!3d22.4965971!4d91.7210784!16zL20vMDkwejU0?entry=ttu"
                 target="_blank"
               >
-                <img src={map} className="w-12 h-12" />
+                <img src={map} />
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/iiuc.ac.bd/" target="_blank">
-                <img src={fb} className="w-12 h-12" />
+                <img src={fb} />
               </a>
             </li>
             <li>
@@ -209,12 +228,12 @@ const Navbar = () => {
                 href="https://www.youtube.com/@internationalislamicuniver5603"
                 target="_blank"
               >
-                <img src={yt} className="w-12 h-12" />
+                <img src={yt} />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/company/iiuctg" target="_blank">
-                <img src={ln} className="w-12 h-12" />
+                <img src={ln} />
               </a>
             </li>
           </ul>

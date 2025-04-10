@@ -1,41 +1,68 @@
-.buses {
-    transition: all 0.5s ease;
-    padding-block: 10px;
+/* Bus.css */
+
+.bus-page {
+  padding: 2rem;
+  text-align: center;
 }
 
-
-#thumbnails {
-    text-align: center;
-    display: flex;
-    justify-content: center;
+.main-preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
-#thumbnails img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px 5px #b8b8b8;
-    border-radius: 10px;
+.main-preview iframe {
+  width: 80%;
+  max-width: 900px;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.4s ease;
 }
 
-#thumbnails img:hover {
-    transform: scale(1.05)
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 
-#main {
-    width: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 20px auto;
-    box-shadow: 2px 2px 10px 5px #b8b8b8;
-    border-radius: 10px;
-
-    @media only screen and (max-width:480px) {
-        width: 100%;
-    }
+.thumbnail {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
-.hidden {
-    opacity: 0;
+.thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail.active {
+  outline: 3px solid var(--primary, #02a9f7);
+  transform: scale(1.1);
+}
+
+.thumbnail-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none; /* Prevent iframe interaction so clicks hit parent */
+}
+
+@media (max-width: 768px) {
+  .main-preview iframe {
+    width: 95%;
+    height: 300px;
+  }
+
+  .thumbnail {
+    width: 90px;
+    height: 70px;
+  }
 }

@@ -3,14 +3,14 @@
   font-family: Arial, sans-serif;
   margin: 4rem auto;
   padding: 30px;
-  background-color: #01303f;
+  background-color: var(--color-secondary);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .links-container h2 {
   text-align: center;
-  color: #f0f8ff;
+  color: var(--text-light);
   margin: 0;
   margin-bottom: 25px;
   font-size: 24px;
@@ -25,26 +25,27 @@
 .links-container li {
   margin: 15px 0;
   padding: 10px;
-  background-color: #f0f8ff; /* Light blue list item background */
+  background-color: var(--bg-light);
   border-radius: 0.5rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-align: center;
 }
 
-.links-container li:hover {
-  background-color: #e0f7ff; /* Slightly darker blue on hover */
-  transform: translateX(5px);
-}
-
 .links-container a {
   text-decoration: none;
-  color: #01303f; /* Dark blue on hover */
+  color: var(--color-secondary);
   font-size: 2rem;
   font-weight: bold;
   display: block;
   transition: color 0.3s ease;
 }
 
+.links-container li:hover {
+  background-color: var(--bg-dark);
+  transform: translateX(5px);
+}
+
+.links-container li:hover > a,
 .links-container a:hover {
-  color: #02a9f7; /* Bright blue link text */
+  color: var(--color-primary);
 }

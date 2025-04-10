@@ -1,60 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Prata&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Jost", "sans-serif";
-}
-
-html {
-  font-size: 50%;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-li {
-  list-style: none;
-}
-
 /* ----------- navbar style start ----------- */
-
 .main-nav {
   width: 100%;
-  height: 10.5rem;
+  height: 10rem;
   display: grid;
   grid-template-columns: 5rem 1fr 3fr 1.5fr 5rem;
   position: fixed;
-  z-index: 1000;
-  padding-top: 0.5rem;
-  /* background-color: #02a9f7; */
-  background: rgba(1, 48, 63, 0.5);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  z-index: var(--z-modal);
+
+  background: var(--bg-glass);
+  border-bottom-left-radius: var(--border-radius2);
+  border-bottom-right-radius: var(--border-radius2);
+  box-shadow: var(--shadow-hard);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.main-nav li,
+.menu-link span,
+.menu-link a,
+.dropdown-menu a,
+.mobile-menu-link li {
+  font-family: var(--font-serif);
+  font-size: var(--fs-md);
 }
 
 /* ----------- logo part start ----------- */
-
 .logo {
   display: grid;
-  /* background-color: #3b5998; */
   grid-column: 2/3;
-  /* justify-content: start; */
   align-items: center;
-  width: 13rem;
+}
+
+.logo img {
+  height: auto;
+  max-height: 8rem;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* ----------- Main Link part start ----------- */
 
 .menu-link {
   grid-column: 3/4;
-  color: #d4f0fc;
+  z-index: var(--z-sticky);
 }
 
 .menu-link ul {
@@ -64,12 +52,11 @@ li {
   align-items: center;
 }
 
-.menu-link ul li {
-  font-size: 2rem;
-  font-weight: bold;
-}
+.menu-link ul li,
+.menu-link ul li span {
+  color: var(--color-primary);
 
-.menu-link ul li a {
+  font-weight: bold;
   text-transform: capitalize;
   transition: 0.5s;
 }
@@ -77,26 +64,12 @@ li {
 .menu-link ul li:hover > a,
 .menu-link ul li:hover {
   transform-origin: left;
-  color: #02a9f7;
+  color: var(--color-primary);
   text-decoration: underline;
   transition: 0.5s;
 }
 
-.menu-2 {
-  /* menu z-[2] font-bold bg-[#02a9f7] w-80 */
-  width: 200px;
-  font-weight: bold;
-  z-index: 2;
-  padding: 2rem;
-  /* background-color: #02a9f7; */
-  background: rgba(2, 87, 122, 0.75);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-}
-
 /* ----------- Social Media ----------- */
-
 .social-media {
   grid-column: 4/5;
 }
@@ -109,22 +82,19 @@ li {
   justify-content: flex-end;
 }
 
-.social-media ul li {
-  text-align: right;
-}
-
 .social-media ul li:first-child {
   grid-column: 2/3;
 }
 
-.social-media ul li {
-  font-size: 2.5rem;
+.social-media ul li img {
+  height: 3rem;
 }
 
 .social-media .hamburger-menu {
   display: none;
-  font-size: 3rem;
-  color: #fff;
+  font-family: var(--font-serif);
+  font-size: var(--fs-lg);
+  color: var(--color-primary);
 }
 
 .facebook {
@@ -139,6 +109,83 @@ li {
   color: #ff0000;
 }
 
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.dropdown-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+  fill: currentColor;
+}
+
+.dropdown-icon.rotate {
+  transform: rotate(-180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  min-height: fit-content;
+  max-height: max-content;
+  display: flex;
+  flex-direction: row;
+
+  background: var(--bg-glass);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  color: var(--primary-text);
+
+  font-weight: 800;
+  transition: background-color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  color: var(--secondary-text);
+}
+
 /* -----------responsive css style Tablet----------- */
 @media (max-width: 1080px) {
   .menu-link {
@@ -148,27 +195,25 @@ li {
   .mobile-menu-link {
     grid-column: 2/4;
     position: relative;
-    z-index: 99;
+    z-index: var(--z-dropdown);
   }
 
   .mobile-menu-link {
-    /* background-color: #02a9f7; */
-    background: rgba(1, 48, 63, 0.95);
+    background: var(--bg-glass);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+
     height: 40rem;
     display: grid;
     grid-column: 2/5;
     align-items: center;
     padding-left: 3rem;
-    margin-top: 0.5rem;
-    transition: all 4s linear;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease-in-out;
     transform-origin: top;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
   }
 
   .mobile-menu-link ul {
@@ -197,7 +242,6 @@ li {
   }
 
   .social-media {
-    /* height: 7rem; */
     display: flex;
     justify-self: end;
     align-items: center;
@@ -215,7 +259,6 @@ li {
   }
 
   .social-media {
-    /* height: 6rem; */
     display: flex;
     justify-self: end;
     align-items: center;
@@ -223,8 +266,6 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    /* font-size: 2.5rem; */
-    /* color: #000000; */
   }
 }
 
@@ -235,7 +276,6 @@ li {
   }
 
   .social-media {
-    /* height: 6rem; */
     display: flex;
     justify-self: end;
     align-items: center;
@@ -243,7 +283,5 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    /* font-size: 2.5rem; */
-    /* color: #ffffff; */
   }
 }
