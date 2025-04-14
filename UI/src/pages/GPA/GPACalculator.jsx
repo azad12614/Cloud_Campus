@@ -1,8 +1,6 @@
 // GPACalculator.js
-
 import React, { useState } from "react";
 import Footer from "../../components/Footer";
-import Links from "../../components/Links";
 import Navbar from "../../components/Navbar";
 import Section from "../../components/Section";
 import CourseForm from "./CourseForm";

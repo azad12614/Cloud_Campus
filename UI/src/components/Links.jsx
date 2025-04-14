@@ -1,7 +1,14 @@
-import React from "react";
-import "./Links.css"; // Import the CSS file
+// File: src/components/Links.jsx
 
+import React from "react";
+import "./Links.css";
+
+/**
+ * Links Component
+ * Renders a list of useful academic and student resources as external links.
+ */
 const Links = () => {
+  // List of links with URLs and display texts
   const links = [
     { url: "https://www.iiuc.ac.bd/alumni/adirectory", text: "Alumni List" },
     {

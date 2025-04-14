@@ -1,5 +1,6 @@
-/* src/components/Hero.css */
+/* File: src/components/Hero.css */
 
+/* Root section with background and layout */
 .hero-section {
   position: relative;
   background-color: var(--bg-dark);
@@ -13,6 +14,7 @@
   overflow: hidden;
 }
 
+/* Faint grid overlay background */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -23,6 +25,7 @@
   pointer-events: none;
 }
 
+/* Grid layout for content and image */
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -33,12 +36,14 @@
   align-items: center;
 }
 
+/* Text content styling */
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 }
 
+/* Title styling */
 .hero-title {
   font-size: var(--fs-5xl);
   font-weight: 700;
@@ -47,6 +52,7 @@
   padding-top: 10rem;
 }
 
+/* Gradient effect on highlighted words */
 .hero-title span {
   background: linear-gradient(90deg, var(--color-primary), var(--color-violet));
   -webkit-background-clip: text;
@@ -54,6 +60,7 @@
   animation: gradientShift 2s infinite alternate;
 }
 
+/* Description text */
 .hero-description {
   font-size: var(--fs-lg);
   font-weight: 600;
@@ -63,6 +70,7 @@
   margin-top: 0.5rem;
 }
 
+/* Update notice box */
 .update-banner {
   background-color: var(--color-secondary);
   color: var(--color-error);
@@ -72,12 +80,13 @@
   border-radius: var(--rounded-lg);
   font-size: var(--fs-sm);
   font-weight: 600;
-  position: relative; /* or fixed if you want it sticky */
+  position: relative;
   top: 0;
   z-index: 999;
   box-shadow: var(--shadow-sm);
 }
 
+/* Button container */
 .hero-buttons {
   display: flex;
   gap: var(--space-md);
@@ -85,6 +94,7 @@
   flex-wrap: wrap;
 }
 
+/* Primary CTA button */
 .btn-primary {
   background-color: var(--color-primary);
   color: var(--text-dark);
@@ -104,6 +114,7 @@
   transform: translateY(-2px);
 }
 
+/* Outline-style CTA button */
 .btn-outline {
   background: transparent;
   border: 2px solid var(--color-primary);
@@ -122,11 +133,13 @@
   transform: translateY(-2px);
 }
 
+/* Image container */
 .hero-image {
   display: flex;
   justify-content: center;
 }
 
+/* Glass-effect image card */
 .hero-image-card {
   background: var(--bg-glass);
   backdrop-filter: var(--glass-blur);
@@ -144,7 +157,7 @@
   filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.2));
 }
 
-/* Float animation */
+/* Floating image animation */
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -157,6 +170,7 @@
   }
 }
 
+/* Gradient text animation */
 @keyframes gradientShift {
   from {
     background-position: 0%;
@@ -166,7 +180,7 @@
   }
 }
 
-/* Responsive */
+/* Responsive: Stack layout on tablets */
 @media (max-width: 960px) {
   .hero-container {
     grid-template-columns: 1fr;
@@ -186,6 +200,7 @@
   }
 }
 
+/* Responsive: Smaller paddings and font for mobile */
 @media (max-width: 480px) {
   .hero-image-card {
     padding: var(--space-md);

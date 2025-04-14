@@ -1,11 +1,13 @@
-/* src/pages/Clubs.css */
+/* File: src/components/Clubs.css */
 
+/* ===== Section Styling ===== */
 .clubs-section {
   padding: var(--space-lg) var(--space-sm);
   background-color: var(--bg-dark);
   color: var(--text-light);
 }
 
+/* ===== Section Heading ===== */
 .clubs-heading {
   font-size: var(--fs-lg);
   font-weight: 600;
@@ -15,6 +17,7 @@
   font-family: var(--font-ibm);
 }
 
+/* ===== Container for Club Cards ===== */
 .clubs-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -24,6 +27,7 @@
   gap: var(--space-md);
 }
 
+/* ===== Club Card Styling ===== */
 .club-card {
   background-color: var(--bg-glass);
   backdrop-filter: var(--glass-blur);
@@ -43,6 +47,7 @@
   box-shadow: 0 0 16px var(--color-primary);
 }
 
+/* ===== Club Name Styling ===== */
 .club-card h3 {
   font-size: var(--fs-md);
   font-weight: 600;
@@ -51,12 +56,14 @@
   font-family: var(--font-ibm);
 }
 
+/* ===== Social Icons Container ===== */
 .club-icons {
   display: flex;
   justify-content: center;
   gap: var(--space-md);
 }
 
+/* ===== Icon Styling ===== */
 .club-icons a {
   color: var(--text-light);
   font-size: 2.2rem;
@@ -67,7 +74,7 @@
   color: var(--color-primary);
 }
 
-/* Responsive */
+/* ===== Responsive Design ===== */
 @media (max-width: 768px) {
   .clubs-container {
     flex-direction: column;

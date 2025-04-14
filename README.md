@@ -1,42 +1,55 @@
-# 🌐 [Cloud Campus Website](https://cloud-campus.onrender.com/) – MERN Stack
+# 🌐 [Cloud Campus](https://cloud-campus.onrender.com/) – MERN Stack Academic Portal
 
-This repository contains the source code for **Cloud Campus**, a modern academic website designed for the **Computer Science & Engineering Department** of **International Islamic University Chittagong (IIUC)**. Developed using the **MERN Stack** (MongoDB, Express.js, React.js, Node.js), this project was built as part of a **Software Engineering course**.
+This repository houses the source code for **Cloud Campus**, a modern, responsive academic website built for the **Department of Computer Science & Engineering (CSE)** at the **International Islamic University Chittagong (IIUC)**. Developed using the **MERN Stack** (MongoDB, Express.js, React.js, Node.js), this project was created as part of a **Software Engineering course**.
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Overview
 
-Cloud Campus is a sleek and user-friendly platform that centralizes essential departmental information for students, faculty, and visitors. The site showcases a clean UI, modern tech-inspired aesthetics, and a mobile-responsive design.
+**Cloud Campus** serves as a central hub for departmental resources, schedules, academic tools, and student-faculty engagement. The site features a sleek, tech-inspired UI and is optimized for all devices.
 
-### ✨ Key Features
+---
 
-- 🔝 **Hero Section** – Eye-catching introduction to the department.
-- 👨‍🏫 **Faculty & Staff** – Profiles of professors, lecturers, and support staff.
-- 📅 **Class & Bus Schedule** – Up-to-date class routines and campus transportation info.
-- 📚 **Course Offers & Syllabus** – Detailed list of offered courses and downloadable syllabi.
-- 🧮 **GPA Calculator** – Handy tool for estimating GPA.
-- 🗓️ **Academic Calendar** – Important academic dates and events.
-- 💬 **Testimonials** – Feedback from alumni and current students.
-- 🖼️ **Gallery** – Visuals of campus life and departmental events.
-- 🔗 **General Links** – Quick access to useful university resources.
-- 🤝 **Contributors** – Highlighting the team behind the project.
-- 📞 **Contact Page** – Reach out to the department.
-- 📌 **Modern Navbar & Footer** – Clean layout and easy navigation.
+## ✨ Features
+
+- 🔝 **Hero Section** – Bold introduction to the CSE department.
+- 👨‍🏫 **Faculty & Staff Directory** – Profiles of professors and staff members.
+- 📅 **Class & Bus Schedules** – Updated timetables and transport details.
+- 📚 **Courses & Syllabus** – Detailed course outlines and downloadable syllabi.
+- 🧮 **GPA Calculator** – Tool to estimate your GPA with ease.
+- 🗓️ **Academic Calendar** – Key academic dates and events.
+- 💬 **Testimonials** – Words from students and alumni.
+- 🖼️ **Gallery** – Snapshots of campus and department life.
+- 🔗 **Quick Links** – Resources and club portals.
+- 🤝 **Contributors** – Meet the developers.
+- 📞 **Contact Page** – Easy communication with the department.
+- 📌 **Modern Navbar & Footer** – Clean design with smooth navigation.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js (Vite)
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Deployment:** [Render](https://render.com)
+| Layer      | Technologies                                 |
+| ---------- | -------------------------------------------- |
+| Frontend   | React.js(Vite)                               |
+| Style      | Raw CSS, TailwindCSS(installed but not used) |
+| Backend    | Node.js, Express.js                          |
+| Database   | MongoDB                                      |
+| Deployment | [Render](https://render.com)                 |
+
+---
+
+## 👥 Team Members
+
+- [Ariful](https://github.com/ariful213026)
+- [Abdur](https://github.com/abdur65)
+- [Azad](https://github.com/azad12614)
 
 ---
 
 ## 👨‍💻 Development Timeline
 
-This project was collaboratively developed over **3–4 months** as part of a team-based software engineering assignment.
+This project was collaboratively developed over **5-6 months** as part of a team-based software engineering assignment.
 
 ---
 
@@ -63,8 +76,12 @@ This project was collaboratively developed over **3–4 months** as part of a te
    npm install
    ```
 
-3. **Create a `.env` file** in the root directory and configure the necessary environment variables.  
-   _(Refer to the backend files for required keys such as MongoDB URI, PORT, etc.)_
+3. **Create a `.env` file** in the root directory and configure the necessary environment variables.
+
+   ```bash
+   DB_URL=your_mongo_uri
+
+   ```
 
 4. **Start the server:**
 

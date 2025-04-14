@@ -5,13 +5,7 @@ import Navbar from "../../components/Navbar";
 import Section from "../../components/Section";
 import "./Contact.css";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaGithub,
-  FaYoutube,
-  FaMap,
-} from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaYoutube, FaMap } from "react-icons/fa";
 
 const Contact = () => {
   return (

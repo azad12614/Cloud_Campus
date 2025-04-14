@@ -1,129 +1,130 @@
-/* ----------- navbar style start ----------- */
+/* File: src/components/Navbar.css */
+
+/* ----------- Navbar General Styles ----------- */
 .main-nav {
   width: 100%;
   height: 10rem;
   display: grid;
   grid-template-columns: 5rem 1fr 3fr 1.5fr 5rem;
   position: fixed;
-  z-index: var(--z-modal);
+  z-index: var(--z-modal); /* Ensure the navbar is on top of other content */
 
-  background: var(--bg-glass);
-  border-bottom-left-radius: var(--border-radius2);
-  border-bottom-right-radius: var(--border-radius2);
-  box-shadow: var(--shadow-hard);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  background: var(--bg-glass); /* Glass effect background */
+  border-bottom-left-radius: var(--border-radius2); /* Rounded corners */
+  border-bottom-right-radius: var(--border-radius2); /* Rounded corners */
+  box-shadow: var(--shadow-hard); /* Strong shadow */
+  backdrop-filter: var(--glass-blur); /* Blur effect for the glassmorphism */
+  -webkit-backdrop-filter: var(--glass-blur); /* For Safari */
 }
 
+/* Links and Text Styles */
 .main-nav li,
 .menu-link span,
 .menu-link a,
 .dropdown-menu a,
 .mobile-menu-link li {
-  font-family: var(--font-serif);
-  font-size: var(--fs-md);
+  font-family: var(--font-serif); /* Set font for links and items */
+  font-size: var(--fs-md); /* Medium font size */
 }
 
-/* ----------- logo part start ----------- */
+/* ----------- Logo Section ----------- */
 .logo {
   display: grid;
-  grid-column: 2/3;
-  align-items: center;
+  grid-column: 2/3; /* Center the logo in the navbar */
+  align-items: center; /* Vertically center logo */
 }
 
 .logo img {
   height: auto;
-  max-height: 8rem;
-  max-width: 100%;
-  object-fit: contain;
+  max-height: 8rem; /* Max height of logo */
+  max-width: 100%; /* Ensure logo is responsive */
+  object-fit: contain; /* Maintain aspect ratio */
 }
 
-/* ----------- Main Link part start ----------- */
-
+/* ----------- Main Links Section ----------- */
 .menu-link {
-  grid-column: 3/4;
-  z-index: var(--z-sticky);
+  grid-column: 3/4; /* Position the menu links */
+  z-index: var(--z-sticky); /* Make sure the links are always on top */
 }
 
 .menu-link ul {
   height: 10rem;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-around; /* Even spacing between menu items */
+  align-items: center; /* Center items vertically */
 }
 
 .menu-link ul li,
 .menu-link ul li span {
-  color: var(--color-primary);
-
-  font-weight: bold;
-  text-transform: capitalize;
-  transition: 0.5s;
+  color: var(--color-primary); /* Primary color for links */
+  font-weight: bold; /* Make links bold */
+  text-transform: capitalize; /* Capitalize text */
+  transition: 0.5s; /* Smooth transition effect */
 }
 
 .menu-link ul li:hover > a,
 .menu-link ul li:hover {
   transform-origin: left;
   color: var(--color-primary);
-  text-decoration: underline;
-  transition: 0.5s;
+  text-decoration: underline; /* Underline on hover */
+  transition: 0.5s; /* Smooth transition effect */
 }
 
-/* ----------- Social Media ----------- */
+/* ----------- Social Media Icons ----------- */
 .social-media {
-  grid-column: 4/5;
+  grid-column: 4/5; /* Position the social media icons */
 }
 
 .social-media ul {
   height: 10rem;
   display: grid;
-  grid-template-columns: 3fr repeat(4, 1fr);
+  grid-template-columns: 3fr repeat(4, 1fr); /* Distribute social icons evenly */
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Align to the right */
 }
 
 .social-media ul li:first-child {
-  grid-column: 2/3;
+  grid-column: 2/3; /* Adjust first social media item */
 }
 
 .social-media ul li img {
-  height: 3rem;
+  height: 3rem; /* Set icon size */
 }
 
 .social-media .hamburger-menu {
-  display: none;
-  font-family: var(--font-serif);
-  font-size: var(--fs-lg);
-  color: var(--color-primary);
+  display: none; /* Hide hamburger menu by default */
+  font-family: var(--font-serif); /* Set font for the menu */
+  font-size: var(--fs-lg); /* Large font size */
+  color: var(--color-primary); /* Primary color for hamburger */
 }
 
+/* Individual Social Media Styles */
 .facebook {
-  color: #0753f8;
+  color: #0753f8; /* Facebook blue */
 }
 
 .instagram {
-  color: #d608aa;
+  color: #d608aa; /* Instagram pink */
 }
 
 .youtube {
-  color: #ff0000;
+  color: #ff0000; /* YouTube red */
 }
 
-/* Dropdown */
+/* ----------- Dropdown Menu ----------- */
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: inline-block; /* Allow dropdown to sit inline */
 }
 
 .dropdown-toggle {
   background: transparent;
   border: none;
   font-weight: bold;
-
   display: flex;
   align-items: center;
   cursor: pointer;
-  color: var(--color-primary);
+  color: var(--color-primary); /* Primary text color */
 }
 
 .dropdown-icon {
@@ -131,11 +132,11 @@
   height: 1rem;
   margin-left: 0.5rem;
   transition: transform 0.3s ease;
-  fill: currentColor;
+  fill: currentColor; /* Inherit color from parent */
 }
 
 .dropdown-icon.rotate {
-  transform: rotate(-180deg);
+  transform: rotate(-180deg); /* Rotate the icon when dropdown is open */
 }
 
 .dropdown-menu {
@@ -146,56 +147,58 @@
   min-height: fit-content;
   max-height: max-content;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Horizontal layout for menu items */
 
   background: var(--bg-glass);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  border-radius: var(--border-radius); /* Rounded corners */
+  box-shadow: var(--shadow-soft); /* Soft shadow */
+  backdrop-filter: var(--glass-blur); /* Glass effect */
+  -webkit-backdrop-filter: var(--glass-blur); /* For Safari */
 
   padding: 0.5rem 0;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.25s ease;
-  z-index: 10;
+  transform: translateY(10px); /* Slide effect */
+  transition: all 0.25s ease; /* Smooth transition */
+  z-index: 10; /* Ensure dropdown is on top */
 }
 
 .dropdown-menu.show {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateY(0); /* Open the dropdown */
 }
 
 .dropdown-menu li {
-  list-style: none;
+  list-style: none; /* Remove default list styles */
 }
 
 .dropdown-menu a {
   display: block;
   padding: 0.6rem 1rem;
   text-decoration: none;
-  color: var(--primary-text);
+  color: var(--primary-text); /* Default text color */
 
   font-weight: 800;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s; /* Smooth color transition on hover */
 }
 
 .dropdown-menu a:hover {
-  color: var(--secondary-text);
+  color: var(--secondary-text); /* Change color on hover */
 }
 
-/* -----------responsive css style Tablet----------- */
+/* ----------- Responsive Styles ----------- */
+
+/* Tablet view */
 @media (max-width: 1080px) {
   .menu-link {
-    display: none;
+    display: none; /* Hide menu links on tablet */
   }
 
   .mobile-menu-link {
     grid-column: 2/4;
     position: relative;
-    z-index: var(--z-dropdown);
+    z-index: var(--z-dropdown); /* Ensure dropdown is on top */
   }
 
   .mobile-menu-link {
@@ -220,12 +223,8 @@
     height: 35rem;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: column; /* Stack the menu items */
     align-items: baseline;
-  }
-
-  .mobile-menu-link ul li:first-child {
-    transition-delay: 0.3s;
   }
 
   .social-media {
@@ -248,14 +247,14 @@
   }
 
   .social-media .hamburger-menu {
-    display: block;
+    display: block; /* Show hamburger on mobile */
   }
 }
 
-/* -----------responsive css style i-pad----------- */
+/* iPad view */
 @media (max-width: 798px) {
   .main-nav {
-    grid-template-columns: 4rem 2fr 2fr 2fr 4rem;
+    grid-template-columns: 4rem 2fr 2fr 2fr 4rem; /* Adjust grid layout */
   }
 
   .social-media {
@@ -265,14 +264,14 @@
   }
 
   .social-media .hamburger-menu {
-    display: block;
+    display: block; /* Show hamburger on smaller devices */
   }
 }
 
-/* -----------responsive css style Mobile----------- */
+/* Mobile view */
 @media (max-width: 520px) {
   .main-nav {
-    grid-template-columns: 2rem 2fr 1fr 2fr 2rem;
+    grid-template-columns: 2rem 2fr 1fr 2fr 2rem; /* Compact grid layout */
   }
 
   .social-media {
@@ -282,6 +281,6 @@
   }
 
   .social-media .hamburger-menu {
-    display: block;
+    display: block; /* Show hamburger on mobile */
   }
 }

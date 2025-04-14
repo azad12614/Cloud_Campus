@@ -1,27 +1,32 @@
+/* File: src/components/Links.css */
+
+/* Container for the entire links section */
 .links-container {
   max-width: 600px;
-  font-family: Arial, sans-serif;
   margin: 4rem auto;
   padding: 30px;
+  font-family: var(--font-sans, Arial, sans-serif);
   background-color: var(--color-secondary);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading styles */
 .links-container h2 {
   text-align: center;
   color: var(--text-light);
-  margin: 0;
   margin-bottom: 25px;
   font-size: 24px;
   font-weight: bold;
 }
 
+/* Remove default list styles */
 .links-container ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* Each link item */
 .links-container li {
   margin: 15px 0;
   padding: 10px;
@@ -31,6 +36,7 @@
   text-align: center;
 }
 
+/* Anchor link styles */
 .links-container a {
   text-decoration: none;
   color: var(--color-secondary);
@@ -40,6 +46,7 @@
   transition: color 0.3s ease;
 }
 
+/* Hover effects for list item and anchor */
 .links-container li:hover {
   background-color: var(--bg-dark);
   transform: translateX(5px);
